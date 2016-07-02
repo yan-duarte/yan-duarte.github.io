@@ -1362,7 +1362,7 @@ hr {
 	font-size: 36px;
 	color: #FFF; }
 
-.post {
+
   table {
     border-collapse: collapse;
   }
@@ -1376,7 +1376,7 @@ hr {
   td{
     vertical-align: center;
   }
-}
+
 
 nav {
 	display: inline-block;
