@@ -1,10 +1,11 @@
 ---
-published: false
+published: true
 date: '2016-07-01 22:05:00 -0300'
 categories:
   - Data Management and Visualization
 tags:
   - week1
+title: 'Assignment 1: Getting Your Research Project Started'
 ---
 ## STEP 1: Choose a data set that you would like to work with.
 After I have analyzed the data set from the suggested codebooks, I decided to use the [Gapminder][link_gapminder]. I have chosen this dataset because it has subjects that is related to my areas of interests.
