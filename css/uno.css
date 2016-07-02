@@ -1473,7 +1473,7 @@ td{
 }
 
 th{
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 *:focus {
