@@ -1465,20 +1465,20 @@ i {
 	margin: 2.2em 0 2.1em 0;
 	border-top: 1px solid #dddddd; }
 
-
 td{
-  vertical-align:middle;
+  text-align: left !important;
   line-height: 1.5em;
-  padding: 1.5em 0.05em 0 0.05em;
+  padding: 0.2em 0.5em 0.2em 0.05em;
   border-bottom: 0.05em solid #e25440;
 }
 
 th{
+	text-align: left !important;
   font-weight: bold !important;
-  padding-top: 0.5em; 
+  padding: 0.5em 0 0.5em 0; 
   border-bottom: 0.05em solid #e25440;
+	border-top: 0.05em solid #e25440;
 }
-
 
 
 *:focus {
