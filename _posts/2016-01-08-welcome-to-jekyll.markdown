@@ -60,10 +60,31 @@ In the end, the study indicates that about 1/3 of the breast cancer cases in thi
 
 The correlation between the alimentation way and the incidence of breast cancer is a explored subject. There were found some studies that consist in analyzing the food consumption in a general way; others only examine in one country. Thus, it would be interesting to explore deeper this correlation and study if the sugar consumption has a direct correlation with the incidence of breast cancer. 
 
+### Reference
+
 [[1]][study_1] Gray G. E., Pike M. C., Henderson B. E. (1979). Breast-cancer incidence and mortality rates in different countries in relation to known risk factors and dietary practices. Jan;39(1):1-7.
 
 [[2]][study_2] Mezzetti M., La Vecchia C., Decarli A., Boyle P., Talamini R., Franceschi S. (1998). Population attributable risk for breast cancer: diet, nutrition, and physical exercise. Mar 4;90(5):389-94.
 
+## STEP 7: Based on your literature review, develop a hypothesis about what you believe the association might be between these topics.
+Hypothesis:
+
+  - Does the sugar consumption has some relation with the incidence of breast cancer?
+  - Does the Cholesterol in blood has some relation with the incidence of breast cancer?
+
+As we see in the review, a good alimentation can be a determining factor to avoid this disease. I believe that this topics have a strong correlation.
+
+## Review Criteria
+
+Your assessment will be based on the evidence you provide that you have completed all of the steps. When relevant, gradients in the scoring will be available to reward clarity (for example, you will get one point for having a research question presented in an unclear fashion, but two points for being clear). In all cases, consider that the peer assessing your work is likely not an expert in the field you are analyzing. You will be assessed equally on your reflection of the literature you’ve discovered and the project you are proposing.
+
+Specific rubric items, and their point values, are as follows: 
+
+  - Has the learner selected a data set and indicated that selection? (1 point)
+  - Has the learner clearly stated a research question and hypothesis? (2 points)
+  - Does the literature review include clear information about search terms used? (1 point)
+  - Does the literature review clearly identify references used? (2 points)
+  - Does the literature review clearly present a summary of findings (e.g., variables considered, patterns of findings, etc.)? (2 points)
 
 [link_gapminder]:      http://www.gapminder.org
 
