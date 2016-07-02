@@ -1469,12 +1469,17 @@ i {
 td{
   vertical-align:middle;
   line-height: 1.5em;
-  padding-top: 1.5em;
+  padding: 1.5em 0.05em 0 0.05em;
+  border-bottom: 0.05em solid #e25440;
 }
 
 th{
   font-weight: bold !important;
+  padding-top: 0.5em; 
+  border-bottom: 0.05em solid #e25440;
 }
+
+
 
 *:focus {
 	outline: none; }
