@@ -1467,8 +1467,9 @@ i {
 
 
 td{
-  vertical-align:center;
-  letter-spacing: .05em; 
+  vertical-align:middle;
+  line-height: 1.5em;
+	padding-top: 1.5em;
 }
 
 *:focus {
