@@ -1465,9 +1465,10 @@ i {
 	margin: 2.2em 0 2.1em 0;
 	border-top: 1px solid #dddddd; }
 
-table{
+
+td{
   vertical-align:center;
-  letter-spacing: 2px;  
+  letter-spacing: .05em; 
 }
 
 *:focus {
