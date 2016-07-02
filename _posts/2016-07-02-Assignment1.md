@@ -70,6 +70,7 @@ The correlation between the alimentation way and the incidence of breast cancer 
 Hypothesis:
 
   - Does the sugar consumption has some relation with the incidence of breast cancer?
+  - Does the food consumption quantity has some relation with the incidence of breast cancer?
   - Does the Cholesterol in blood has some relation with the incidence of breast cancer?
 
 As we see in the review, a good alimentation can be a determining factor to avoid this disease. I believe that this topics have a strong correlation.
@@ -97,4 +98,3 @@ Specific rubric items, and their point values, are as follows:
 [study_1]: http://www.ncbi.nlm.nih.gov/pubmed/758926
 
 [study_2]: http://www.ncbi.nlm.nih.gov/pubmed/9498489
-
