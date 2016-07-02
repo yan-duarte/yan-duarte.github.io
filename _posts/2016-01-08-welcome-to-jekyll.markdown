@@ -2,9 +2,9 @@
 title: 'Assignment 1: Getting Your Research Project Started'
 date: '2016-07-01 22:05:00 -0300'
 categories:
-  - jekyll
+  - Data Management and Visualization
 tags:
-  - jekyll
+  - week1
 published: true
 ---
 ## STEP 1: Choose a data set that you would like to work with.
@@ -26,9 +26,9 @@ The codebook was created based on Gapminder codebook. It contains all the variab
 
 ## STEP 4: Identify a second topic that you would like to explore in terms of its association with your original topic.
 When I looked again in Gapminder, there were three topics that I thought that could have some link with the incidence of new breast cancer cases:
-1. [Sugar per person (g per day)][link_gmsugar];
-2. [Food supply (kilocalories / person & day)][link_gmfood];
-3. [Cholesterol (fat) in blood, woomen, (mmol/L)][link_gmcholesterol].
+  1. [Sugar per person (g per day)][link_gmsugar];
+  2. [Food supply (kilocalories / person & day)][link_gmfood];
+  3. [Cholesterol (fat) in blood, woomen, (mmol/L)][link_gmcholesterol].
 
 The arrangement of each data set was informed in a relation with country and year. For data set 1 (Sugar per person) the year range is between 1961 and 2004. The second data set (Food supply) is between 1961 and 2007, and the last one (Cholesterol) is between 1980 and 2008.
 Therefore, I realized that it would be interesting to make the years values average of each country from the start of data set until 2002, as the breast cancer new cases data set is of 2002.
