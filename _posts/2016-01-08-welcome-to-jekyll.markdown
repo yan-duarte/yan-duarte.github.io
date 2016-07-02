@@ -44,7 +44,7 @@ So in my research, I can make until three question that has some link:
 At first, I will focus on the first question, trying to answer all of them during the course.
 
 ## STEP 5: Add questions/items/variables documenting this second topic to your personal codebook.
-Done.
+Done at codebook above.
 
 ## STEP 6: Perform a literature review to see what research has been previously done on this topic.
 
