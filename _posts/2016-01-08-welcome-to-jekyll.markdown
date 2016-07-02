@@ -53,9 +53,14 @@ The breast cancer is the second disease that most cause obits among women in all
 The study [[1]][study_1] investigate the incidence and mortality of cancer with known risk factors and dietary practices. To do that, it collects information from differents data sets like height, weight, food consumption, etc. The information gathered is an average value from several countries.
 The results from the study realized that the height and weight is both highly correlated with total fat consumption and, the total fat consumption is the variable most highly correlated with the mortality rates.
 
-
+In the study [[2]][study_2] were calculated multivariate odds ratios and population attributable risks for breast cancer with dietary b-carotene and vitamin E intake, alcohol consumption, physical activity, and, for postmenopausal women, body mass index.
+The data was from a case control study conducted in Italy from June 1991 through April 1994.
+The study presented that the risks associated with alcohol and b-carotene intake were larger among premenopausal women, and the risk related to physical activity were larger among postmenopausal women.
+In the end, the study indicates that about 1/3 of the breast cancer cases in this Italian population could be avoided. It would be possible by the intervention on a few selected and modifiable risk factors: reducing alcohol intake, having a diet richer in fruit, vegetables, and vegetable oil, and a higher level of physical activity.
 
 [[1]][study_1] Gray G. E., Pike M. C., Henderson B. E. (1979). Breast-cancer incidence and mortality rates in different countries in relation to known risk factors and dietary practices. Jan;39(1):1-7.
+
+[[2]][study_2] Mezzetti M., La Vecchia C., Decarli A., Boyle P., Talamini R., Franceschi S. (1998). Population attributable risk for breast cancer: diet, nutrition, and physical exercise. Mar 4;90(5):389-94.
 
 
 [link_gapminder]:      http://www.gapminder.org
@@ -67,3 +72,5 @@ The results from the study realized that the height and weight is both highly co
 [link_gmcholesterol]:  https://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=5.59290322580644;ti=2008$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=0ArfEDsV3bBwCdGJHcHZkSUdBcU56aS1OT3lLeU4tRHc;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=194;dataMax=96846$map_y;scale=lin;dataMin=3.974;dataMax=6.2$map_s;sma=50;smi=2$cd;bd=0$inds=
 
 [study_1]: http://www.ncbi.nlm.nih.gov/pubmed/758926
+
+[study_2]: http://www.ncbi.nlm.nih.gov/pubmed/9498489
