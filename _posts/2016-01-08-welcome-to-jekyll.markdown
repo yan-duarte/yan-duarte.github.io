@@ -26,11 +26,20 @@ The codebook was created based on Gapminder codebook. It contains all the variab
 
 ## STEP 4: Identify a second topic that you would like to explore in terms of its association with your original topic.
 When I looked again in Gapminder, there were three topics that I thought that could have some link with the incidence of new breast cancer cases:
-1. Sugar per person (g per day);
-2. Food supply (kilocalories / person & day);
-3. Cholesterol (fat) in blood, woomen, (mmol/L).
+1. [Sugar per person (g per day)][link_gmsugar];
+2. [Food supply (kilocalories / person & day)][link_gmfood];
+3. [Cholesterol (fat) in blood, woomen, (mmol/L)][link_gmcholesterol].
+
+The arrangement of each data set was informed in a relation with country and year. For data set 1 (Sugar per person) the year range is between 1961 and 2004. The second data set (Food supply) is between 1961 and 2007, and the last one (Cholesterol) is between 1980 and 2008.
+
 
 
 
 
 [link_gapminder]:      http://www.gapminder.org
+
+[link_gmsugar]: https://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=5.59290322580644;ti=2010$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=phAwcNAVuyj2sdmdhX9zuKg;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=194;dataMax=96846$map_y;scale=lin;sma=49;smi=2.65$cd;bd=0$inds=
+
+[link_gmfood]: https://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=5.59290322580644;ti=2010$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=0ArfEDsV3bBwCdGlYVVpXX20tbU13STZyVG0yNkRrZnc;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=194;dataMax=96846$map_y;scale=lin;sma=49;smi=2.65$cd;bd=0$inds=
+
+[link_gmcholesterol]:  https://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=5.59290322580644;ti=2008$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=0ArfEDsV3bBwCdGJHcHZkSUdBcU56aS1OT3lLeU4tRHc;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=194;dataMax=96846$map_y;scale=lin;dataMin=3.974;dataMax=6.2$map_s;sma=50;smi=2$cd;bd=0$inds=
