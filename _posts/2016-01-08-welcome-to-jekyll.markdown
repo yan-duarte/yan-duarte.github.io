@@ -58,6 +58,8 @@ The data was from a case control study conducted in Italy from June 1991 through
 The study presented that the risks associated with alcohol and b-carotene intake were larger among premenopausal women, and the risk related to physical activity were larger among postmenopausal women.
 In the end, the study indicates that about 1/3 of the breast cancer cases in this Italian population could be avoided. It would be possible by the intervention on a few selected and modifiable risk factors: reducing alcohol intake, having a diet richer in fruit, vegetables, and vegetable oil, and a higher level of physical activity.
 
+The correlation between the alimentation way and the incidence of breast cancer is a explored subject. There were found some studies that consist in analyzing the food consumption in a general way; others only examine in one country. Thus, it would be interesting to explore deeper this correlation and study if the sugar consumption has a direct correlation with the incidence of breast cancer. 
+
 [[1]][study_1] Gray G. E., Pike M. C., Henderson B. E. (1979). Breast-cancer incidence and mortality rates in different countries in relation to known risk factors and dietary practices. Jan;39(1):1-7.
 
 [[2]][study_2] Mezzetti M., La Vecchia C., Decarli A., Boyle P., Talamini R., Franceschi S. (1998). Population attributable risk for breast cancer: diet, nutrition, and physical exercise. Mar 4;90(5):389-94.
