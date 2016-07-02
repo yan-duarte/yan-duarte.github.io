@@ -1374,6 +1374,9 @@ hr {
   th, td {
     padding: 1em;
   }
+  tr{
+  	valign="middle"
+  }
 }
 
 nav {
