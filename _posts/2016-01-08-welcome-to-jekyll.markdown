@@ -48,12 +48,12 @@ Done.
 
 The breast cancer is the second disease that most cause obits among women in all the world.
 
-The study [1][study_1] investigate the incidence and mortality of cancer with known risk factors and dietary practices. To do that, it collects information from differents data sets like height, weight, food consumption, etc. The information gathered is an average value from several countries.
+The study [[1]][study_1] investigate the incidence and mortality of cancer with known risk factors and dietary practices. To do that, it collects information from differents data sets like height, weight, food consumption, etc. The information gathered is an average value from several countries.
 The results from the study realized that the height and weight is both highly correlated with total fat consumption and, the total fat consumption is the variable most highly correlated with the mortality rates.
 
 
 
-[1][study_1] Gray G. E., Pike M. C., Henderson B. E. (1979). Breast-cancer incidence and mortality rates in different countries in relation to known risk factors and dietary practices. Jan;39(1):1-7.
+[[1]][study_1] Gray G. E., Pike M. C., Henderson B. E. (1979). Breast-cancer incidence and mortality rates in different countries in relation to known risk factors and dietary practices. Jan;39(1):1-7.
 
 
 [link_gapminder]:      http://www.gapminder.org
