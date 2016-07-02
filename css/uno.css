@@ -1364,18 +1364,17 @@ hr {
 
 .post {
   table {
-    padding: 6px;
+    border-collapse: collapse;
   }
   table, th, td {
-    border: 1px solid black !important;
-    border-collapse: collapse;
-    line-height: 1em;
+    border: 1px solid black;
+     
   }
   th, td {
     padding: 1em;
   }
   tr{
-  	valign="middle"
+  	valign: "middle";
   }
 }
 
