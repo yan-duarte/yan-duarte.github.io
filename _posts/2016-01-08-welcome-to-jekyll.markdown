@@ -28,9 +28,7 @@ The codebook was created based on Gapminder codebook. It contains all the variab
 When I looked again in Gapminder, there were three topics that I thought that could have some link with the incidence of new breast cancer cases:
 
   1. [Sugar per person (g per day)][link_gmsugar];
-  
   2. [Food supply (kilocalories / person & day)][link_gmfood];
-
   3. [Cholesterol (fat) in blood, woomen, (mmol/L)][link_gmcholesterol].
 
 The arrangement of each data set was informed in a relation with country and year. For data set 1 (Sugar per person) the year range is between 1961 and 2004. The second data set (Food supply) is between 1961 and 2007, and the last one (Cholesterol) is between 1980 and 2008.
@@ -40,9 +38,7 @@ With that information, and, as the three topics has a relation with alimentation
 So in my research, I can make until three question that has some link:
 
   1. _Does the sugar consumption has some relation with the incidence of breast cancer?_
-
   2. _Does the food consumption quantity has some relation with the incidence of breast cancer?_
-
   3. _Does the Cholesterol in blood has some relation with the incidence of breast cancer?_
 
 At first, I will focus on the first question, trying to answer all of them during the course.
