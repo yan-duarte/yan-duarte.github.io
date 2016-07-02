@@ -1,6 +1,6 @@
 ---
 title: 'Assignment 1: Getting Your Research Project Started'
-date: 2016-07-01 22:05:00 -0300
+date: '2016-07-01 22:05:00 -0300'
 categories:
   - jekyll
 tags:
@@ -25,6 +25,10 @@ The codebook was created based on Gapminder codebook. It contains all the variab
 | meanCholesterol   | The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world | MRC-HPA Centre for Environment and Health |
 
 ## STEP 4: Identify a second topic that you would like to explore in terms of its association with your original topic.
+When I looked again in Gapminder, there were three topics that I thought that could have some link with the incidence of new breast cancer cases:
+1. Sugar per person (g per day);
+2. Food supply (kilocalories / person & day);
+3. Cholesterol (fat) in blood, woomen, (mmol/L).
 
 
 
