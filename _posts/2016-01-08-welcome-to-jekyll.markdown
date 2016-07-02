@@ -5,7 +5,7 @@ categories:
   - Data Management and Visualization
 tags:
   - week1
-published: true
+published: false
 ---
 ## STEP 1: Choose a data set that you would like to work with.
 After I have analyzed the data set from the suggested codebooks, I decided to use the [Gapminder][link_gapminder]. I have chosen this dataset because it has subjects that is related to my areas of interests.
