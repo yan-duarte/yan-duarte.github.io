@@ -46,6 +46,15 @@ Done.
 
 ## STEP 6:
 
+The breast cancer is the second disease that most cause obits among women in all the world.
+
+The study [1][study_1] investigate the incidence and mortality of cancer with known risk factors and dietary practices. To do that, it collects information from differents data sets like height, weight, food consumption, etc. The information gathered is an average value from several countries.
+The results from the study realized that the height and weight is both highly correlated with total fat consumption and, the total fat consumption is the variable most highly correlated with the mortality rates.
+
+
+
+[1][study_1] Gray G. E., Pike M. C., Henderson B. E. (1979). Breast-cancer incidence and mortality rates in different countries in relation to known risk factors and dietary practices. Jan;39(1):1-7.
+
 
 [link_gapminder]:      http://www.gapminder.org
 
@@ -54,3 +63,5 @@ Done.
 [link_gmfood]: https://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=5.59290322580644;ti=2010$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=0ArfEDsV3bBwCdGlYVVpXX20tbU13STZyVG0yNkRrZnc;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=194;dataMax=96846$map_y;scale=lin;sma=49;smi=2.65$cd;bd=0$inds=
 
 [link_gmcholesterol]:  https://www.gapminder.org/world/#$majorMode=chart$is;shi=t;ly=2003;lb=f;il=t;fs=11;al=30;stl=t;st=t;nsl=t;se=t$wst;tts=C$ts;sp=5.59290322580644;ti=2008$zpv;v=0$inc_x;mmid=XCOORDS;iid=phAwcNAVuyj1jiMAkmq1iMg;by=ind$inc_y;mmid=YCOORDS;iid=0ArfEDsV3bBwCdGJHcHZkSUdBcU56aS1OT3lLeU4tRHc;by=ind$inc_s;uniValue=8.21;iid=phAwcNAVuyj0XOoBL_n5tAQ;by=ind$inc_c;uniValue=255;gid=CATID0;by=grp$map_x;scale=log;dataMin=194;dataMax=96846$map_y;scale=lin;dataMin=3.974;dataMax=6.2$map_s;sma=50;smi=2$cd;bd=0$inds=
+
+[study_1]: http://www.ncbi.nlm.nih.gov/pubmed/758926
