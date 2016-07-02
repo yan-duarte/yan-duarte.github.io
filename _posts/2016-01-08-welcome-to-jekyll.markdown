@@ -1,6 +1,6 @@
 ---
-title: Welcome to Jekyll!
-date: {}
+title: 'Assignment 1: Getting Your Research Project Started'
+date: 2016-01-08T15:04:23.000Z
 categories:
   - jekyll
 tags:
