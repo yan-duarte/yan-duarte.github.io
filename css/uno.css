@@ -1373,8 +1373,8 @@ hr {
   th, td {
     padding: 1em;
   }
-  tr{
-
+  td{
+    vertical-align: center;
   }
 }
 
