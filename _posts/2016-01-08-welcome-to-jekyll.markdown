@@ -46,7 +46,7 @@ At first, I will focus on the first question, trying to answer all of them durin
 ## STEP 5: Add questions/items/variables documenting this second topic to your personal codebook.
 Done.
 
-## STEP 6:
+## STEP 6: Perform a literature review to see what research has been previously done on this topic.
 
 The breast cancer is the second disease that most cause obits among women in all the world.
 
