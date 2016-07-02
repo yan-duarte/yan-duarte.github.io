@@ -31,9 +31,20 @@ When I looked again in Gapminder, there were three topics that I thought that co
 3. [Cholesterol (fat) in blood, woomen, (mmol/L)][link_gmcholesterol].
 
 The arrangement of each data set was informed in a relation with country and year. For data set 1 (Sugar per person) the year range is between 1961 and 2004. The second data set (Food supply) is between 1961 and 2007, and the last one (Cholesterol) is between 1980 and 2008.
+Therefore, I realized that it would be interesting to make the years values average of each country from the start of data set until 2002, as the breast cancer new cases data set is of 2002.
+With that information, and, as the three topics has a relation with alimentation, I would be able to explore if there is a relation between alimentation and the incidence of breast cancer.
 
+So in my research, I can make until three question that has some link:
+1. _Does the sugar consumption has some relation with the incidence of breast cancer?_
+2. _Does the food consumption quantity has some relation with the incidence of breast cancer?_
+3. _Does the Cholesterol in blood has some relation with the incidence of breast cancer?_
 
+At first, I will focus on the first question, trying to answer all of them during the course.
 
+## STEP 5: Add questions/items/variables documenting this second topic to your personal codebook.
+Done.
+
+## STEP 6:
 
 
 [link_gapminder]:      http://www.gapminder.org
