@@ -50,6 +50,13 @@ Done at codebook above.
 
 The breast cancer is the second disease that most cause obits among women in all the world.
 
+To make my review I used the scholar site with the text:
+  
+  - _"breast cancer diet"_
+  - _"breast cancer sugar"_
+  
+From the results, I separated two studies:
+  
 The study [[1]][study_1] investigate the incidence and mortality of cancer with known risk factors and dietary practices. To do that, it collects information from differents data sets like height, weight, food consumption, etc. The information gathered is an average value from several countries.
 The results from the study realized that the height and weight is both highly correlated with total fat consumption and, the total fat consumption is the variable most highly correlated with the mortality rates.
 
