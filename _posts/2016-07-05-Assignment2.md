@@ -28,3 +28,22 @@ import numpy
 data = pandas.read_csv("separatedData.csv", low_memory = False)
 ```
 
+#### Print data set dimension
+```python
+print(len(data))
+print(len(data.columns))
+```
+```
+129
+6
+```
+
+#### Print data set dimension
+```python
+print(len(data))
+print(len(data.columns))
+```
+```
+129
+6
+```
