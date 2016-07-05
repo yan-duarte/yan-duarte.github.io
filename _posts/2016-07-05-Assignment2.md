@@ -20,8 +20,11 @@ You can download the python script [here](https://yan-duarte.github.io/archives/
 
 The results of the first program that demonstrates the frequency distributions were:
 
+####Importing the packages and the [data set](https://yan-duarte.github.io/archives/separatedData.csv)
 ```python
-s = "Python syntax highlighting"
-print s
+import pandas
+import numpy
+
+data = pandas.read_csv("separatedData.csv", low_memory = False)
 ```
 
