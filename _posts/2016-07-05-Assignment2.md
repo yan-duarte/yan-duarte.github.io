@@ -10,15 +10,19 @@ tags:
 title: 'Assignment 2: Running Your First Program'
 ---
 
-## STEP 1: Run your first program. 
+## **WHAT TO SUBMIT:**
 
-This program will be used throughout the remainder of the course and become the basis of your data analysis going forward.
+Following completion of your first program, create a blog entry where you post:
 
-You can download the python script [here](https://yan-duarte.github.io/archives/assignment2.py).
+  1. Your program: You can download it [here](https://yan-duarte.github.io/archives/assignment2.py);
+  2. The output that displays three of your variables as frequency tables: Present at the end of this post;
+  3. A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.
 
-## STEP 2: Run frequency distributions for your chosen variables and select columns, and possibly rows.
 
-The results of the first program that demonstrates the frequency distributions were:
+
+
+
+## **The results of the first program that demonstrates the frequency distributions were:**
 
 #### **Importing the packages and the [data set](https://yan-duarte.github.io/archives/separatedData.csv)**
 
