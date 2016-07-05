@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 date: '2016-07-05 14:00:00 -0300'
 Name:
   - Assignment: Running Your First Program
