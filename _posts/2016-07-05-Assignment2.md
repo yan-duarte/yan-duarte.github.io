@@ -18,6 +18,20 @@ Following completion of your first program, create a blog entry where you post:
   2. The output that displays three of your variables as frequency tables: Present at the end of this post;
   3. A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.
 
+After the first week assignment and the second week lessons, I realized that my code book could be improved.
+All of my variables have a different response for each entry, so I decided to create response categories.
+The new code book stayed in that way:
+
+
+|   Variable Name    |      Description of Indicator   |  Main Source |
+|:----:|:----------------------------------------:|:----:|
+| breastCancerAll    | Total number of new female cases of breast cancer during the 2002 year. | IARC (International Agency for Research on Cancer) |
+| breastCancer100th  | Number of new cases of breast cancer in 100,000 female residents during the 2002 year. | IARC (International Agency for Research on Cancer) |
+| meanSugarPerson    | Mean of the food consumption quantity (grams per person and day) of sugar and sweeters between years 1961 and 2002 | FAO modified |
+| meanFoodPerson     | Mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 (the number of days in the year) between the years | FAO modified |
+| meanCholesterol    | The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world | MRC-HPA Centre for Environment and Health |
+| cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borderline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
+
 
 
 
@@ -804,4 +818,3 @@ Specific rubric items, and their point values, are as follows:
   - Was the program output interpretable (i.e. organized and labeled)? (1 point)
   - Does the program output display three data managed variables as frequency tables? (1 point)
   - Did the summary describe the frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.? (2 points)
-
