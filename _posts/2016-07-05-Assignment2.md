@@ -12,7 +12,7 @@ title: 'Assignment 2: Running Your First Program'
 
 ## STEP 1: Run your first program. 
 
-### This program will be used throughout the remainder of the course and become the basis of your data analysis going forward.
+This program will be used throughout the remainder of the course and become the basis of your data analysis going forward.
 
 You can download the python script [here](https://yan-duarte.github.io/archives/assignment2.py).
 
