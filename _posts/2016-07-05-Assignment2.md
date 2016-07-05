@@ -47,15 +47,16 @@ If I can, I will also try to answer the other two questions:
   - _Does the food consumption quantity has some relation with the incidence of breast cancer?_
   - _Does the Cholesterol in blood has some relation with the incidence of breast cancer?_
 
-A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.
-
 After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the data set. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1].
 
-To the food consumption data, I made the average of all countries consumption and compare each country consumption to this mean. 55% of the countries stay under the mean.
+To the food consumption data, I made the average of all countries consumption and compared each country consumption to this mean. 55% of the countries stay under the average.
+
+At last, 
 
 ### Reference
-[[1]][ref1] Life by Daily Burn Are You Exceeding Your Daily Sugar Intake in Just One Meal INFOGRAPHIC. Visited 05 Jul 2016.
 
+[[1]][ref1] Life by Daily Burn Are You Exceeding Your Daily Sugar Intake in Just One Meal INFOGRAPHIC. Visited 05 Jul 2016. URL: http://dailyburn.com/life/health/daily-sugar-intake-infographic/.
+[[2]][ref2] Cholesterol Test - Procedure details. Visited 05 Jul 2016. URL: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555.
 
 
 ## **The results of the first program that demonstrates the frequency distributions were:**
@@ -346,3 +347,5 @@ Specific rubric items, and their point values, are as follows:
   - Did the summary describe the frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.? (2 points)
   
 [ref1]: http://dailyburn.com/life/health/daily-sugar-intake-infographic/
+
+[ref2]: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555
