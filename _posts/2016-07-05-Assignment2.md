@@ -14,7 +14,7 @@ title: 'Assignment 2: Running Your First Program'
 
 Following completion of your first program, create a blog entry where you post:
 
-  1. _Your program:_ You can download it [here](https://yan-duarte.github.io/archives/assignment2.py);
+  1. _Your program:_ Download the program [here](https://yan-duarte.github.io/archives/assignment2.py) and the data set [here](https://yan-duarte.github.io/archives/separatedData.csv);
   2. _The output that displays three of your variables as frequency tables:_ Present at the end of this post;
   3. _A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc._
 
