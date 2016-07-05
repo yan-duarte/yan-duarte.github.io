@@ -51,11 +51,12 @@ After running the program, It was possible to observe that the consumption of su
 
 To the food consumption data, I made the average of all countries consumption and compared each country consumption to this mean. 55% of the countries stay under the average.
 
-At last, 
+At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic [[2]][ref2]. In the data set, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
 
 ### Reference
 
 [[1]][ref1] Life by Daily Burn Are You Exceeding Your Daily Sugar Intake in Just One Meal INFOGRAPHIC. Visited 05 Jul 2016. URL: http://dailyburn.com/life/health/daily-sugar-intake-infographic/.
+
 [[2]][ref2] Cholesterol Test - Procedure details. Visited 05 Jul 2016. URL: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555.
 
 
