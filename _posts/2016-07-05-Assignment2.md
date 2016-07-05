@@ -22,15 +22,16 @@ After the first week assignment and the second week lessons, I realized that my 
 All of my variables have a different response for each entry, so I decided to create response categories.
 The new code book stayed in that way:
 
-
 |   Variable Name    |      Description of Indicator   |  Main Source |
 |:----:|:----------------------------------------:|:----:|
 | breastCancerAll    | Total number of new female cases of breast cancer during the 2002 year. | IARC (International Agency for Research on Cancer) |
 | breastCancer100th  | Number of new cases of breast cancer in 100,000 female residents during the 2002 year. | IARC (International Agency for Research on Cancer) |
 | meanSugarPerson    | Mean of the food consumption quantity (grams per person and day) of sugar and sweeters between years 1961 and 2002 | FAO modified |
+| sugarConsumption   | Consumption of sugar based in the meanSugarPerson <br> (0) Desirable between 0 and 30 g. <br> (1) Raised between 30 and 60 g. <br>(2) Borderline high between 60 and 90 g. <br>(3) High between 90 and 120 g. <br> (4) Very high under 120g. | FAO modified |
 | meanFoodPerson     | Mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 (the number of days in the year) between the years | FAO modified |
+| foodCountryMean    | Consumption of food based in the meanFoodPerson <br> (0) food consumption below the world average. <br> (1) food consumption under the world average. | FAO modified |
 | meanCholesterol    | The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world | MRC-HPA Centre for Environment and Health |
-| cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borderline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
+| cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borerline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
 
 
 
