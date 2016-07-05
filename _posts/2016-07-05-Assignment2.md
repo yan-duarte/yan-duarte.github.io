@@ -10,7 +10,7 @@ tags:
 title: 'Assignment 2: Running Your First Program'
 ---
 
-## **WHAT TO SUBMIT:**
+## WHAT TO SUBMIT:
 
 Following completion of your first program, create a blog entry where you post:
 
