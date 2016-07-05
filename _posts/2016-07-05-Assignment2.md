@@ -19,8 +19,7 @@ Following completion of your first program, create a blog entry where you post:
   3. _A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc._
 
 After the first week assignment and the second week lessons, I realized that my code book could be improved.
-All of my variables have a different response for each entry, so I decided to create response categories.
-The new code book stayed in that way:
+All of my variables have a different response for each entry, so I decided to create response categories. You can download the new code book and the data in this [xlsx file](https://yan-duarte.github.io/archives/codebook.xlsx). The new code book stayed in that way:
 
 |   Variable Name    |      Description of Indicator   |  Main Source |
 |:----:|:----------------------------------------:|:----:|
