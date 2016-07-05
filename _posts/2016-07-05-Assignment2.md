@@ -14,9 +14,9 @@ title: 'Assignment 2: Running Your First Program'
 
 Following completion of your first program, create a blog entry where you post:
 
-  1. Your program: You can download it [here](https://yan-duarte.github.io/archives/assignment2.py);
-  2. The output that displays three of your variables as frequency tables: Present at the end of this post;
-  3. A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.
+  1. _Your program:_ You can download it [here](https://yan-duarte.github.io/archives/assignment2.py);
+  2. _The output that displays three of your variables as frequency tables:_ Present at the end of this post;
+  3. _A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc._
 
 After the first week assignment and the second week lessons, I realized that my code book could be improved.
 All of my variables have a different response for each entry, so I decided to create response categories.
@@ -33,6 +33,20 @@ The new code book stayed in that way:
 | meanCholesterol    | The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world | MRC-HPA Centre for Environment and Health |
 | cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borerline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
 
+The new attributes were:
+
+  - sugarConsumption
+  - foodCountryMean
+  - cholesterolInBlood
+
+Witch I will give more importance in the sugarComsumption and breastCancer100th to make this work and answer the question:
+
+  - _Does the sugar consumption has some relation with the incidence of breast cancer?_
+
+If I can, I will also try to answer the other two questions:
+
+  - _Does the food consumption quantity has some relation with the incidence of breast cancer?_
+  - _Does the Cholesterol in blood has some relation with the incidence of breast cancer?_
 
 
 
