@@ -20,3 +20,8 @@ You can download the python script [here](https://yan-duarte.github.io/archives/
 
 The results of the first program that demonstrates the frequency distributions were:
 
+```python
+s = "Python syntax highlighting"
+print s
+```
+
