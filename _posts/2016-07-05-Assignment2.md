@@ -28,6 +28,7 @@ All of my variables have a different response for each entry, so I decided to cr
 | foodCountryMean    | Consumption of food based in the meanFoodPerson <br> (0) food consumption below the world average. <br> (1) food consumption under the world average. | FAO modified |
 | cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borerline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
 
+
 The new attributes were made based on the old ones presented in the [assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
 I will give more importance in the sugarComsumption and breastCancer100th attributes to make this work and answer the question:
 
@@ -42,7 +43,7 @@ After running the program, It was possible to observe that the consumption of su
 
 To the food consumption data, I made the average of all countries consumption and compared each country consumption to this mean. 55% of the countries stay under the average.
 
-At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic [[2]][ref2][[3]][ref3]. In the data set, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
+At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic ([[2]][ref2] and [[3]][ref3]). In the data set, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
 
 ### Reference
 
