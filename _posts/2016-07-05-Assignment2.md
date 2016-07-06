@@ -29,8 +29,8 @@ All of my variables have a different response for each entry, so I decided to cr
 | cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borerline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
 
 <br>
-The new attributes were made based on the old ones presented in the [assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
-With this, I joined the three questions made in assignment 1 to:
+The new attributes were made based on the old ones presented in the [assignment 1][ass1].
+With this, I joined the three questions made in [assignment 1][ass1] to:
 
   - _Does the sugar intake, the food consumption or the total cholesterol in blood has some relation with the incidence of new breast cancer cases?_
 
@@ -335,6 +335,8 @@ Specific rubric items, and their point values, are as follows:
   - Was the program output interpretable (i.e. organized and labeled)? (1 point)
   - Does the program output display three data managed variables as frequency tables? (1 point)
   - Did the summary describe the frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.? (2 points)
+  
+[ass1]: https://yan-duarte.github.io/2016/Assignment1/
   
 [ref1]: http://dailyburn.com/life/health/daily-sugar-intake-infographic/
 
