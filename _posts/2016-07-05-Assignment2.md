@@ -30,6 +30,9 @@ All of my variables have a different response for each entry, so I decided to cr
 
 <br>
 The new attributes were made based on the old ones presented in the [assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
+With this, I joined the three questions made in assignment 1 to:
+
+  - _Does the sugar intake, the food consumption or the total cholesterol in blood has some relation with the incidence of new breast cancer cases?_
 
 After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
@@ -44,7 +47,6 @@ At last, to range the total cholesterol in the blood of the countries I used as 
 [[2]][ref2] MD-Health How Many Grams of Sugar Per Day. Visited 06/07/2016. URL: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html.
 
 [[3]][ref3] Cholesterol Test - Procedure details. Visited 05 Jul 2016. URL: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555.
-
 
 
 ## **The results of the first program that demonstrates the frequency distributions were:**
@@ -339,4 +341,3 @@ Specific rubric items, and their point values, are as follows:
 [ref2]: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html
 
 [ref3]: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555
-
