@@ -39,19 +39,21 @@ If I can, I will also try to answer the other two questions:
   - _Does the food consumption quantity has some relation with the incidence of breast cancer?_
   - _Does the Cholesterol in blood has some relation with the incidence of breast cancer?_
 
-After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1].
+After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
 To the food consumption data, I made the average of all countries consumption and compared each country consumption to this mean. 55% of the countries stay under the average.
 
-At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic ([[2]][ref2] and [[3]][ref3]). In the dataset, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
+At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic [[3]][ref3]. In the dataset, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
 
 ### Reference
 
 [[1]][ref1] Life by Daily Burn Are You Exceeding Your Daily Sugar Intake in Just One Meal INFOGRAPHIC. Visited 05 Jul 2016. URL: http://dailyburn.com/life/health/daily-sugar-intake-infographic/.
 
-[[2]][ref2] Cholesterol Test - Procedure details. Visited 05 Jul 2016. URL: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555.
+[[2]][ref2] MD-Health How Many Grams of Sugar Per Day. Visited 06/07/2016. URL: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html.
 
-[[3]][ref3] MD-Health How Many Grams of Sugar Per Day. Visited 06/07/2016. URL: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html.
+[[3]][ref3] Cholesterol Test - Procedure details. Visited 05 Jul 2016. URL: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555.
+
+
 
 ## **The results of the first program that demonstrates the frequency distributions were:**
 
@@ -342,6 +344,7 @@ Specific rubric items, and their point values, are as follows:
   
 [ref1]: http://dailyburn.com/life/health/daily-sugar-intake-infographic/
 
-[ref2]: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555
+[ref2]: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html
 
-[ref3]: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html
+[ref3]: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555
+
