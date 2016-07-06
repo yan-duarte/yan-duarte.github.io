@@ -30,14 +30,6 @@ All of my variables have a different response for each entry, so I decided to cr
 
 <br>
 The new attributes were made based on the old ones presented in the [assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
-I will give more importance in the sugarComsumption and breastCancer100th attributes to make this work and answer the question:
-
-  - _Does the sugar consumption has some relation with the incidence of breast cancer?_
-
-If I can, I will also try to answer the other two questions:
-
-  - _Does the food consumption quantity has some relation with the incidence of breast cancer?_
-  - _Does the Cholesterol in blood has some relation with the incidence of breast cancer?_
 
 After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
