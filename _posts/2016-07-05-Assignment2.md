@@ -18,27 +18,18 @@ Following completion of your first program, create a blog entry where you post:
   2. _The output that displays three of your variables as frequency tables:_ Present at the end of this post;
   3. _A few sentences describing your frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc._
 
-After the first week assignment and the second week lessons, I realized that my code book could be improved.
-All of my variables have a different response for each entry, so I decided to create response categories. You can download the new code book and the data in this [xlsx file](https://yan-duarte.github.io/archives/codebook.xlsx). The new code book stayed in that way:
+After the first week assignment and the second week lessons, I realized that my codebook could be improved.
+All of my variables have a different response for each entry, so I decided to create response categories. You can download the new full codebook and dataset in this [xlsx file](https://yan-duarte.github.io/archives/codebook.xlsx). The attributes of codebook that I will use in this work stayed in that way:
 
 |   Variable Name    |      Description of Indicator   |  Main Source |
 |:----:|:----------------------------------------:|:----:|
-| breastCancerAll    | Total number of new female cases of breast cancer during the 2002 year. | IARC (International Agency for Research on Cancer) |
 | breastCancer100th  | Number of new cases of breast cancer in 100,000 female residents during the 2002 year. | IARC (International Agency for Research on Cancer) |
-| meanSugarPerson    | Mean of the food consumption quantity (grams per person and day) of sugar and sweeters between years 1961 and 2002 | FAO modified |
 | sugarConsumption   | Consumption of sugar based in the meanSugarPerson <br> (0) Desirable between 0 and 30 g. <br> (1) Raised between 30 and 60 g. <br>(2) Borderline high between 60 and 90 g. <br>(3) High between 90 and 120 g. <br> (4) Very high under 120g. | FAO modified |
-| meanFoodPerson     | Mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 (the number of days in the year) between the years | FAO modified |
 | foodCountryMean    | Consumption of food based in the meanFoodPerson <br> (0) food consumption below the world average. <br> (1) food consumption under the world average. | FAO modified |
-| meanCholesterol    | The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world | MRC-HPA Centre for Environment and Health |
 | cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borerline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
 
-The new attributes were:
-
-  - sugarConsumption
-  - foodCountryMean
-  - cholesterolInBlood
-
-Witch I will give more importance in the sugarComsumption and breastCancer100th to make this work and answer the question:
+The new attributes were made based on the old ones presented in the [assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
+I will give more importance in the sugarComsumption and breastCancer100th attributes to make this work and answer the question:
 
   - _Does the sugar consumption has some relation with the incidence of breast cancer?_
 
@@ -51,7 +42,7 @@ After running the program, It was possible to observe that the consumption of su
 
 To the food consumption data, I made the average of all countries consumption and compared each country consumption to this mean. 55% of the countries stay under the average.
 
-At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic [[2]][ref2]. In the data set, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
+At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic [[2]][ref2][[3]][ref3]. In the data set, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
 
 ### Reference
 
@@ -59,6 +50,7 @@ At last, to range the total cholesterol in the blood of the countries I used as 
 
 [[2]][ref2] Cholesterol Test - Procedure details. Visited 05 Jul 2016. URL: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555.
 
+[[3]][ref3] MD-Health How Many Grams of Sugar Per Day. Visited 06/07/2016. URL: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html.
 
 ## **The results of the first program that demonstrates the frequency distributions were:**
 
@@ -350,3 +342,5 @@ Specific rubric items, and their point values, are as follows:
 [ref1]: http://dailyburn.com/life/health/daily-sugar-intake-infographic/
 
 [ref2]: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555
+
+[ref3]: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html
