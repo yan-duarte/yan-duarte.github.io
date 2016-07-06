@@ -28,7 +28,7 @@ All of my variables have a different response for each entry, so I decided to cr
 | foodCountryMean    | Consumption of food based in the meanFoodPerson <br> (0) food consumption below the world average. <br> (1) food consumption under the world average. | FAO modified |
 | cholesterolInBlood | Total Cholesterol in blood based in the meanCholesterol <br> (0) Desirable below 5.2 mmol/L <br> (1) Borerline high between 5.2 and 6.2 mmol/L <br> (2) High above 6.2 mmol/L| MRC-HPA Centre for Environment and Health |
 
-
+<br>
 The new attributes were made based on the old ones presented in the [assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
 I will give more importance in the sugarComsumption and breastCancer100th attributes to make this work and answer the question:
 
