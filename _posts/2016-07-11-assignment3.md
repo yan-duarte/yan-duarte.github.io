@@ -16,10 +16,28 @@ Once you have written a successful program that manages your data, create a blog
 
   - Download the program [here](https://yan-duarte.github.io/archives/assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv);
 
+In the last [assignment][https://yan-duarte.github.io/2016/Assignment2/], I had already made the data management that I thought necessary, but I made it in the excel with formulas.
 
-In the last assignment, I already made the data management that 
+Now, I remade the data management directly in python, and the program output can be seen down in the post.
+
+The results were still the same. The sample used was the incidence of new breast cancer cases in 129 differents countries. After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [1] and [2].
+
+To the food consumption data, I made the average of all countries consumption and compared each country consumption to this mean. 55% of the countries stay under the average.
+
+At last, to range the total cholesterol in the blood of the countries I used as a base the metric of Mayo Clinic [3]. In the dataset, none of the values exceeded to a high level of total cholesterol and almost 73% of the countries presented to be in the desirable level.
+
+### Reference
+
+[[1]][ref1] Life by Daily Burn Are You Exceeding Your Daily Sugar Intake in Just One Meal INFOGRAPHIC. Visited 05 Jul 2016. URL: http://dailyburn.com/life/health/daily-sugar-intake-infographic/.
+
+[[2]][ref2] MD-Health How Many Grams of Sugar Per Day. Visited 06/07/2016. URL: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html.
+
+[[3]][ref3] Cholesterol Test - Procedure details. Visited 05 Jul 2016. URL: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555.
 
 
+## **Output of the program:**
+
+#### **Importing the packages and the [data set (csv)](https://yan-duarte.github.io/archives/separatedData.csv)**
 ```python
 import pandas
 import numpy
@@ -38,7 +56,7 @@ data["meanCholesterol"]   = data["meanCholesterol"].convert_objects(convert_nume
 sub1=data[['breastCancer100th','meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
 ```
 
-
+#### **Making the new variable sugar_consumption**
 ```python
 # Create the conditions to a new variable named sugar_consumption that will categorize the meanSugarPerson answers
 def sugar_consumption (row):
@@ -62,6 +80,7 @@ p1 = sub1["sugar_consumption"].value_counts(sort=False,normalize=True)
 print(p1)
 ```
 
+#### **Count and Percentage of the new variable sugar_consumption**
 ```
 Count of sugar_consumption - Range of sugar consumption based on the mean of the quantity (grams per person and day) of sugar and sweeters between 1961 and 2002
 0    27
@@ -80,8 +99,8 @@ Percentage of sugar_consumption - Range of sugar consumption based on the mean o
 Name: sugar_consumption, dtype: float64
 ```
 
+#### **Making the new variable food_consumption**
 ```python
-
 #Make the average of meanFoodPerson values.
 food_mean = statistics.mean(data["meanFoodPerson"])
 
@@ -104,6 +123,7 @@ p2 = sub1["food_consumption"].value_counts(sort=False, normalize=True)
 print(p2)
 ```
 
+#### **Count and Percentage of the new variable food_consumption**
 ```
 Count of food_consumption - Mean of the food consumption of countries based on the mean  of the total supply of food (kilocalories / person & day) between 1961 and 2002
 0    71
@@ -116,8 +136,8 @@ Percentage of food_consumption - Mean of the food consumption of countries based
 Name: food_consumption, dtype: float64
 ```
 
+#### **Making the new variable cholesterol_blood**
 ```python
-
 # Create the conditions to a new variable named cholesterol_blood that will categorize the meanCholesterol answers
 def cholesterol_blood (row):
    if row['meanCholesterol'] <= 5.2 : return 0         # Desirable below 5.2 mmol/L
@@ -138,6 +158,7 @@ p3 = sub1["cholesterol_blood"].value_counts(sort=False,normalize=True)
 print(p3)
 ```
 
+#### **Count and Percentage of the new variable cholesterol_blood**
 ```
 Count of cholesterol_blood - Range of the average of the mean TC (Total Cholesterol) of the female population counted in mmol per L between 1980 and 2002
 0    94
@@ -149,3 +170,10 @@ Percentage of cholesterol_blood - Range of the average of the mean TC (Total Cho
 1    0.271318
 Name: cholesterol_blood, dtype: float64
 ```
+
+  
+[ref1]: http://dailyburn.com/life/health/daily-sugar-intake-infographic/
+
+[ref2]: http://www.md-health.com/How-Many-Grams-Of-Sugar-Per-Day.html
+
+[ref3]: http://www.mayoclinic.org/tests-procedures/cholesterol-test/details/results/rsc-20169555
