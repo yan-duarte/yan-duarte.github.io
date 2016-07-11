@@ -173,6 +173,7 @@ Name: cholesterol_blood, dtype: float64
 <br>
 
 ## **Review criteria**
+
 Your assessment will be based on the evidence you provide that you have completed all of the steps. When relevant, gradients in the scoring will be available to reward clarity (for example, you will get one point for submitting output that is not understandable, but two points if it is understandable). In all cases, consider that the peer assessing your work is likely not an expert in the field you are analyzing. You will be assessed equally on your description of your frequency distributions.
 
 Specific rubric items, and their point values, are as follows:
