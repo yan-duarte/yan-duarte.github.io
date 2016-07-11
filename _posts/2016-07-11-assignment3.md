@@ -7,9 +7,9 @@ categories:
   - Data Management and Visualization
 tags:
   - week3
-Title:
-  - Making Data Management Decisions
+title: 'Assignment 3: Making Data Management Decisions'
 ---
+
 ## A New Post
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
