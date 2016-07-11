@@ -1,5 +1,14 @@
 ---
 published: false
+date: '2016-07-11 14:00:00 -0300'
+Name:
+  - Assignment: Making Data Management Decisions
+categories:
+  - Data Management and Visualization
+tags:
+  - week3
+Title:
+  - Making Data Management Decisions
 ---
 ## A New Post
 
