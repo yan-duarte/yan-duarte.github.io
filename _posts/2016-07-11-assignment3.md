@@ -14,6 +14,11 @@ title: 'Assignment 3: Making Data Management Decisions'
 
 Once you have written a successful program that manages your data, create a blog entry where you post your program and the results/output that displays at least 3 of your data managed variables as frequency distributions. Write a few sentences describing these frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.
 
+  - Download the program [here](https://yan-duarte.github.io/archives/assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv);
+
+
+In the last assignment, I already made the data management that 
+
 
 ```python
 import pandas
@@ -85,7 +90,7 @@ def food_consumption (row):
    if row['meanFoodPerson'] <= food_mean : return 0  # Food consumption below the world average.
    if row['meanFoodPerson'] > food_mean : return 1   # Food consumption under the world average.
 
-# Add the new variable sugar_consumption to subData
+# Add the new variable food_consumption to subData
 sub1['food_consumption'] = sub1.apply (lambda row: food_consumption (row),axis=1)
 
 # Count of food_consumption
@@ -138,6 +143,7 @@ Count of cholesterol_blood - Range of the average of the mean TC (Total Choleste
 0    94
 1    35
 Name: cholesterol_blood, dtype: int64
+
 Percentage of cholesterol_blood - Range of the average of the mean TC (Total Cholesterol) of the female population counted in mmol per L between 1980 and 2002
 0    0.728682
 1    0.271318
