@@ -28,9 +28,9 @@ In the last [assignment (3)](https://yan-duarte.github.io/2016/Assignment3/), I 
 I did that in two ways, in the first one I made the Quantitative->Quantitave method generating a scatterplot and the second one was a Qualitative->Quantitative method that creates a bar graph.
 Before I present the result of the relationship between the two variable in graph, let's see the histogram and the metrics extracted in each attribute separated.
 
-## Univariate graphs
+## **Univariate graphs**
 
-### Incidence of breast cancer
+### **Incidence of breast cancer**
 
 The first attribute was the incidence of breast cancer in 100,000 female residents during the 2002 year. As it is a quantitative attribute, was generated the histogram of the data.
 
@@ -67,11 +67,11 @@ Name: breastCancer100th, dtype: float64
 
 With this, we can see that 75% of the countries have an incidence of breast cancer under 50.30 per 100,000 female.
 
-### Sugar consumption
+### **Sugar consumption**
 
 The second attribute is the sugar consumption. For this attribute, I have made two graphs: one that shows the histogram of the original data and the other one that shows the bar graph of this attribute relocated into categories.
 
-#### Histogram
+#### **Histogram**
 
 ```python
 #Univariate histogram of the Mean of the sugar consumption (grams per person and day) between 1961 and 2002.
@@ -106,7 +106,7 @@ Name: meanSugarPerson, dtype: float64
 
 The mean of sugar consumption is 76.24 and we can see that 75% of the countries have an consumption of sugar under 110.31 grams per day.
 
-#### Bar graph
+#### **Bar graph**
 
 ```python
 #Univariate bar graph of the Mean of the sugar consumption (grams per person and day) between 1961 and 2002.
@@ -129,7 +129,7 @@ Where the consumption is:
 
 The bar graph behaved very similarly as the histogram.
 
-## Bivariate graphs
+## **Bivariate graphs**
 
 The two bivariate graphics are presented below:
 
@@ -155,7 +155,7 @@ plt.show()
 
 In both graphics, we can see that there is a relation with the incidence of breast cancer and the consumption of sugar. At the same time that the sugar consumption is increased the incidence of new breast cancer cases is increased too.
 
-## Review criteria
+## **Review criteria**
 
 Your assessment will be based on the evidence you provide that you have completed all of the steps. When relevant, gradients in the scoring will be available to reward clarity (for example, you will get one point for submitting graphs that do not accurately represent your data, but two points if the data is accurately represented). In all cases, consider that the peer assessing your work is likely not an expert in the field you are analyzing. You will be assessed equally on your description of your frequency distributions.
 
