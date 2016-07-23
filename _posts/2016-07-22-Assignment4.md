@@ -87,8 +87,8 @@ plt.show()
 This histogram is almost evenly distributed, we can see that the countries that have the most sugar consumption are in the 20 and the 110 grams per person.
 
 ```python
-desc1 = sub1["meanSugarPerson"].describe()
-print(desc1)
+desc2 = sub1["meanSugarPerson"].describe()
+print(desc2)
 
 ```
 
@@ -130,3 +130,9 @@ Where the consumption is:
 The bar graph behaved very similarly as the histogram.
 
 ## Bivariate graphs
+
+The two bivariate graphics are presented below:
+
+![Figure 4]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph4.png)
+
+![Figure 5]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph5.png)
