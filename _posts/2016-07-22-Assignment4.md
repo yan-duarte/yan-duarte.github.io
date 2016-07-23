@@ -153,3 +153,14 @@ plt.show()
 
 ![Figure 5]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph5.png)
 
+In both graphics, we can see that there is a relation with the incidence of breast cancer and the consumption of sugar. At the same time that the sugar consumption is increased the incidence of new breast cancer cases is increased too.
+
+## Review criteria
+
+Your assessment will be based on the evidence you provide that you have completed all of the steps. When relevant, gradients in the scoring will be available to reward clarity (for example, you will get one point for submitting graphs that do not accurately represent your data, but two points if the data is accurately represented). In all cases, consider that the peer assessing your work is likely not an expert in the field you are analyzing. You will be assessed equally on your description of your frequency distributions.
+
+Specific rubric items, and their point values, are as follows:
+
+  - Was a univariate graph created for each of the selected variables? (2 points)
+  - Was a bivariate graph created for the selected variables? (2 points)
+  - Did the summary describe what the graphs revealed in terms of the individual variables and the relationship between them? (2 points)
