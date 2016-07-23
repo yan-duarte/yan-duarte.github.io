@@ -28,6 +28,8 @@ In the last [assignment (3)](https://yan-duarte.github.io/2016/Assignment3/), I 
 I did that in two ways, in the first one I made the Quantitative->Quantitave method generating a scatterplot and the second one was a Qualitative->Quantitative method that creates a bar graph.
 Before I present the result of the relationship between the two variable in graph, let's see the histogram and the metrics extracted in each attribute separated.
 
+## Incidence of breast cancer
+
 The first attribute was the incidence of breast cancer in 100,000 female residents during the 2002 year. As it is a quantitative attribute, was generated the histogram of the data.
 
 ```python
@@ -58,10 +60,51 @@ min        3.900000
 50%       29.700000
 75%       50.300000
 max      101.100000
+Name: breastCancer100th, dtype: float64
 ```
 
 With this, we can see that 75% of the countries have an incidence of breast cancer over 50.30 per 100,000 female.
 
+## Sugar consumption
+
+The second attribute is the sugar consumption. For this attribute, I have made two graphs: one that shows the histogram of the original data and the other one that shows the bar graph of this attribute relocated into categories.
+
+### Histogram
+
+```python
+#Univariate histogram of the Mean of the sugar consumption (grams per person and day) between 1961 and 2002.
+seaborn.distplot(sub1["meanSugarPerson"].dropna(), kde=False);
+plt.xlabel('Mean of the sugar consumption (grams per person and day) between 1961 and 2002.')
+plt.ylabel('Number of counties.')
+plt.title('Histogram of the Sugar Consumption.')
+plt.show()
+```
+
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph2.png)
+
+We can observe in the histogram that most of the countries have an incidence of cancer around 30 and 40 cases per 100,000 female. The extracted metrics of this attribute were:
+
+```python
+desc1 = sub1["meanSugarPerson"].describe()
+print(desc1)
+
+```
+
+```
+count    129.000000
+mean      76.238394
+std       42.488004
+min        6.132381
+25%       42.206429
+50%       79.714524
+75%      110.307619
+max      163.861429
+Name: meanSugarPerson, dtype: float64
+```
+
+With this, we can see that 75% of the countries have an incidence of breast cancer over 50.30 per 100,000 female.
+
+### Bar graph
 
 The results were still the same. The sample used was the incidence of new breast cancer cases in 129 differents countries. After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
