@@ -83,7 +83,8 @@ plt.show()
 ```
 
 ![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph2.png)
-This histogram is almost evenly distributed, we can see that the countries that have the most sugar consumption are in the 20 and the 110 grams per person 
+
+This histogram is almost evenly distributed, we can see that the countries that have the most sugar consumption are in the 20 and the 110 grams per person.
 
 ```python
 desc1 = sub1["meanSugarPerson"].describe()
@@ -107,5 +108,25 @@ The mean of sugar consumption is 76.24 and we can see that 75% of the countries 
 
 #### Bar graph
 
+```python
+#Univariate bar graph of the Mean of the sugar consumption (grams per person and day) between 1961 and 2002.
+seaborn.countplot(x="sugar_consumption", data=sub1)
+plt.xlabel('Mean of the sugar consumption (grams per person and day) between 1961 and 2002.')
+plt.ylabel('Number of counties.')
+plt.title('Histogram of the Sugar Consumption.')
+plt.show()
+```
+
+![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph3.png)
+
+Where the consumption is:
+
+  - (0) Desirable between 0 and 30 g.
+  - (1) Raised between 30 and 60 g.
+  - (2) Borderline high between 60 and 90 g.
+  - (3) High between 90 and 120 g.
+  - (4) Very high under 120g.
+
+The bar graph behaved very similarly as the histogram.
 
 ## Bivariate graphs
