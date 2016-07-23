@@ -42,11 +42,13 @@ plt.show()
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph1.png)
 
 We can observe in the histogram that most of the countries have an incidence of cancer around 30 and 40 cases per 100,000 female. The extracted metrics of this attribute were:
+
 ```python
 desc1 = sub1["breastCancer100th"].describe()
 print(desc1)
 
 ```
+
 ```
 count    129.000000
 mean      37.987597
