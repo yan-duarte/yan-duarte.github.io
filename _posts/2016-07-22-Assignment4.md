@@ -54,6 +54,9 @@ min        3.900000
 max      101.100000
 ```
 
+With this, we can see that 75% of the countries have an incidence of breast cancer over 50.30 per 100,000 female.
+
+
 The results were still the same. The sample used was the incidence of new breast cancer cases in 129 differents countries. After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
 To the food consumption data, I made the average of all countries consumption and compared each country consumption to this mean. 55% of the countries stay under the average.
