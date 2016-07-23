@@ -25,7 +25,12 @@ Once you have written a successful program that creates univariate and bivariate
 
 In the last [assignment (3)](https://yan-duarte.github.io/2016/Assignment3/), I had made the data management that I thought necessary. Now is time to create the graphics that represent this data.
 
-First of all I made the Quantitative->Quantitave method generating a scalper
+I did that in two ways, in the first one I made the Quantitative->Quantitave method generating a scatterplot and the second one was a Qualitative->Quantitative method that creates a bar graph.
+Before I present the result of the relationship between the two variable in graph, let's see the histogram and the metrics extracted in each attribute separated.
+
+The first attribute was the incidence of breast cancer in 100,000 female residents during the 2002 year. As it is a quantitative attribute, was generated the histogram of the data.
+
+
 
 
 
