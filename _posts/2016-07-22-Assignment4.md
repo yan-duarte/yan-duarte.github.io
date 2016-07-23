@@ -30,7 +30,7 @@ Before I present the result of the relationship between the two variable in grap
 
 The first attribute was the incidence of breast cancer in 100,000 female residents during the 2002 year. As it is a quantitative attribute, was generated the histogram of the data.
 
-
+![Figure 1]({{site.baseurl}}/http://www.yan-duarte.github.io/images/assignment4/graph1.png)
 
 
 
