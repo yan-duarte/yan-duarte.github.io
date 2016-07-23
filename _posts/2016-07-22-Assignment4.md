@@ -39,7 +39,7 @@ plt.title('Histogram of the Incidence of Breast Cancer.')
 plt.show()
 ```
 
-![Figure 1]({{site.baseurl}}/http://yan-duarte.github.io/images/assignment4/graph1.png)
+![Figure 1]({{site.baseurl}}/www.yan-duarte.github.io/images/assignment4/graph1.png)
 
 We can observe in the histogram that most of the countries have an incidence of cancer around 20 and 30 cases per 100,000 female. The metrics 
 
