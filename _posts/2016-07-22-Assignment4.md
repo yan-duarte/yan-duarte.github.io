@@ -9,16 +9,25 @@ tags:
   - week4
 title: 'Assignment 4: Creating Graphs for Your Data'
 ---
+## PREVIOUS CONTENT
+
+  - [Assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
+  - [Assignment 2](https://yan-duarte.github.io/2016/Assignment2/).
+  - [Assignment 3](https://yan-duarte.github.io/2016/Assignment3/).
+  - Link to download the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+  - Link to download the codebook [here](https://yan-duarte.github.io/archives/codebook.xlxs).
 
 ## WHAT TO SUBMIT:
 
-Once you have written a successful program that manages your data, create a blog entry where you post your program and the results/output that displays at least 3 of your data managed variables as frequency distributions. Write a few sentences describing these frequency distributions in terms of the values the variables take, how often they take them, the presence of missing data, etc.
+Once you have written a successful program that creates univariate and bivariate graphs, create a blog entry where you post your program and the graphs that you have created. Write a few sentences describing what your graphs reveal in terms of your individual variables and the relationship between them.
 
-  - Download the program [here](https://yan-duarte.github.io/archives/assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv);
+  - Download the graph program [here](https://yan-duarte.github.io/archives/assignment4.py).
 
-In the last [assignment](https://yan-duarte.github.io/2016/Assignment2/), I had already made the data management that I thought necessary, but I made it in the excel with formulas.
+In the last [assignment (3)](https://yan-duarte.github.io/2016/Assignment3/), I had made the data management that I thought necessary. Now is time to create the graphics that represent this data.
 
-Now, I remade the data management directly in python, and the program output can be seen down in the post.
+First of all I made the Quantitative->Quantitave method generating a scalper
+
+
 
 The results were still the same. The sample used was the incidence of new breast cancer cases in 129 differents countries. After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
