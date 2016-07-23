@@ -65,7 +65,7 @@ max      101.100000
 Name: breastCancer100th, dtype: float64
 ```
 
-With this, we can see that 75% of the countries have an incidence of breast cancer over 50.30 per 100,000 female.
+With this, we can see that 75% of the countries have an incidence of breast cancer under 50.30 per 100,000 female.
 
 ### Sugar consumption
 
@@ -83,8 +83,7 @@ plt.show()
 ```
 
 ![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph2.png)
-
-We can observe in the histogram that most of the countries have an incidence of cancer around 30 and 40 cases per 100,000 female. The extracted metrics of this attribute were:
+This histogram is almost evenly distributed, we can see that the countries that have the most sugar consumption are in the 20 and the 110 grams per person 
 
 ```python
 desc1 = sub1["meanSugarPerson"].describe()
@@ -104,7 +103,7 @@ max      163.861429
 Name: meanSugarPerson, dtype: float64
 ```
 
-With this, we can see that 75% of the countries have an incidence of breast cancer over 50.30 per 100,000 female.
+The mean of sugar consumption is 76.24 and we can see that 75% of the countries have an consumption of sugar under 110.31 grams per day.
 
 #### Bar graph
 
