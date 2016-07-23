@@ -30,9 +30,18 @@ Before I present the result of the relationship between the two variable in grap
 
 The first attribute was the incidence of breast cancer in 100,000 female residents during the 2002 year. As it is a quantitative attribute, was generated the histogram of the data.
 
+```python
+#Univariate histogram of the incidence of breast cancer in 100,000 female residents during the 2002 year.
+seaborn.distplot(sub1["breastCancer100th"].dropna(), kde=False);
+plt.xlabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
+plt.ylabel('Number of counties.')
+plt.title('Histogram of the Incidence of Breast Cancer.')
+plt.show()
+```
+
 ![Figure 1]({{site.baseurl}}/http://www.yan-duarte.github.io/images/assignment4/graph1.png)
 
-
+We can observe in the histogram that most of the countries have an incidence of cancer around 20 and 30 cases per 100,000 female. The metrics 
 
 The results were still the same. The sample used was the incidence of new breast cancer cases in 129 differents countries. After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
