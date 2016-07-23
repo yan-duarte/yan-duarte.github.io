@@ -15,7 +15,7 @@ title: 'Assignment 4: Creating Graphs for Your Data'
   - [Assignment 2](https://yan-duarte.github.io/2016/Assignment2/).
   - [Assignment 3](https://yan-duarte.github.io/2016/Assignment3/).
   - Link to download the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
-  - Link to download the codebook [here](https://yan-duarte.github.io/archives/codebook.xlxs).
+  - Link to download the codebook [here](https://yan-duarte.github.io/archives/codebook.xlsx).
 
 ## WHAT TO SUBMIT:
 
