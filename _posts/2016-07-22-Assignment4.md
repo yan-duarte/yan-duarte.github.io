@@ -41,7 +41,18 @@ plt.show()
 
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/assignment4/graph1.png)
 
-We can observe in the histogram that most of the countries have an incidence of cancer around 20 and 30 cases per 100,000 female. The metrics 
+We can observe in the histogram that most of the countries have an incidence of cancer around 20 and 30 cases per 100,000 female. The extracted metrics of this attribute were:
+
+```
+count    129.000000
+mean      37.987597
+std       24.323873
+min        3.900000
+25%       20.600000
+50%       29.700000
+75%       50.300000
+max      101.100000
+```
 
 The results were still the same. The sample used was the incidence of new breast cancer cases in 129 differents countries. After running the program, It was possible to observe that the consumption of sugar is considered desirable only in 20.9% of the countries of the dataset. Taking into account that this metric is based on the average of the desirable sugar ingest in grams per day of the woman (25g) and the man (36g) [[1]][ref1] and [[2]][ref2].
 
