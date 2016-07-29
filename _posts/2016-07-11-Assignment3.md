@@ -6,7 +6,7 @@ Name:
 categories:
   - Data Management and Visualization
 tags:
-  - week3
+  - Data Management and Visualization
 title: 'Assignment 3: Making Data Management Decisions'
 ---
 
