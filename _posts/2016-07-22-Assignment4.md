@@ -6,7 +6,7 @@ Name:
 categories:
   - Data Management and Visualization
 tags:
-  - week4
+  - Data Management and Visualization
 title: 'Assignment 4: Creating Graphs for Your Data'
 ---
 ## PREVIOUS CONTENT
