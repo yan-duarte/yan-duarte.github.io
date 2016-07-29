@@ -6,7 +6,7 @@ Name:
 categories:
   - Data Management and Visualization
 tags:
-  - week2
+  - Data Management and Visualization
 title: 'Assignment 2: Running Your First Program'
 ---
 
