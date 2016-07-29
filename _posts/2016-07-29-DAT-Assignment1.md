@@ -159,4 +159,10 @@ group1 group2 meandiff  lower    upper  reject
 ----------------------------------------------
 ```
 
-With the Post hoc test we can say that the 
+The Post hoc test presented us that only three comparison groups have the null hypothesis confirmed. The groups are: 
+
+  - (0) Desirable with (1) Raised
+  - (1) Raised with (2) Borderline high
+  - (2) Borderline high with (3) High
+
+This means that the amount of new breast cancer cases among the population that intakes sugar in the proportions of this groups doesn't have a significant difference. However, to the other seven comparisons, the post hoc test presents that the null hypothesis is false, demonstrating that the high consumption of sugar has a relation with a greater incidence of breast cancer case.
