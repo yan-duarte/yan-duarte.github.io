@@ -94,3 +94,40 @@ Kurtosis:                       2.864   Cond. No.                         5.76
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
+
+We can see that the F-test is 21.59 and the p-value is lower than 0.05 indicating that the null hypothesis is false.
+
+For the mean and the standard deviation we have:
+
+```python 
+# means for breast cancer by sugar consumption
+print ('means for breast cancer by sugar consumption')
+m1= sub2.groupby('sugar_consumption').mean()
+print (m1)
+
+# standard deviations for breast cancer by sugar consumption
+print ('standard deviations for breast cancer by sugar consumption')
+sd1 = sub2.groupby('sugar_consumption').std()
+print (sd1)
+```
+```
+means for breast cancer by sugar consumption
+                   
+sugar_consumption  breastCancer100th                 
+0                          20.648148
+1                          23.642105
+2                          34.722581
+3                          46.025806
+4                          66.214286
+
+standard deviations for breast cancer by sugar consumption
+                   
+sugar_consumption  breastCancer100th                 
+0                           6.607535
+1                          10.970228
+2                          16.280432
+3                          26.222649
+4                          25.255302
+```
+
+We can see that the mean for each category is different but there are some categories that have a close value. However, as we have five categories in the explanatory variable, we need to make a Post hoc test in order to avoid the type 1 error.
