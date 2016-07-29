@@ -131,3 +131,32 @@ sugar_consumption  breastCancer100th
 ```
 
 We can see that the mean for each category is different but there are some categories that have a close value. However, as we have five categories in the explanatory variable, we need to make a Post hoc test in order to avoid the type 1 error.
+
+## **Post hoc test**
+
+```python
+# Post hoc test for ANOVA (as the categorical variable have five categories)
+mc1 = multi.MultiComparison(sub2['breastCancer100th'], sub2['sugar_consumption'])
+res1 = mc1.tukeyhsd()
+print(res1.summary())
+```
+
+```
+Multiple Comparison of Means - Tukey HSD,FWER=0.05
+==============================================
+group1 group2 meandiff  lower    upper  reject
+----------------------------------------------
+  0      1     2.994   -12.7348 18.7227 False 
+  0      2    14.0744   0.2475  27.9013  True 
+  0      3    25.3777  11.5508  39.2045  True 
+  0      4    45.5661  30.2834  60.8489  True 
+  1      2    11.0805  -4.2234  26.3843 False 
+  1      3    22.3837   7.0799  37.6875  True 
+  1      4    42.5722  25.9412  59.2031  True 
+  2      3    11.3032  -2.0384  24.6448 False 
+  2      4    31.4917  16.6466  46.3368  True 
+  3      4    20.1885   5.3433  35.0336  True 
+----------------------------------------------
+```
+
+With the Post hoc test we can say that the 
