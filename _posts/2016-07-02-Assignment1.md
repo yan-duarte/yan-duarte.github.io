@@ -4,7 +4,7 @@ date: '2016-07-01 22:05:00 -0300'
 categories:
   - Data Management and Visualization
 tags:
-  - week1
+  - Data Management and Visualization
 title: 'Assignment 1: Getting Your Research Project Started'
 ---
 ## STEP 1: Choose a data set that you would like to work with.
