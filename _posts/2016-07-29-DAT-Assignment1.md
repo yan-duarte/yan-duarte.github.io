@@ -9,6 +9,12 @@ tags:
   - Data Analysis Tools
 title: 'Assignment 1: Running an analysis of variance'
 ---
+This is the first assignment for the data analysis tool course, second of a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
+The content of the first course you can see [here](https://yan-duarte.github.io/tags/#Data Management and Visualization).
+
+For this assignment, we have to make the Analysis of Variance (ANOVA) in our data.
+As I am already working with a quantitative response variable and a categorical explanatory variable, it is possible to use the ANOVA technique and, as the explanatory variable have five categories, it will be necessary to use the post hoc test for ANOVA.
+
 ## PREVIOUS CONTENT
 
   - [Assignment 1](https://yan-duarte.github.io/2016/Assignment1/).
