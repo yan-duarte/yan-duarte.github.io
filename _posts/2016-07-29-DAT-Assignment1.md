@@ -13,7 +13,7 @@ This is the first assignment for the data analysis tool course, second of a seri
 The content of the first course you can see [here](https://yan-duarte.github.io/tags/#Data Management and Visualization).
 
 For this assignment, we have to make the Analysis of Variance (ANOVA) in our data.
-As I am already working with a quantitative response variable and a categorical explanatory variable, it is possible to use the ANOVA technique and, as the explanatory variable have five categories, it will be necessary to use the post hoc test for ANOVA.
+As I am already working with a quantitative response variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) and a categorical explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002), it is possible to use the ANOVA technique and, as the explanatory variable have five categories, it will be necessary to use the post hoc test for ANOVA.
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/dat-assignment1.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
