@@ -14,9 +14,9 @@ The content of the first course you can see [here](https://yan-duarte.github.io/
 The first assignment of this course you can see [here](https://yan-duarte.github.io/2016/DAT-Assignment1/)
 
 For this assignment, we have to run a chi-square test of independence in our data.
-The data that I am using is adapted from gapminder and the reponse variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) is quantitative while the explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002) is qualitative with five categories.
-
-To run the chi-square test both variables must be qualitative, so I 
+The data that I am using is adapted from gapminder and the response variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) is quantitative while the explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002) is qualitative with five categories.
+ 
+To run the chi-square test both variables must be qualitative, so I                       
 
 
 
