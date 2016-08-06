@@ -9,10 +9,17 @@ tags:
   - Data Analysis Tools
 title: 'Assignment 2: Running a Chi-Square Test of Independence'
 ---
-This is the first assignment for the data analysis tool course, second of a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
+This is the second assignment for the data analysis tool course, second of a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
 The content of the first course you can see [here](https://yan-duarte.github.io/tags/#Data Management and Visualization).
+The first assignment of this course you can see [here](https://yan-duarte.github.io/2016/DAT-Assignment1/)
 
-For this assignment, we have to make the Analysis of Variance (ANOVA) in our data.
+For this assignment, we have to run a chi-square test of independence in our data.
+The data that I am using is adapted from gapminder and the reponse variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) is quantitative while the explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002) is qualitative with five categories.
+
+To run the chi-square test both variables must be qualitative, so I 
+
+
+
 As I am already working with a quantitative response variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) and a categorical explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002), it is possible to use the ANOVA technique and, as the explanatory variable have five categories, it will be necessary to use the post hoc test for ANOVA.
 
 The hypothesis that is being approached is that the quantity of sugar consumption in countries increases the incidence of new breast cancer cases.
