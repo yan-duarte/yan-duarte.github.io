@@ -2,12 +2,12 @@
 published: true
 date: '2016-07-29 19:00:00 -0300'
 Name:
-  - Assignment: Running an analysis of variance
+  - Assignment: Running a Chi-Square Test of Independence
 categories:
   - Data Analysis Tools
 tags:
   - Data Analysis Tools
-title: 'Assignment 1: Running an analysis of variance'
+title: 'Assignment 2: Running a Chi-Square Test of Independence'
 ---
 This is the first assignment for the data analysis tool course, second of a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
 The content of the first course you can see [here](https://yan-duarte.github.io/tags/#Data Management and Visualization).
