@@ -16,22 +16,22 @@ The first assignment of this course you can see [here](https://yan-duarte.github
 For this assignment, we have to run a chi-square test of independence in our data.
 The data that I am using is adapted from gapminder and the response variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) is quantitative while the explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002) is qualitative with five categories.
  
-To run the chi-square test both variables must be qualitative, so I                       
+To run the chi-square test, both variables must be qualitative. 
+Thereby, I transformed the response variable into a qualitative variable with two categories:
+
+  - (0) The incidence of breast cancer is below the average of the incidence of all countries.
+  - (1) The incidence of breast cancer is above the average of the incidence of all countries.
+
+Therefore the hypothesis that is being approached is that the higher quantity of sugar consumption in countries increases the incidence of new breast cancer cases.
+
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/dat-assignment2.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
 
+## **Chi-Square Test of Independence**
 
-As I am already working with a quantitative response variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) and a categorical explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002), it is possible to use the ANOVA technique and, as the explanatory variable have five categories, it will be necessary to use the post hoc test for ANOVA.
+Below is the code to make the Chi-Square Test of Independence technique:
 
-The hypothesis that is being approached is that the quantity of sugar consumption in countries increases the incidence of new breast cancer cases.
-
-The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/dat-assignment1.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
-
-
-## **Analysis of Variance**
-
-Below is the code to make the ANOVA technique:
-
-First I have imported the libraries and management the data like in the other assignments presented until here.
+First I have imported the libraries and management the data like in the other assignments presented until here and make the response variable qualitative.
 
 ```python
 import pandas
