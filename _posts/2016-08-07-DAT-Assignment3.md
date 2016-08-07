@@ -9,25 +9,19 @@ tags:
   - Data Analysis Tools
 title: 'Assignment 3: Generating a Correlation Coefficient'
 ---
-This is the second assignment for the data analysis tool course, second of a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
-The content of the first course you can see [here](https://yan-duarte.github.io/tags/#Data Management and Visualization).
-The first assignment of this course you can see [here](https://yan-duarte.github.io/2016/DAT-Assignment1/)
+This is the third assignment for the data analysis tool course, second of a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
+The previous content you can see [here](https://yan-duarte.github.io/tags/#Data Management and Visualization).
 
-For this assignment, we have to run a chi-square test of independence in our data.
-The data that I am using is adapted from gapminder and the response variable (the incidence of new breast cancer in 100,000 female residents during the 2002 year) is quantitative while the explanatory variable (mean of the sugar consumption (grams per person and day) between 1961 and 2002) is qualitative with five categories.
+For this assignment, we have to generate a correlation coefficient test in our data.
+The data that I am using is adapted from gapminder and both of my variables (response and explanatory) are already quantitative.
+The response variable is the incidence of new breast cancer in 100,000 female residents during the 2002 year while the explanatory variable is the mean of the sugar consumption (grams per person and day) between 1961 and 2002.
  
-To run the chi-square test, both variables must be qualitative. 
-Thereby, I transformed the response variable into a qualitative variable with two categories:
+The hypothesis that is being approached is that the higher quantity of sugar consumption in countries increases the incidence of new breast cancer cases.
 
-  - (0) The incidence of breast cancer is below the average of the incidence of all countries.
-  - (1) The incidence of breast cancer is above the average of the incidence of all countries.
-
-Therefore the hypothesis that is being approached is that the higher quantity of sugar consumption in countries increases the incidence of new breast cancer cases.
-
-The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/dat-assignment2.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/dat-assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
 
-## **Chi-Square Test of Independence**
+## **Correlation Coefficient**
 
 Below is the code to make the Chi-Square Test of Independence technique:
 
