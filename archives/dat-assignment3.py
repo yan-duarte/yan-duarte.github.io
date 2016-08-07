@@ -27,3 +27,6 @@ plt.show()
 
 print ('association between meanSugarPerson and breastCancer100th')
 print (scipy.stats.pearsonr(sub1['meanSugarPerson'], sub1['breastCancer100th']))
+
+print('\n r²=')
+print(scipy.stats.pearsonr(sub1['meanSugarPerson'], sub1['breastCancer100th'])[0]*scipy.stats.pearsonr(sub1['meanSugarPerson'], sub1['breastCancer100th'])[0])
