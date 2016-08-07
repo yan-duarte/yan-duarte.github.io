@@ -31,14 +31,15 @@ The complete program for this assignment can be download [here](https://yan-duar
 
 Below is the code to make the Chi-Square Test of Independence technique:
 
-First I have imported the libraries and management the data like in the other assignments presented until here and make the response variable qualitative.
+First I have imported the libraries and management the data like in the other assignments presented until here. Another thing done was to make the response variable qualitative.
 
 ```python
 import pandas
 import numpy
+import scipy.stats
+import seaborn
+import matplotlib.pyplot as plt
 import statistics
-import statsmodels.formula.api as smf
-import statsmodels.stats.multicomp as multi
 
 # Import the data set to memory
 data = pandas.read_csv("separatedData.csv", low_memory = False)
@@ -51,6 +52,15 @@ data["meanSugarPerson"]   = data["meanSugarPerson"].convert_objects(convert_nume
 sub1=data[['breastCancer100th', 'meanSugarPerson']]
 
 # Create the conditions to a new variable named sugar_consumption that will categorize the meanSugarPerson answers
+meanIncidence = statistics.mean(sub1['breastCancer100th'])
+
+def incidence_cancer (row):
+    if row['breastCancer100th'] <= meanIncidence : return 0   # Incidence of breast cancer is below the average of the incidence of all countries.
+    if row['breastCancer100th'] > meanIncidence  : return 1   # incidence of breast cancer is above the average of the incidence of all countries.
+# Add the new variable sugar_consumption to subData
+sub1['incidence_cancer'] = sub1.apply (lambda row: incidence_cancer (row),axis=1)
+
+# Create the conditions to a new variable named sugar_consumption that will categorize the meanSugarPerson answers
 def sugar_consumption (row):
    if 0 < row['meanSugarPerson'] <= 30 : return 0    # Desirable between 0 and 30 g.
    if 30 < row['meanSugarPerson'] <= 60 : return 1   # Raised between 30 and 60 g.
@@ -60,49 +70,57 @@ def sugar_consumption (row):
 
 # Add the new variable sugar_consumption to subData
 sub1['sugar_consumption'] = sub1.apply (lambda row: sugar_consumption (row),axis=1)
+
+# creating a sub data with only the breast cancer cases and the sugar consumption mean
+sub2 = sub1[['incidence_cancer', 'sugar_consumption']].dropna()
 ```
 
-Then I have created a new sub data and make the ANOVA method.
+After that, the chi-square test was run
 
 ```python 
-# creating a sub data with only the breast cancer cases and the sugar consumption mean
-sub2 = sub1[['breastCancer100th', 'sugar_consumption']].dropna()
+# contingency table of observed counts
+ct1=pandas.crosstab(sub2['incidence_cancer'], sub2['sugar_consumption'])
+print (ct1)
 
-# using ols function for calculating the F-statistic and associated p value
-model1 = smf.ols(formula='breastCancer100th ~ C(sugar_consumption)', data=sub2).fit()
-print (model1.summary())
+# column percentages
+colsum=ct1.sum(axis=0)
+colpct=ct1/colsum
+print(colpct)
+
+# chi-square
+print ('chi-square value, p value, expected counts')
+cs1= scipy.stats.chi2_contingency(ct1)
+print (cs1)
+
+# set variable types
+sub2["sugar_consumption"] = sub2["sugar_consumption"].astype('category')
+# new code for setting variables to numeric:
+sub2['incidence_cancer'] = pandas.to_numeric(sub2['incidence_cancer'], errors='coerce')
+
+# graph percent with incidence of breast cancer within each sugar consumption group
+seaborn.factorplot(x="sugar_consumption", y="incidence_cancer", data=sub2, kind="bar", ci=None)
+plt.xlabel('Days smoked per month')
+plt.ylabel('Proportion Nicotine Dependent')
+plt.show()
 ```
 
 ```
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:      breastCancer100th   R-squared:                       0.411
-Model:                            OLS   Adj. R-squared:                  0.392
-Method:                 Least Squares   F-statistic:                     21.59
-Date:                Fri, 29 Jul 2016   Prob (F-statistic):           1.55e-13
-Time:                        19:03:11   Log-Likelihood:                -560.14
-No. Observations:                 129   AIC:                             1130.
-Df Residuals:                     124   BIC:                             1145.
-Df Model:                           4                                         
-Covariance Type:            nonrobust                                         
-=============================================================================================
-                                coef    std err          t      P>|t|      [95.0% Conf. Int.]
----------------------------------------------------------------------------------------------
-Intercept                    20.6481      3.651      5.655      0.000        13.421    27.875
-C(sugar_consumption)[T.1]     2.9940      5.682      0.527      0.599        -8.251    14.239
-C(sugar_consumption)[T.2]    14.0744      4.995      2.818      0.006         4.189    23.960
-C(sugar_consumption)[T.3]    25.3777      4.995      5.081      0.000        15.492    35.263
-C(sugar_consumption)[T.4]    45.5661      5.520      8.254      0.000        34.640    56.493
-==============================================================================
-Omnibus:                        2.575   Durbin-Watson:                   1.688
-Prob(Omnibus):                  0.276   Jarque-Bera (JB):                2.533
-Skew:                           0.336   Prob(JB):                        0.282
-Kurtosis:                       2.864   Cond. No.                         5.76
-==============================================================================
+sugar_consumption   0   1   2   3   4
+incidence_cancer                     
+0                  27  18  20  18   5
+1                   0   1  11  13  16
 
-Warnings:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+sugar_consumption    0         1         2         3         4
+incidence_cancer                                              
+0                  1.0  0.947368  0.645161  0.580645  0.238095
+1                  0.0  0.052632  0.354839  0.419355  0.761905
+
+chi-square value, p value, expected counts
+(39.512867893214903, 5.4581126727845847e-08, 4, array([[ 18.41860465,  12.96124031,  21.14728682,  21.14728682,  14.3255814 ],
+       [  8.58139535,   6.03875969,   9.85271318,   9.85271318,   6.6744186 ]]))
 ```
+
+
 
 We can see that the F-test is 21.59 and the p-value is lower than 0.05 indicating that the null hypothesis is false.
 
