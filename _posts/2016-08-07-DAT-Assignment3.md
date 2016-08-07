@@ -67,5 +67,8 @@ association between meanSugarPerson and breastCancer100th
 (0.64050235531179356, 2.9900485245592816e-16)
 ```
 
+We get a correlation coefficient of 0.64050235531179356 and a p-value of 2.9900485245592816e-16.
+This indicates to us that the relationship between the sugar consumption and the incidence of breast cancer is strong and it is also positive as the scatterplot has already shown us.
 
+To help us to understand the correlation between the two variables we can square the correlation coefficient. This will result in the value 0.41024326716. This can be interpleted in the following way: If we know the sugar consumption grams per day of an woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
 
