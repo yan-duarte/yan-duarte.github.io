@@ -120,44 +120,10 @@ chi-square value, p value, expected counts
        [  8.58139535,   6.03875969,   9.85271318,   9.85271318,   6.6744186 ]]))
 ```
 
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment1/graph1.png)
 
-
-We can see that the F-test is 21.59 and the p-value is lower than 0.05 indicating that the null hypothesis is false.
-
-For the mean and the standard deviation we have:
-
-```python 
-# means for breast cancer by sugar consumption
-print ('means for breast cancer by sugar consumption')
-m1= sub2.groupby('sugar_consumption').mean()
-print (m1)
-
-# standard deviations for breast cancer by sugar consumption
-print ('standard deviations for breast cancer by sugar consumption')
-sd1 = sub2.groupby('sugar_consumption').std()
-print (sd1)
-```
-```
-means for breast cancer by sugar consumption
-                   
-sugar_consumption  breastCancer100th                 
-0                          20.648148
-1                          23.642105
-2                          34.722581
-3                          46.025806
-4                          66.214286
-
-standard deviations for breast cancer by sugar consumption
-                   
-sugar_consumption  breastCancer100th                 
-0                           6.607535
-1                          10.970228
-2                          16.280432
-3                          26.222649
-4                          25.255302
-```
-
-We can see that the mean for each category is different but there are some categories that have a close value. However, as we have five categories in the explanatory variable, we need to make a Post hoc test in order to avoid the type 1 error.
+We can see that the p-value is lower than 0.05 indicating that the null hypothesis is false.
+The graph indicates us that the hypothesis is correct, however, as we have five categories in the explanatory variable, we must get the newly allowed p-value and after that, make a Post hoc test in order to avoid the type 1 error.
 
 ## **Post hoc test**
 
