@@ -147,10 +147,12 @@ To make it simple, I will put the results in a table to demonstrates what p-valu
 -------------------------------------------------------
 ```
 
-The Post hoc test presented us that only three comparison groups have the null hypothesis confirmed. The groups are: 
+The indexes of the groups are: 
 
-  - (0) Desirable with (1) Raised
-  - (1) Raised with (2) Borderline high
-  - (2) Borderline high with (3) High
+  - (0) Desirable 0 and 30 g.
+  - (1) Raised with 30 and 60 g.
+  - (2) Borderline high 60 and 90 g.
+  - (3) High between 90 and 120 g.
+  - (4) Very high under 120g.
 
 This means that the amount of new breast cancer cases among the population that intakes sugar in the proportions of this groups doesn't have a significant difference. However, to the other seven comparisons, the post hoc test presents that the null hypothesis is false, demonstrating that the high consumption of sugar has a relation with a greater incidence of breast cancer case.
