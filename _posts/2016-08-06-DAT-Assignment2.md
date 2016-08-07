@@ -1,6 +1,6 @@
 ---
 published: true
-date: '2016-07-29 19:00:00 -0300'
+date: '2016-08-06 22:00:00 -0300'
 Name:
   - Assignment: Running a Chi-Square Test of Independence
 categories:
