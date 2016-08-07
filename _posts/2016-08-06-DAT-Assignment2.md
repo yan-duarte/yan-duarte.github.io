@@ -159,4 +159,12 @@ With the results we can change the graph to:
 
 ![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment2/dat-ass2-fig2.png)
 
-This means that the amount of new breast cancer cases among the population that intakes sugar in the proportions of this groups doesn't have a significant difference. However, to the other seven comparisons, the post hoc test presents that the null hypothesis is false, demonstrating that the high consumption of sugar has a relation with a greater incidence of breast cancer case.
+Post hoc comparisons of the incidence of breast cancer cases by pairs of sugar consumption categories have demonstrated more null hypothesis than the confirmation of the hypothesis.
+The hypothesis that is being approached only confirmed when compared the groups:
+
+  - (0) Desirable with (2) Borderline high
+  - (0) Desirable with (3) High
+  - (0) Desirable with (4) Very high.
+  - (1) Raised with (4) Very high.
+
+This means that the amount of new breast cancer cases among the population that intakes sugar in the proportions of this groups (only 40% of the tested groups) have a significant difference. While the other 6 pair comparisons have their null hypothesis confirmed.
