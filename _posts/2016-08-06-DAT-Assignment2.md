@@ -120,7 +120,7 @@ chi-square value, p value, expected counts
        [  8.58139535,   6.03875969,   9.85271318,   9.85271318,   6.6744186 ]]))
 ```
 
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment1/graph1.png)
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment2/dat-ass2-fig1.png)
 
 We can see that the p-value is lower than 0.05 indicating that the null hypothesis is false.
 The graph indicates us that the hypothesis is correct, however, as we have five categories in the explanatory variable, we must get the newly allowed p-value and after that, make a Post hoc test in order to avoid the type 1 error.
