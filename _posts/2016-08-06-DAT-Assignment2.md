@@ -154,5 +154,9 @@ The indexes of the groups are:
   - (2) Borderline high 60 and 90 g.
   - (3) High between 90 and 120 g.
   - (4) Very high under 120g.
+  
+With the results we can change the graph to:
+
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment2/dat-ass2-fig2.png)
 
 This means that the amount of new breast cancer cases among the population that intakes sugar in the proportions of this groups doesn't have a significant difference. However, to the other seven comparisons, the post hoc test presents that the null hypothesis is false, demonstrating that the high consumption of sugar has a relation with a greater incidence of breast cancer case.
