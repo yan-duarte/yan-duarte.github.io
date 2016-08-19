@@ -12,10 +12,11 @@ title: 'Assignment 4: Testing a Potential Moderator'
 This is the last assignment for the data analysis tool course, second of a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
 The previous content you can see [here](https://yan-duarte.github.io/tags/#Data Management and Visualization).
 
-In this assignment we can choose to run an ANOVA, Chi-Square test or correlation coefficient that includes a moderator. I have choosed to run the correlation coeficient with the moderator.
-The data that I am using is adapted from gapminder and both of my variables (response and explanatory) are already quantitative.
-The response variable is the incidence of new breast cancer in 100,000 female residents during the 2002 year while the explanatory variable is the mean of the sugar consumption (grams per person and day) between 1961 and 2002.
-To the moderator I am using the 
+In this assignment, we can choose to run an ANOVA, Chi-Square test or correlation coefficient that includes a moderator. I have chosen to run the correlation coefficient with the moderator. 
+The data that I am using is adapted from gapminder and both of my variables (response and explanatory) are already quantitative. 
+The response variable is the incidence of new breast cancer in 100,000 female residents during the 2002 year while the explanatory variable is the mean of the sugar consumption (grams per person and day) between 1961 and 2002. 
+To the moderator, I am using the
+
  
 The hypothesis for this assignment is: that the higher quantity of sugar consumption in countries increases the incidence of new breast cancer cases.
 
