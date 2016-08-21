@@ -92,11 +92,11 @@ plt.title('Scatterplot for the association between the sugar consumption and the
 plt.show()
 ```
 
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment3/dat-ass4-fig1.png)
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment4/dat-ass4-fig1.png)
 
-![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment3/dat-ass4-fig2.png)
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment4/dat-ass4-fig2.png)
 
-![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment3/dat-ass4-fig3.png)
+![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment4/dat-ass4-fig3.png)
 
 After that, I made the correlation coefficient.
 
