@@ -27,7 +27,7 @@ So, the hypothesis for this assignment suggest that this relation is true.
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/dat-assignment4.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
 
-## **Correlation Coefficient**
+## **Correlation Coefficient with moderator**
 
 Below is the code to make the Correlation Coefficient technique:
 
@@ -47,30 +47,79 @@ data = pandas.read_csv("separatedData.csv", low_memory = False)
 # Change data type among variables to numeric
 data["breastCancer100th"] = data["breastCancer100th"].convert_objects(convert_numeric=True)
 data["meanSugarPerson"]   = data["meanSugarPerson"].convert_objects(convert_numeric=True)
+data["meanFoodPerson"]   = data["meanFoodPerson"].convert_objects(convert_numeric=True)
 
-# Create a subData with only the variables breastCancer100th, meanSugarPerson, meanFoodPerson, meanCholesterol
-sub1 = data[['breastCancer100th','meanSugarPerson']]
+#making the categories of the moderator variable
+def foodPerson (row):
+   if row['meanFoodPerson'] <= 2150:
+      return 0
+   elif row['meanFoodPerson'] <= 2600 :
+      return 1
+   elif row['meanFoodPerson'] > 2600:
+      return 2
 
-# Bivariate Scatterplot Q->Q -  Incidence of breast cancer versus sugar consumption
+data['foodPerson'] = data.apply (lambda row: foodPerson (row),axis=1)
+
+# Create a subData with only the variables breastCancer100th, meanSugarPerson for each foodperson categories
+data_clean = data[['breastCancer100th','meanSugarPerson','foodPerson']]
+
+sub1=data_clean[(data_clean['foodPerson']== 0)]
+sub2=data_clean[(data_clean['foodPerson']== 1)]
+sub3=data_clean[(data_clean['foodPerson']== 2)]
+
+#%%
+# Bivariate Scatterplot Q->Q - Sugar consumption versus incidence of breast cancer for LOW food consumption
 scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", fit_reg=True, data=sub1)
 plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
 plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
-plt.title('Scatterplot for the association between the incidence of breast cancer and the sugar consumption.')
+plt.title('Scatterplot for the association between the sugar consumption and the incidence of breast cancer for LOW food consumption.')
+plt.show()
+
+#%%
+# Bivariate Scatterplot Q->Q - Sugar consumption versus incidence of breast cancer for MIDDLE food consumption
+scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", fit_reg=True, data=sub2)
+plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
+plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
+plt.title('Scatterplot for the association between the sugar consumption and the incidence of breast cancer for MIDDLE food consumption.')
+plt.show()
+
+#%%
+# Bivariate Scatterplot Q->Q - Sugar consumption versus incidence of breast cancer for HIGH food consumption
+scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", fit_reg=True, data=sub3)
+plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
+plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
+plt.title('Scatterplot for the association between the sugar consumption and the incidence of breast cancer for HIGH food consumption.')
 plt.show()
 ```
 
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment3/dat-ass3-fig1.png)
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment3/dat-ass4-fig1.png)
+
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment3/dat-ass4-fig2.png)
+
+![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/dat-assignment3/dat-ass4-fig3.png)
 
 After that, I made the correlation coefficient.
 
 ```python 
-print ('association between meanSugarPerson and breastCancer100th')
+print ('association between meanSugarPerson and breastCancer100th for LOW food consumption')
 print (scipy.stats.pearsonr(sub1['meanSugarPerson'], sub1['breastCancer100th']))
+print ('       ')
+print ('association between meanSugarPerson and breastCancer100th for MIDDLE food consumption')
+print (scipy.stats.pearsonr(sub2['meanSugarPerson'], sub2['breastCancer100th']))
+print ('       ')
+print ('association between meanSugarPerson and breastCancer100th for HIGH food consumption')
+print (scipy.stats.pearsonr(sub3['meanSugarPerson'], sub3['breastCancer100th']))
 ```
 
 ```
-association between meanSugarPerson and breastCancer100th
-(0.64050235531179356, 2.9900485245592816e-16)
+association between meanSugarPerson and breastCancer100th for LOW food consumption
+(0.18902133624332168, 0.26252371958645243)
+       
+association between meanSugarPerson and breastCancer100th for MIDDLE food consumption
+(0.49804179149503514, 0.00092106766237722384)
+       
+association between meanSugarPerson and breastCancer100th for HIGH food consumption
+(0.55364434984066369, 2.5069493005646581e-05)
 ```
 
 We get a correlation coefficient of 0.64050235531179356 and a p-value of 2.9900485245592816e-16.
