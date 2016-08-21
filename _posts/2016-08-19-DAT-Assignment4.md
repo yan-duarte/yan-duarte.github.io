@@ -22,7 +22,7 @@ To the moderator, I am using the mean of the total supply of food (kilocalories 
   - 2: High food consumption.
 
 With this, we can create the question for the work: Does the food consumption moderate the relationship between the sugar consumption and the incidence of breast cancer?
-So, the hypothesis for this assignment suggest that this relation is true.
+So, the hypothesis for this assignment suggests that this relation is true.
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/dat-assignment4.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
