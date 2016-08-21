@@ -122,7 +122,10 @@ association between meanSugarPerson and breastCancer100th for HIGH food consumpt
 (0.55364434984066369, 2.5069493005646581e-05)
 ```
 
-We get a correlation coefficient of 0.64050235531179356 and a p-value of 2.9900485245592816e-16.
-This indicates to us that the relationship between the sugar consumption and the incidence of breast cancer is strong and it is also positive as the scatterplot has already shown us.
+For low food consumption the correlation coeficient is 0.19 and the p-value is not significant with value 0.26.
+For middle food consumption the correlation coeficient is 0.498 and the p-value is significant with value 0.0009.
+For high food consumption the correlation coeficient is 0.55 and the p-value is significant with value 2.5e-5.
 
-To help us to understand the correlation between the two variables we can square the correlation coefficient. This will result in the value 0.41024326716. This can be interpleted in the following way: If we know the sugar consumption grams per day of an woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
+This indicates to us that there is a relationship between the sugar consumption and the incidence of breast cancer in both middle and high food consumption. Meanwhile, for the low food consumption, it demonstrates a  weak relationship.
+
+You can see these relationships clearly in the scatterplots.
