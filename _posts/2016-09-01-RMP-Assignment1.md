@@ -1,10 +1,10 @@
 ---
-title: 'Assignment 1: Getting Your Research Project Started'
-date: '2016-07-01 22:05:00 -0300'
+title: 'Assignment 1: Writing About Your Data'
+date: '2016-09-01 16:30:00 -0300'
 categories:
-  - Data Management and Visualization
+  - Regression Modeling Practice
 tags:
-  - week1
+  - Regression Modeling Practice
 published: true
 ---
 
