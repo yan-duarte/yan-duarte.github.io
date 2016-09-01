@@ -2,7 +2,8 @@
 title: Yan Duarte
 description: 'Welcome to my blog page.'
 url: 'http://yan-duarte.github.io'
-baseurl: '/'
+baseurl: '/confguide'
+source: app
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
