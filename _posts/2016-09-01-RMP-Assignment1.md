@@ -5,7 +5,7 @@ categories:
   - Data Management and Visualization
 tags:
   - week1
-published: false
+published: true
 ---
 
 teste
