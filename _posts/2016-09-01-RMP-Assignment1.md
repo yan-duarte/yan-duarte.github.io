@@ -36,13 +36,13 @@ However an alphanumeric scoring system which independently describes the availab
 
 Availability of incidence data:
 
-  A. High quality* national data or high quality regional (coverage greater than 50%).
-  B. High quality* regional (coverage between 10% and 50%).
-  C. High quality* regional (coverage lower than 10%).
-  D. National data (rates).
-  E. Regional data (rates).
-  F. Frequency data.
-  G. No data.
+  - A. High quality* national data or high quality regional (coverage greater than 50%).
+  - B. High quality* regional (coverage between 10% and 50%).
+  - C. High quality* regional (coverage lower than 10%).
+  - D. National data (rates).
+  - E. Regional data (rates).
+  - F. Frequency data.
+  - G. No data.
 
 The period of this data collection was from 1953 until 2002.
 
