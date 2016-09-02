@@ -31,10 +31,21 @@ The provided data is from 1961 until 2004 of 156 different countries.
 
 ## **Procedure**
 
-Data were collected by trained U.S. Census Bureau Field Representatives during 2001–
-2002 through computer-assisted personal interviews (CAPI). One adult was selected for
-interview in each household, and interviews were conducted in respondents’ homes
-following informed consent procedures.
+The incidence of new breas case data were collected with the amount of the information available for each country. In theory, there are as many methods as countries, and because of the variety and the complexity of these methods, an overall quality score for the incidence and mortality estimates combined is almost impossible to establish.
+However an alphanumeric scoring system which independently describes the availability of incidence and mortality data has been established at the country level. The combined score is presented together with the estimates for each country with an aim of providing a broad indication of the robustness of the estimation. 
+
+Availability of incidence data:
+A.	High quality* national data or high quality regional (coverage greater than 50%).
+B.	High quality* regional (coverage between 10% and 50%).
+C.	High quality* regional (coverage lower than 10%).
+D.	National data (rates).
+E.	Regional data (rates).
+F.	Frequency data.
+G.	No data.
+
+The period of this data collection was from 1953 until 2002.
+
+For the sugar consumption per person and day, the data 
 
 
 ## **Measures**
