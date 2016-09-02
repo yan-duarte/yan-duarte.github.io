@@ -31,8 +31,8 @@ The provided data is from 1961 until 2004 of 156 different countries.
 
 ## **Procedure**
 
-The incidence of new breas case data were collected with the amount of the information available for each country. In theory, there are as many methods as countries, and because of the variety and the complexity of these methods, an overall quality score for the incidence and mortality estimates combined is almost impossible to establish.
-However an alphanumeric scoring system which independently describes the availability of incidence and mortality data has been established at the country level. The combined score is presented together with the estimates for each country with an aim of providing a broad indication of the robustness of the estimation. 
+The incidence of new breast case data was collected with the amount of the information available for each country. In theory, there are as many methods as countries, and because of the variety and the complexity of these methods, an overall quality score for the incidence and mortality estimates combined is almost impossible to establish.
+However, an alphanumeric scoring system which independently describes the availability of incidence and mortality data has been established at the country level. The combined score is presented together with the estimates for each country with an aim of providing a broad indication of the robustness of the estimation. 
 
 Availability of incidence data:
 
@@ -46,12 +46,13 @@ Availability of incidence data:
 
 The period of this data collection was from 1953 until 2002. [(Reference)](http://globocan.iarc.fr/Pages/DataSource_and_methods.aspx).
 
-For the sugar consumption per person and day, the FAO data is obtained through the total quantity of foodstuffs produced in a country added to the total quantity imported and adjusted to any change in stocks that may have occurred since the beginning of the reference period gives the supply available during that period. On the utilisation side a distinction is made between the quantities exported, fed to livestock + used for seed, losses during storage and transportation, and food supplies available for human consumption. The per capita supply of each such food item available for human consumption is then obtained by dividing the respective quantity by the related data on the population actually partaking in it. The period of this data collection was from 1961 until 2004. [(Reference)](http://faostat.fao.org/site/354/default.aspx).
-
+For the sugar consumption per person and day, the FAO data is obtained through the total quantity of foodstuffs produced in a country added to the total quantity imported and adjusted to any change in stocks that may have occurred since the beginning of the reference period gives the supply available during that period. On the utilisation side, a distinction is made between the quantities exported, fed to livestock + used for seed, losses during storage and transportation, and food supplies available for human consumption. The per capita supply of each such food item available for human consumption is then obtained by dividing the respective quantity by the related data on the population actually partaking in it. The period of this data collection was from 1961 until 2004. [(Reference)](http://faostat.fao.org/site/354/default.aspx).
 
 ## **Measures**
 
-Since most of the cancer registries were not national level, we only picked several countries and territories for comparisons: Canada, Costa Rica, Czech Republic, Denmark, Estonia, Finland, Hong Kong, Iceland, New Zealand, Norway, Slovak Republic, Slovenia and Sweden. A direct combination has been done because IARC CI5 time series data stops in year 1997 and all 2002 data comes from IARC GLOBOCAN 2002 data.	
+Since most of the incidence of breast cancer registries before 2002 were missing, I choose to pick only the data from 2002 from GAPMINDER/IARC. To merge the information between this data and the sugar consumption, I only used data from 129 countries. In this works, the incidence of breast cancer is a quantitative response variable.
+
+For the sugar consumption, I 
 
 
 
