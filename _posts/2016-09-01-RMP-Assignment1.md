@@ -46,7 +46,7 @@ Availability of incidence data:
 
 The period of this data collection was from 1953 until 2002.
 
-For the sugar consumption per person and day, the data 
+For the sugar consumption per person and day, the FAO data is obtained through the total quantity of foodstuffs produced in a country added to the total quantity imported and adjusted to any change in stocks that may have occurred since the beginning of the reference period gives the supply available during that period. On the utilisation side a distinction is made between the quantities exported, fed to livestock + used for seed, losses during storage and transportation, and food supplies available for human consumption. The per capita supply of each such food item available for human consumption is then obtained by dividing the respective quantity by the related data on the population actually partaking in it. The period of this data collection was from 1961 until 2004.
 
 
 ## **Measures**
