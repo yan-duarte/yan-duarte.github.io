@@ -15,6 +15,14 @@ In this assignment, we have to describe the sample, the data collection procedur
 
 ## Sample
 
+The sample is from GAPMINDER a non-profit venture promoting sustainable global development and achievement of the United Nations Millennium Development Goals by increased use and understanding of statistics and other information about social, economic and environmental development at local, national and global levels.
+
+GAPMINDER uses data from others data providers, the response variable used in this work is the number of new cases of breast cancer in 100,000 female residents during the 2002 year provide by the International Agency for Research on Cancer (IARC).
+
+Incidence of new breast cancer data was compiled by Gapminder using data from [IARC GLOBOCAN 2002 (estimates for 2002)][http://globocan.iarc.fr/] and [IARC CI5 (Cancer Incidence in 5 Continents)][http://ci5.iarc.fr/] .
+
+
+
 The sample is from the first wave of the National Epidemiologic Survey on Alcohol and
 Related Conditions (NESARC), the largest nationwide longitudinal survey of alcohol and
 drug use and associated psychiatric and medical comorbidities. Participants (N=43,093)
