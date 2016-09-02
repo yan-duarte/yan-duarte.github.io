@@ -50,21 +50,20 @@ For the sugar consumption per person and day, the FAO data is obtained through t
 
 ## **Measures**
 
-Since most of the incidence of breast cancer registries before 2002 were missing, I choose to pick only the data from 2002 from GAPMINDER/IARC. To merge the information between this data and the sugar consumption, I only used data from 129 countries. In this works, the incidence of breast cancer is a quantitative response variable.
+Since most of the incidence of breast cancer registries before 2002 were missing, I opted to pick only the data from 2002 of GAPMINDER/IARC. To merge the information between this data and the sugar consumption, I only used data from 129 countries. In this works, the incidence of breast cancer is a quantitative response variable that ranged from 3.9 to 101.10 new breast cancer cases per 100,000 female.
 
-For the sugar consumption, I 
+For the sugar consumption, I realized that would be better to make an average of the data from 1953 until 2002. The result was used as the explanatory variable and, during the course, I used it either as a quantitative variable as much as a qualitative variable. To the quantitative variable, it ranged from 6.13 to 163.86 sugar consumption per person and day. While to the qualitative variable, I separated the data into five categories:
+
+  - Desirable: between 0 and 30 g per day.
+  - Raised: between 30 and 60 g per day.
+  - Borderline high: between 60 and 90 g per day.
+  - High: between 90 and 120 g per day.
+  - Very high: under 120g per day.
+  
+
+  
 
 
 
-Lifetime major depression (i.e. those experienced in the past 12 months and prior to the
-past 12 months) was assessed using the NIAAA, Alcohol Use Disorder and Associated
-Disabilities Interview Schedule – DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford,
-Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed
-questions on the frequency, quantity, and patterning of tobacco use as well as symptom
-criteria for DSM-IV nicotine dependence. Current smoking was evaluated through both
-smoking frequency (“About how often did you usually smoke in the past year?”) coded
-dichotomously to represent presence or absence of daily smoking, and quantity (“On the
-days that you smoked in the last year, about how many cigarettes did you usually smoke?”),
-a quantitative variable that ranged from 1 cigarette per day to 98 cigarettes per day
 
 
