@@ -21,12 +21,12 @@ GAPMINDER uses data from others data providers, I choose to use the variable num
 
 The incidence of new breast cancer data was compiled by Gapminder using data from [IARC GLOBOCAN 2002 (estimates for 2002)](http://globocan.iarc.fr/) and [IARC CI5 (Cancer Incidence in 5 Continents - Vol. I to VIII)](http://ci5.iarc.fr/) .
 
-It has the incidence of new breast cancer data since the year of 1953 to 2002 from 174 different countries where only the year of 2002 has the complete data of all countries.
+It has the incidence of new breast cancer data since the year of 1953 to 2002 from N=174 different countries where only the year of 2002 has the complete data of all countries.
 
 Another variable used was the food consumption quantity (grams per person and day) of sugar and sweeters. GAPMINDER compiled the data from Food and Agriculture Organization of the United Nations ([FAO](http://faostat.fao.org/)). Food supply data is some of the most important data in FAOSTAT. In fact, this data is the basis for estimation of global and national undernourishment assessment, when it is combined with parameters and other data sets.
 This data has been the foundation of food balance sheets ever since they were first constructed. The data is accessed by both business and governments for economic analysis and policy setting, as well as being used by the academic community. 
 
-The provided data is from 1961 until 2004 of 156 different countries.
+The provided data is from 1961 until 2004 of N=156 different countries.
 
 
 ## **Procedure**
@@ -50,7 +50,7 @@ For the sugar consumption per person and day, the FAO data is obtained through t
 
 ## **Measures**
 
-Since most of the incidence of breast cancer registries before 2002 were missing, I opted to pick only the data from 2002 of GAPMINDER/IARC. To merge the information between this data and the sugar consumption, I only used data from 129 countries. In this works, the incidence of breast cancer is a quantitative response variable that ranged from 3.9 to 101.10 new breast cancer cases per 100,000 female.
+Since most of the incidence of breast cancer registries before 2002 were missing, I opted to pick only the data from 2002 of GAPMINDER/IARC. To merge the information between this data and the sugar consumption, I only used data from N=129 countries. In this works, the incidence of breast cancer is a quantitative response variable that ranged from 3.9 to 101.10 new breast cancer cases per 100,000 female.
 
 For the sugar consumption, I realized that would be better to make an average of the data from 1953 until 2002. The result was used as the explanatory variable and, during the course, I used it either as a quantitative variable as much as a qualitative variable. To the quantitative variable, it ranged from 6.13 to 163.86 sugar consumption per person and day. While to the qualitative variable, I separated the data into five categories:
 
