@@ -13,6 +13,35 @@ The previous content you can see [here](https://yan-duarte.github.io/tags/).
 In this assignment, we have to describe the sample, the data collection procedure, and how do I manage my data.
 
 
+## Sample
+
+The sample is from the first wave of the National Epidemiologic Survey on Alcohol and
+Related Conditions (NESARC), the largest nationwide longitudinal survey of alcohol and
+drug use and associated psychiatric and medical comorbidities. Participants (N=43,093)
+represented the civilian, non-institutionalized adult population of the United States, and
+included persons living in households, military personnel living off base, and persons
+residing in the following group quarters: boarding or rooming houses, non-transient hotels
+and motels, shelters, facilities for housing workers, college quarters, and group homes. The
+NESARC included over sampling of Blacks, Hispanics and young adults aged 18 to 24 years.
+The data analytic sample for this study included participants 18-25 years old who reported
+smoking at least 1 cigarette per day in the past 30 days (N=1,320).
+Procedure
+Data were collected by trained U.S. Census Bureau Field Representatives during 2001–
+2002 through computer-assisted personal interviews (CAPI). One adult was selected for
+interview in each household, and interviews were conducted in respondents’ homes
+following informed consent procedures.
+Measures
+Lifetime major depression (i.e. those experienced in the past 12 months and prior to the
+past 12 months) was assessed using the NIAAA, Alcohol Use Disorder and Associated
+Disabilities Interview Schedule – DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford,
+Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed
+questions on the frequency, quantity, and patterning of tobacco use as well as symptom
+criteria for DSM-IV nicotine dependence. Current smoking was evaluated through both
+smoking frequency (“About how often did you usually smoke in the past year?”) coded
+dichotomously to represent presence or absence of daily smoking, and quantity (“On the
+days that you smoked in the last year, about how many cigarettes did you usually smoke?”),
+a quantitative variable that ranged from 1 cigarette per day to 98 cigarettes per day
+
 
 
 
