@@ -88,12 +88,12 @@ Warnings:
 
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass2-fig1.png)
 
-We can see in the OLS Regression Results that the p-value is considerably less than our alpha level of 0.05 wich tells us that we can reject null hypothesis and concludes that the sugar consumption is significantly associated with the incidence of breas cancer cases.
+We can see in the OLS Regression Results that the p-value is considerably less than our alpha level of 0.05 wich tells us that we can reject the null hypothesis and concludes that the sugar consumption is significantly associated with the incidence of breast cancer cases.
 
-The coeficient for sugar consumption is 0.3667 and the intercept is 37.9876. This means that the equation for the best line of this graph is:
+The coefficient for sugar consumption is 0.3667 and the intercept is 37.9876. This means that the equation for the best line of this graph is:
 
   - *breastCancer100th = 37.9876 + 0.3667 * meanSugarPerson*
   
-The collumn **P>\| t \|** give us the p value for our explanatory variables, association with the response variable. This p value is 0.000 wich means that it is really small confirming the significance associated between the variables.
+The column **P>\| t \|** give us the p-value for our explanatory variables, association with the response variable. This p-value is 0.000 wich means that it is really small confirming the significance associated with the variables.
 
-Other information that OLS Regression Results give to us is the R-square. This value can be interpleted in the following way: If we know the sugar consumption grams per day of an woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
+Other information that OLS Regression Results give to us is the R-square. This value can be interpreted in the following way: If we know the sugar consumption grams per day of a woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
