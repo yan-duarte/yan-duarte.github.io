@@ -1,6 +1,6 @@
 ---
 title: 'Assignment 1: Writing About Your Data'
-date: '2016-09-01 16:30:00 -0300'
+date: '2016-09-10 18:40:00 -0300'
 categories:
   - Regression Modeling Practice
 tags:
