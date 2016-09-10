@@ -14,9 +14,7 @@ In this assignment, we have to Test a Basic Linear Regression Model with our dat
 
 To do that, one management with the data must be done. As both explanatory and response variable are quantitative the only modification to do is to center in the mean the explanatory variable by subtracting the mean from the data values, then the value 0 will be the mean.
 
-
 ## **Test a Basic Linear Regression Model**
-
 
 ```python
 import pandas
@@ -65,7 +63,7 @@ Dep. Variable:      breastCancer100th   R-squared:                       0.410
 Model:                            OLS   Adj. R-squared:                  0.406
 Method:                 Least Squares   F-statistic:                     88.34
 Date:                Sat, 10 Sep 2016   Prob (F-statistic):           2.99e-16
-Time:                        19:16:04   Log-Likelihood:                -560.18
+Time:                        19:28:53   Log-Likelihood:                -560.18
 No. Observations:                 129   AIC:                             1124.
 Df Residuals:                     127   BIC:                             1130.
 Df Model:                           1                                         
@@ -73,13 +71,13 @@ Covariance Type:            nonrobust
 ===================================================================================
                       coef    std err          t      P>|t|      [95.0% Conf. Int.]
 -----------------------------------------------------------------------------------
-Intercept          10.0325      3.402      2.949      0.004         3.301    16.764
+Intercept          37.9876      1.651     23.007      0.000        34.720    41.255
 meanSugarPerson     0.3667      0.039      9.399      0.000         0.289     0.444
 ==============================================================================
 Omnibus:                        3.414   Durbin-Watson:                   1.778
 Prob(Omnibus):                  0.181   Jarque-Bera (JB):                3.052
 Skew:                           0.291   Prob(JB):                        0.217
-Kurtosis:                       2.522   Cond. No.                         180.
+Kurtosis:                       2.522   Cond. No.                         42.3
 ==============================================================================
 
 Warnings:
@@ -87,3 +85,13 @@ Warnings:
 ```
 
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass2-fig1.png)
+
+We can see in the OLS Regression Results that the p-value is considerably less than our alpha level of 0.05 wich tells us that we can reject null hypothesis and concludes that the sugar consumption is significantly associated with the incidence of breas cancer cases.
+
+The coeficient for sugar consumption is 0.3667 and the intercept is 37.9876. This means that the equation for the best line of this graph is:
+
+  - *breastCancer100th = 37.9876 + 0.3667 * meanSugarPerson*
+  
+The collumn P>|t| give us the p value for our explanatory variables, association with the response variable. This p value is 0.000 wich means that it is really small confirming the significance associated between the variables.
+
+Other information that OLS Regression Results give to us is the R-square. This value can be interpleted in the following way: If we know the sugar consumption grams per day of an woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
