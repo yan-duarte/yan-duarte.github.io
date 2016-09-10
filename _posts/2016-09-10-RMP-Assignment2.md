@@ -14,6 +14,8 @@ In this assignment, we have to Test a Basic Linear Regression Model with our dat
 
 To do that, one management with the data must be done. As both explanatory and response variable are quantitative the only modification to do is to center in the mean the explanatory variable by subtracting the mean from the data values, then the value 0 will be the mean. (The mean value of the explanatory variable is 76.2383942414).
 
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment2.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+
 ## **Test a Basic Linear Regression Model**
 
 ```python
