@@ -1,5 +1,5 @@
 ---
-title: 'Assignment 1: Writing About Your Data'
+title: 'Assignment 2: Test a Basic Linear Regression Model'
 date: '2016-09-10 18:40:00 -0300'
 categories:
   - Regression Modeling Practice
