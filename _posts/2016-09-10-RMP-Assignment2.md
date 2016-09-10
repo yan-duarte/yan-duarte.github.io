@@ -92,7 +92,7 @@ We can see in the OLS Regression Results that the p-value is considerably less t
 
 The coefficient for sugar consumption is 0.3667 and the intercept is 37.9876. This means that the equation for the best line of this graph is:
 
-  - *breastCancer100th = 37.9876 + 0.3667 * meanSugarPerson*
+  - **breastCancer100th = 37.9876 + 0.3667 * meanSugarPerson**
   
 The column **P>\| t \|** give us the p-value for our explanatory variables, association with the response variable. This p-value is 0.000 wich means that it is really small confirming the significance associated with the variables.
 
