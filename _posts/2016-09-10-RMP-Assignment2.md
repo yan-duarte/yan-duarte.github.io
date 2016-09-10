@@ -85,3 +85,5 @@ Kurtosis:                       2.522   Cond. No.                         180.
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
+
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass2-fig1.png)
