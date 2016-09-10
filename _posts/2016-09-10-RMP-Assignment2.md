@@ -12,7 +12,7 @@ The previous content you can see [here](https://yan-duarte.github.io/tags/).
 
 In this assignment, we have to Test a Basic Linear Regression Model with our data.
 
-To do that, one management with the data must be done. As both explanatory and response variable are quantitative the only modification to do is to center in the mean the explanatory variable by subtracting the mean from the data values, then the value 0 will be the mean.
+To do that, one management with the data must be done. As both explanatory and response variable are quantitative the only modification to do is to center in the mean the explanatory variable by subtracting the mean from the data values, then the value 0 will be the mean. (The mean value of the explanatory variable is 76.2383942414).
 
 ## **Test a Basic Linear Regression Model**
 
@@ -42,7 +42,7 @@ mean = statistics.mean(sub1['meanSugarPerson'])
 sub1['meanSugarPerson'] = sub1['meanSugarPerson'] - mean
 
 # BASIC LINEAR REGRESSION
-scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, data=data)
+scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, data=sub1)
 plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
 plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
 plt.title('Scatterplot for the association between the incidence of breast cancer and the sugar consumption.')
@@ -51,7 +51,7 @@ plt.show()
 print(scat1)
 
 print ("OLS regression model for the association between incidence of breast cancer and the sugar consumption")
-reg1 = smf.ols('breastCancer100th ~ meanSugarPerson', data=data).fit()
+reg1 = smf.ols('breastCancer100th ~ meanSugarPerson', data=sub1).fit()
 print (reg1.summary())
 ```
 
