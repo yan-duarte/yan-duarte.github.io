@@ -92,6 +92,6 @@ The coeficient for sugar consumption is 0.3667 and the intercept is 37.9876. Thi
 
   - *breastCancer100th = 37.9876 + 0.3667 * meanSugarPerson*
   
-The collumn P>|t| give us the p value for our explanatory variables, association with the response variable. This p value is 0.000 wich means that it is really small confirming the significance associated between the variables.
+The collumn P>| t | give us the p value for our explanatory variables, association with the response variable. This p value is 0.000 wich means that it is really small confirming the significance associated between the variables.
 
 Other information that OLS Regression Results give to us is the R-square. This value can be interpleted in the following way: If we know the sugar consumption grams per day of an woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
