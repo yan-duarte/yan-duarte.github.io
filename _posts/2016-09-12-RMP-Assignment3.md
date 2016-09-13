@@ -25,3 +25,19 @@ Note that all my explanatories variables are quantitative, thus I must center th
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
 ## **Test a Basic Linear Regression Model**
+
+
+
+Summarize what you found. Discuss the results for the associations between all of your explanatory variables and your response variable. Make sure to include statistical results (Beta coefficients and p-values) in your summary.
+
+
+Report whether or not your results supported your hypothesis for the association between your primary explanatory response variable.
+
+
+Discuss whether or not there was evidence of confounding for the association between your primary explanatory and response variable.
+
+
+Generate regression diagnostic plots and write a few sentences describing what these plots tell you about your regression model in terms of the distribution of the residuals, model fit, influential observations, and outliers.
+
+
+Include your multiple regression output in your blog.
