@@ -24,7 +24,9 @@ Note that all my explanatories variables are quantitative, thus I must center th
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
-## **Test a Basic Linear Regression Model**
+## **Test a Multiple Regression Model**
+
+
 
 
 
