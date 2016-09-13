@@ -18,7 +18,7 @@ My explanatory variable is the mean of sugar consumption quantity (grams per per
 To make the assignment of this week I have add two other explanatory variables:
   
   - Mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 (the number of days in the year) between the years 1961 and 2002.
-  -
+  - The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world population) between the years 1980 and 2002.
 
 Note that all my explanatories variables are quantitative, thus I must center the variables by subtracting the mean from the data values, then the value 0 will be very close to the mean. 
 
