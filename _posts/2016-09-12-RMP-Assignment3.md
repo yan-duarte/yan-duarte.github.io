@@ -55,15 +55,15 @@ sub1 = data[['breastCancer100th', 'meanSugarPerson', 'meanFoodPerson', 'meanChol
 scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, data=sub1)
 plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
 plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
-```
 
-```python
 # fit second order polynomial
 # run the 2 scatterplots together to get both linear and second order fit lines
 scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, order=2, data=sub1)
 plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
 plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
 ```
+
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig1.png)
 
 ```python
 # center quantitative IVs for regression analysis
@@ -78,7 +78,7 @@ print (reg1.summary())
 ```
 
 ```
-OLS Regression Results                            
+                            OLS Regression Results                            
 ==============================================================================
 Dep. Variable:      breastCancer100th   R-squared:                       0.410
 Model:                            OLS   Adj. R-squared:                  0.406
@@ -143,6 +143,118 @@ Warnings:
 strong multicollinearity or other numerical problems.
 ```
 
+```python
+# adding food consumption
+reg3 = smf.ols('breastCancer100th  ~ meanSugarPerson_c + I(meanSugarPerson_c**2) + meanFoodPerson_c',
+               data=sub1).fit()
+print (reg3.summary())
+```
+
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      breastCancer100th   R-squared:                       0.653
+Model:                            OLS   Adj. R-squared:                  0.645
+Method:                 Least Squares   F-statistic:                     78.54
+Date:                Mon, 12 Sep 2016   Prob (F-statistic):           1.27e-28
+Time:                        23:21:27   Log-Likelihood:                -525.90
+No. Observations:                 129   AIC:                             1060.
+Df Residuals:                     125   BIC:                             1071.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [95.0% Conf. Int.]
+---------------------------------------------------------------------------------------------
+Intercept                    33.5975      1.834     18.320      0.000        29.968    37.227
+meanSugarPerson_c             0.1377      0.040      3.476      0.001         0.059     0.216
+I(meanSugarPerson_c ** 2)     0.0025      0.001      3.333      0.001         0.001     0.004
+meanFoodPerson_c              0.0316      0.004      8.975      0.000         0.025     0.039
+==============================================================================
+Omnibus:                        0.058   Durbin-Watson:                   1.720
+Prob(Omnibus):                  0.971   Jarque-Bera (JB):                0.062
+Skew:                           0.042   Prob(JB):                        0.970
+Kurtosis:                       2.935   Cond. No.                     3.59e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.59e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+```
+
+```python
+#Q-Q plot for normality
+fig4 = sm.qqplot(reg3.resid, line='r')
+plt.show(fig4)
+```
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig2.png)
+
+```python
+# simple plot of residuals
+stdres = pandas.DataFrame(reg3.resid_pearson)
+plt.plot(stdres, 'o', ls='None')
+l = plt.axhline(y=0, color='r')
+plt.ylabel('Standardized Residual')
+plt.xlabel('Observation Number')
+```
+
+![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig3.png)
+
+```python
+# additional regression diagnostic plots
+fig2 = plt.figure(figsize=(12,8))
+fig2 = sm.graphics.plot_regress_exog(reg3,  "meanFoodPerson_c", fig=fig2)
+plt.show(fig2)
+```
+
+![Figure 4]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig4.png)
+
+```python
+# leverage plot
+fig3=sm.graphics.influence_plot(reg3, size=8)
+plt.show(fig3)
+```
+
+![Figure 5]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig5.png)
+
+```python
+# adding mean cholesterol
+reg4 = smf.ols('breastCancer100th  ~ meanSugarPerson_c + I(meanSugarPerson_c**2) + meanCholesterol_c',
+               data=sub1).fit()
+print (reg4.summary())
+```
+
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      breastCancer100th   R-squared:                       0.728
+Model:                            OLS   Adj. R-squared:                  0.722
+Method:                 Least Squares   F-statistic:                     111.6
+Date:                Mon, 12 Sep 2016   Prob (F-statistic):           3.40e-35
+Time:                        23:21:31   Log-Likelihood:                -510.23
+No. Observations:                 129   AIC:                             1028.
+Df Residuals:                     125   BIC:                             1040.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [95.0% Conf. Int.]
+---------------------------------------------------------------------------------------------
+Intercept                    32.7510      1.629     20.111      0.000        29.528    35.974
+meanSugarPerson_c             0.0165      0.040      0.410      0.683        -0.063     0.096
+I(meanSugarPerson_c ** 2)     0.0029      0.001      4.465      0.000         0.002     0.004
+meanCholesterol_c            45.7660      3.909     11.709      0.000        38.030    53.502
+==============================================================================
+Omnibus:                        5.132   Durbin-Watson:                   1.947
+Prob(Omnibus):                  0.077   Jarque-Bera (JB):                5.067
+Skew:                          -0.316   Prob(JB):                       0.0794
+Kurtosis:                       3.736   Cond. No.                     8.65e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.65e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+```
 
 Summarize what you found. Discuss the results for the associations between all of your explanatory variables and your response variable. Make sure to include statistical results (Beta coefficients and p-values) in your summary.
 
