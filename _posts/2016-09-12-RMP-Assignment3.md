@@ -259,7 +259,7 @@ strong multicollinearity or other numerical problems.
 
 When we add the meanCholesterol variable to the multiple regression tests, we can see that this variable made the meanSugarPerson p-value get increased over than 0.5, assuming that the meanCholesterol is a confounding variable for this work.
 
-## ** **
+## ** Q-Q Plot **
 
 ```python
 #Q-Q plot for normality
@@ -267,6 +267,8 @@ fig4 = sm.qqplot(reg3.resid, line='r')
 plt.show(fig4)
 ```
 ![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig2.png)
+
+## ** Standardized residuals for all observations **
 
 ```python
 # simple plot of residuals
@@ -276,7 +278,6 @@ l = plt.axhline(y=0, color='r')
 plt.ylabel('Standardized Residual')
 plt.xlabel('Observation Number')
 ```
-
 ![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig3.png)
 
 ```python
@@ -287,6 +288,8 @@ plt.show(fig2)
 ```
 
 ![Figure 4]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig4.png)
+
+# ** Leverage Plot **
 
 ```python
 # leverage plot
