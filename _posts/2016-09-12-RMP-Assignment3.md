@@ -268,6 +268,8 @@ plt.show(fig4)
 ```
 ![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig2.png)
 
+The qqplot for our regression model shows that the residuals generally follow a straight line, but deviate at the lower and higher quantiles. This indicates that our residuals did not follow perfect normal distribution meaning that the curvilinear association that we observed in our scatter plot may not be fully estimated by the quadratic sugar consumption.
+
 ## **Standardized residuals for all observations**
 
 ```python
