@@ -108,7 +108,7 @@ The column P>| t | give us the p-value for our explanatory variables, associatio
 
 Other information that OLS Regression Results give to us is the R-square. This value can be interpreted in the following way: If we know the sugar consumption grams per day of a woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
 
-After make the linear regression test, we are going to do now the polynomial regression test, for this, we add the polynomial second order of the meanSugarPerson variable into the scatterplot and into the regression analysis.
+After make the linear regression test, we are going to do now the polynomial regression test. For this, we have to add the polynomial second order of the meanSugarPerson variable into the scatterplot and into the regression analysis.
 
 ```python
 # first order (linear) scatterplot
@@ -170,11 +170,7 @@ breastCancer100th = 34.4829 + 0.3680 * meanSugarPerson + 0.0020 * meanSugarPerso
 
 The R-square in this scenario is slightly greater than the previous and can be interpreted as If we know the sugar consumption grams per day of a woman we can predict 43% of the variability we will see in the incidence of breast cancer cases.
 
-
-
-
-
-
+After this analysis is time to add another explanatory variable, the amount of food consumption in kilocalories per day.
 
 ```python
 # adding food consumption
@@ -215,43 +211,12 @@ Warnings:
 strong multicollinearity or other numerical problems.
 ```
 
+The OLS Regression Results demonstrates the p-value and the P>| t | for all variables lower than 0.05.
+We can conclude that both meanSugarPerson and meanFoodPerson are significantly associated with the incidence of new breast cancer cases.
 
+The R-square increased considerably from 43% to 65.3%.
 
-
-```python
-#Q-Q plot for normality
-fig4 = sm.qqplot(reg3.resid, line='r')
-plt.show(fig4)
-```
-![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig2.png)
-
-```python
-# simple plot of residuals
-stdres = pandas.DataFrame(reg3.resid_pearson)
-plt.plot(stdres, 'o', ls='None')
-l = plt.axhline(y=0, color='r')
-plt.ylabel('Standardized Residual')
-plt.xlabel('Observation Number')
-```
-
-![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig3.png)
-
-```python
-# additional regression diagnostic plots
-fig2 = plt.figure(figsize=(12,8))
-fig2 = sm.graphics.plot_regress_exog(reg3,  "meanFoodPerson_c", fig=fig2)
-plt.show(fig2)
-```
-
-![Figure 4]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig4.png)
-
-```python
-# leverage plot
-fig3=sm.graphics.influence_plot(reg3, size=8)
-plt.show(fig3)
-```
-
-![Figure 5]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig5.png)
+Thereafter, as the meanFoodPerson improved the study, let's try to add the cholesterol in blood variable.
 
 ```python
 # adding mean cholesterol
@@ -292,4 +257,43 @@ Warnings:
 strong multicollinearity or other numerical problems.
 ```
 
-When we add the meanSugarPerson variable to the multiple regression tests, we can see that this variable has a p-value greater than 0.5, assuming that the meanSugarPerson is a confounding variable for this work.
+When we add the meanCholesterol variable to the multiple regression tests, we can see that this variable made the meanSugarPerson p-value get increased over than 0.5, assuming that the meanCholesterol is a confounding variable for this work.
+
+## ** **
+
+```python
+#Q-Q plot for normality
+fig4 = sm.qqplot(reg3.resid, line='r')
+plt.show(fig4)
+```
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig2.png)
+
+```python
+# simple plot of residuals
+stdres = pandas.DataFrame(reg3.resid_pearson)
+plt.plot(stdres, 'o', ls='None')
+l = plt.axhline(y=0, color='r')
+plt.ylabel('Standardized Residual')
+plt.xlabel('Observation Number')
+```
+
+![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig3.png)
+
+```python
+# additional regression diagnostic plots
+fig2 = plt.figure(figsize=(12,8))
+fig2 = sm.graphics.plot_regress_exog(reg3,  "meanFoodPerson_c", fig=fig2)
+plt.show(fig2)
+```
+
+![Figure 4]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig4.png)
+
+```python
+# leverage plot
+fig3=sm.graphics.influence_plot(reg3, size=8)
+plt.show(fig3)
+```
+
+![Figure 5]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig5.png)
+
+
