@@ -282,6 +282,15 @@ plt.xlabel('Observation Number')
 ```
 ![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig3.png)
 
+*"The standardized residuals are simply the residual values transformed to have a mean of zero and a standard deviation of one. This transformation is called normalizing or standardizing the values so that they fit a standard normal distribution. In a standard normal distribution 68% of the observations are expected to fall within one standard deviation of the mean. So between -1 and 1 standard deviations. And 95% of the observations are expected to fall within 2 standard deviations of the mean.*
+
+*With the standard normal distribution, we would expect 95% of the values of the residuals to fall between two standard deviations of the mean. Residual values that are more than two standard deviations from the mean in either direction, are a warning sign that we may have some outliers. However, there are no observations that have three or more standard deviations from the mean. So we do not appear to have any extreme outliers.*
+
+*In terms of evaluating the overall fit of the model, there's some other rules of thumb that you can use to determine how well your model fits the data based on the distribution of the residuals. If more than 1% of our observations has standardized residuals with an absolute value greater than 2.5, or more than 5% have an absolute value of greater than or equal to 2, then there is evidence that the level of error within our model is unacceptable. That is the model is a fairly poor fit to the observed data."*
+
+In this work, only 1 point is exceeded an absolute value of 2.5 representing less than 1% and there are 6 points (4.65%) that are greater than or equal to an absolute value of 2.0. This suggests that the model is good.
+
+
 ```python
 # additional regression diagnostic plots
 fig2 = plt.figure(figsize=(12,8))
