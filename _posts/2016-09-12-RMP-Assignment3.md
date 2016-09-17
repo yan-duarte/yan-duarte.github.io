@@ -28,6 +28,8 @@ The complete program for this assignment can be download [here](https://yan-duar
 
 ## **Test a Multiple Regression Model**
 
+The first thing to do is to import the libraries and prepare the data to be used.
+
 ```python
 import numpy
 import pandas
@@ -52,20 +54,7 @@ data["meanCholesterol"]   = pandas.to_numeric(data["meanCholesterol"], errors='c
 sub1 = data[['breastCancer100th', 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']].dropna()
 ```
 
-```python
-# first order (linear) scatterplot
-scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, data=sub1)
-plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
-plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
-
-# fit second order polynomial
-# run the 2 scatterplots together to get both linear and second order fit lines
-scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, order=2, data=sub1)
-plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
-plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
-```
-
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig1.png)
+The explanatory variables are centered and the first OLS Regression Test was made with only the meanSugarPerson variable.
 
 ```python
 # center quantitative IVs for regression analysis
@@ -108,9 +97,33 @@ Warnings:
 
 ```
 
+The results for this test is the same as the [assignment 2](https://yan-duarte.github.io/2016/RMP-Assignment2/)
 
+We can see in the OLS Regression Results that the p-value is considerably less than our alpha level of 0.05 wich tells us that we can reject the null hypothesis and concludes that the sugar consumption is significantly associated with the incidence of breast cancer cases.
 
+The coefficient for sugar consumption is 0.3667 and the intercept is 37.9876. This means that the equation for the best line of this graph is:
 
+breastCancer100th = 37.9876 + 0.3667 * meanSugarPerson
+The column P>| t | give us the p-value for our explanatory variables, association with the response variable. This p-value is 0.000 wich means that it is really small confirming the significance associated with the variables.
+
+Other information that OLS Regression Results give to us is the R-square. This value can be interpreted in the following way: If we know the sugar consumption grams per day of a woman we can predict 41% of the variability we will see in the incidence of breast cancer cases.
+
+After make the linear regression test, we are going to do now the polynomial regression test, for this, we add the polynomial second order of the meanSugarPerson variable into the scatterplot and into the regression analysis.
+
+```python
+# first order (linear) scatterplot
+scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, data=sub1)
+plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
+plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
+
+# fit second order polynomial
+# run the 2 scatterplots together to get both linear and second order fit lines
+scat1 = seaborn.regplot(x="meanSugarPerson", y="breastCancer100th", scatter=True, order=2, data=sub1)
+plt.xlabel('Mean of the sugar consumption between 1961 and 2002.')
+plt.ylabel('Incidence of breast cancer in 100,000 female residents during the 2002 year.')
+```
+
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig1.png)
 
 ```python
 # quadratic (polynomial) regression analysis
@@ -148,6 +161,20 @@ Warnings:
 [2] The condition number is large, 3.58e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.
 ```
+
+For the polynomial OLS Regression Results, we can see that the p-value still less than 0.05 assuming that we can reject the null hypothesis and concludes that the correlation between sugar consumption and incidence of breast cancer is significantly strong.
+
+The coefficient for sugar consumption is 0.3680, for the polynomial sugar consumption we have a value of 0.0020 and for the intercept 34.4829. This means that the equation for the best line of this graph is:
+
+breastCancer100th = 34.4829 + 0.3680 * meanSugarPerson + 0.0020 * meanSugarPerson²
+
+The R-square in this scenario is slightly greater than the previous and can be interpreted as If we know the sugar consumption grams per day of a woman we can predict 43% of the variability we will see in the incidence of breast cancer cases.
+
+
+
+
+
+
 
 ```python
 # adding food consumption
@@ -187,6 +214,9 @@ Warnings:
 [2] The condition number is large, 3.59e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.
 ```
+
+
+
 
 ```python
 #Q-Q plot for normality
