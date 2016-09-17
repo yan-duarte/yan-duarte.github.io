@@ -289,7 +289,7 @@ plt.show(fig2)
 
 ![Figure 4]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig4.png)
 
-# **Leverage Plot**
+## **Leverage Plot**
 
 ```python
 # leverage plot
