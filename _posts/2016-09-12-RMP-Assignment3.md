@@ -108,6 +108,10 @@ Warnings:
 
 ```
 
+
+
+
+
 ```python
 # quadratic (polynomial) regression analysis
 reg2 = smf.ols('breastCancer100th ~ meanSugarPerson_c + I(meanSugarPerson_c**2)', data=sub1).fit()
@@ -258,16 +262,4 @@ Warnings:
 strong multicollinearity or other numerical problems.
 ```
 
-Summarize what you found. Discuss the results for the associations between all of your explanatory variables and your response variable. Make sure to include statistical results (Beta coefficients and p-values) in your summary.
-
-
-Report whether or not your results supported your hypothesis for the association between your primary explanatory response variable.
-
-
-Discuss whether or not there was evidence of confounding for the association between your primary explanatory and response variable.
-
-
-Generate regression diagnostic plots and write a few sentences describing what these plots tell you about your regression model in terms of the distribution of the residuals, model fit, influential observations, and outliers.
-
-
-Include your multiple regression output in your blog.
+When we add the meanSugarPerson variable to the multiple regression tests, we can see that this variable has a p-value greater than 0.5, assuming that the meanSugarPerson is a confounding variable for this work.
