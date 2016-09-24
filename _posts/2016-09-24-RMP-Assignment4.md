@@ -7,24 +7,48 @@ tags:
   - Regression Modeling Practice
 published: true
 ---
-This is the last assignment for the regression modeling practice course, fourth from a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
+This is the last assignment for the regression modeling practice course, third from a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
 The previous content you can see [here](https://yan-duarte.github.io/tags/).
 
 In this assignment, we have to Test a Logistic Regression Model with our data.
 
-My response variable is the number of new cases of breast cancer in 100,000 female residents during the year 2002.
-My explanatory variable is the mean of sugar consumption quantity (grams per person and day) between the years 1961 and 2002.
+My response variable is the number of new cases of breast cancer in 100,000 female residents during the year 2002 (breastCancer100th).
+My explanatory variable is the mean of sugar consumption quantity (grams per person and day) between the years 1961 and 2002 (meanSugarPerson).
 
-To make the assignment of this week I have added two other explanatory variables:
+To make the assignment of this week I have added two other explanatory variables:  
   
-  - Mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 (the number of days in the year) between the years 1961 and 2002.
-  - The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world population) between the years 1980 and 2002.
+  - Mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 (the number of days in the year) between the years 1961 and 2002 (meanFoodPerson).
+  - The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world population) between the years 1980 and 2002 (meanCholesterol).
 
-Note that all my explanatory variables are quantitative. Thus, I must center the variables by subtracting the mean from the data values, then the value 0 will be very close to the mean.
+Note that all off my variables are quantitative. Thus, I must management they transforming it to qualitative.
+
+Variable breastCancer100th:
+
+  -(0) The incidence of breast cancer is below the average of the incidence of all countries.
+  -(1) The incidence of breast cancer is above the average of the incidence of all countries.
+    
+Variable meanSugarPerson:
+  
+  -(0) Desirable 0 and 30 g.
+  -(1) Raised with 30 and 60 g.
+  -(2) Borderline high 60 and 90 g.
+  -(3) High between 90 and 120 g.
+  -(4) Very high under 120g.
+
+  
+Variable meanFoodPerson:
+  
+  -(0) The food consumption below the average of the food consumption of all countries.
+  -(1) The food consumption above the average of the food consumption of all countries.
+  
+Variable meanCholesterol:
+  
+  -
+  -
 
 All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
 
-The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment4.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
 ## **Test a Multiple Regression Model**
 
@@ -322,4 +346,3 @@ plt.show(fig3)
 
 
 One of the first things we see in the leverage plot is that we have a few outliers, contents that have residuals greater than 2 or less than -2. We've already identified some of these outliers in some of the other plots we've looked at, but this plot also tells us that these outliers have small or close to zero leverage values, meaning that although they are outlying observations, they do not have an undue influence on the estimation of the regression model. On the other hand, we see that there are a few cases with higher than average leverage. But one in particular is more obvious in terms of having an influence on the estimation of the predicted value of sugar consumption per day. This observation has a high leverage but is not an outlier. We don't have any observations that are both high leverage and outliers.
-
