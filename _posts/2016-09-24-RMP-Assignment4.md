@@ -53,7 +53,7 @@ Variable meanCholesterol:
   -(1) Borderline high between 5.2 and 6.2 mmol/L
   -(2) High above 6.2 mmol/L __*__
   
-__*__ There is data in the dataset that has a cholesterol in blood above 6.2, so I only used the two first categories.
+__*__ There is no data in the dataset that has a cholesterol in blood above 6.2, so I only used the two first categories.
 
 ## **Test a Multiple Regression Model**
 
