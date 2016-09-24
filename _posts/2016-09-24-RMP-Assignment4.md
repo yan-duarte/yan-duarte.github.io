@@ -30,28 +30,28 @@ The complete program for this assignment can be download [here](https://yan-duar
 
 Variable breastCancer100th:
 
-  -(0) The incidence of breast cancer is below the average of the incidence of all countries.
-  -(1) The incidence of breast cancer is above the average of the incidence of all countries.
+  - (0) The incidence of breast cancer is below the average of the incidence of all countries.
+  - (1) The incidence of breast cancer is above the average of the incidence of all countries.
     
 Variable meanSugarPerson:
   
-  -(0) Desirable 0 and 30 g.
-  -(1) Raised with 30 and 60 g.
-  -(2) Borderline high 60 and 90 g.
-  -(3) High between 90 and 120 g.
-  -(4) Very high under 120g.
+  - (0) Desirable 0 and 30 g.
+  - (1) Raised with 30 and 60 g.
+  - (2) Borderline high 60 and 90 g.
+  - (3) High between 90 and 120 g.
+  - (4) Very high under 120g.
 
   
 Variable meanFoodPerson:
   
-  -(0) The food consumption below the average of the food consumption of all countries.
-  -(1) The food consumption above the average of the food consumption of all countries.
+  - (0) The food consumption below the average of the food consumption of all countries.
+  - (1) The food consumption above the average of the food consumption of all countries.
   
 Variable meanCholesterol:
   
-  -(0) Desirable below 5.2 mmol/L
-  -(1) Borderline high between 5.2 and 6.2 mmol/L
-  -(2) High above 6.2 mmol/L ** * **
+  - (0) Desirable below 5.2 mmol/L
+  - (1) Borderline high between 5.2 and 6.2 mmol/L
+  - (2) High above 6.2 mmol/L ** * **
   
 ** * ** There is no data in the dataset that has a cholesterol in blood above 6.2, so I only used the two first categories.
 
