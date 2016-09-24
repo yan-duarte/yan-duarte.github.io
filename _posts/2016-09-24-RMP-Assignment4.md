@@ -124,18 +124,20 @@ def cholesterol_blood (row):
 sub1['cholesterol_blood'] = sub1.apply (lambda row: cholesterol_blood (row),axis=1)
 ```
 
-The explanatory variables are centered and the first OLS Regression Test was made with only the meanSugarPerson variable.
+The code to make the Logistic Regression model and the odds ratios
 
 ```python
-# center quantitative IVs for regression analysis
-sub1['meanSugarPerson_c'] = (sub1['meanSugarPerson'] - sub1['meanSugarPerson'].mean())
-sub1['meanFoodPerson_c']  = (sub1['meanFoodPerson'] - sub1['meanFoodPerson'].mean())
-sub1['meanCholesterol_c']   = (sub1['meanCholesterol'] - sub1['meanCholesterol'].mean())
-sub1[["meanSugarPerson_c", "meanFoodPerson_c", 'meanCholesterol_c']].describe()
+# Logistic Regression analysis
+lreg1 = smf.logit(formula = 'incidence_cancer ~ sugar_consumption + food_consumption + cholesterol_blood', data = sub1).fit()
+print (lreg1.summary())
 
-# linear regression analysis
-reg1 = smf.ols('breastCancer100th ~ meanSugarPerson_c', data=sub1).fit()
-print (reg1.summary())
+# odd ratios with 95% confidence intervals
+params = lreg1.params
+conf = lreg1.conf_int()
+conf['OR'] = params
+conf.columns = ['Lower CI', 'Upper CI', 'OR']
+print (numpy.exp(conf))
+
 ```
 
 ```
