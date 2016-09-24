@@ -22,6 +22,12 @@ To make the assignment of this week I have added two other explanatory variables
 
 Note that all off my variables are quantitative. Thus, I must management they transforming it to qualitative.
 
+All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
+
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment4.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+
+## **Index of the variables**
+
 Variable breastCancer100th:
 
   -(0) The incidence of breast cancer is below the average of the incidence of all countries.
@@ -43,12 +49,11 @@ Variable meanFoodPerson:
   
 Variable meanCholesterol:
   
-  -
-  -
-
-All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
-
-The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment4.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+  -(0) Desirable below 5.2 mmol/L
+  -(1) Borderline high between 5.2 and 6.2 mmol/L
+  -(2) High above 6.2 mmol/L __*__
+  
+__*__ There is data in the dataset that has a cholesterol in blood above 6.2, so I only used the two first categories.
 
 ## **Test a Multiple Regression Model**
 
