@@ -51,7 +51,7 @@ Variable meanCholesterol:
   
   - (0) Desirable below 5.2 mmol/L
   - (1) Borderline high between 5.2 and 6.2 mmol/L
-  - (2) High above 6.2 mmol/L ** * **
+  - (2) High above 6.2 mmol/L __ * __
   
 ** * ** There is no data in the dataset that has a cholesterol in blood above 6.2, so I only used the two first categories.
 
