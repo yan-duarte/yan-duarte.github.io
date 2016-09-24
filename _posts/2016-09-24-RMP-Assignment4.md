@@ -139,33 +139,33 @@ print (reg1.summary())
 ```
 
 ```
-                            OLS Regression Results                            
+                           Logit Regression Results                           
 ==============================================================================
-Dep. Variable:      breastCancer100th   R-squared:                       0.410
-Model:                            OLS   Adj. R-squared:                  0.406
-Method:                 Least Squares   F-statistic:                     88.34
-Date:                Mon, 12 Sep 2016   Prob (F-statistic):           2.99e-16
-Time:                        23:15:22   Log-Likelihood:                -560.18
-No. Observations:                 129   AIC:                             1124.
-Df Residuals:                     127   BIC:                             1130.
-Df Model:                           1                                         
-Covariance Type:            nonrobust                                         
-=====================================================================================
-                        coef    std err          t      P>|t|      [95.0% Conf. Int.]
--------------------------------------------------------------------------------------
-Intercept            37.9876      1.651     23.007      0.000        34.720    41.255
-meanSugarPerson_c     0.3667      0.039      9.399      0.000         0.289     0.444
+Dep. Variable:       incidence_cancer   No. Observations:                  129
+Model:                          Logit   Df Residuals:                      125
+Method:                           MLE   Df Model:                            3
+Date:                Sat, 24 Sep 2016   Pseudo R-squ.:                  0.5627
+Time:                        20:26:10   Log-Likelihood:                -35.268
+converged:                       True   LL-Null:                       -80.654
+                                        LLR p-value:                 1.496e-19
 ==============================================================================
-Omnibus:                        3.414   Durbin-Watson:                   1.778
-Prob(Omnibus):                  0.181   Jarque-Bera (JB):                3.052
-Skew:                           0.291   Prob(JB):                        0.217
-Kurtosis:                       2.522   Cond. No.                         42.3
+                        coef  std err        z    P>|z|    [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept            -4.9331    1.049   -4.705    0.000      -6.988    -2.878
+sugar_consumption     0.5915    0.317    1.864    0.062      -0.031     1.214
+food_consumption      3.0577    0.827    3.696    0.000       1.436     4.679
+cholesterol_blood     2.1235    0.650    3.267    0.001       0.849     3.398
 ==============================================================================
 
-Warnings:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+                   Lower CI  Upper CI    OR
+Intercept              0.00      0.06  0.01
+sugar_consumption      0.97      3.37  1.81
+food_consumption       4.20    107.69 21.28
+cholesterol_blood      2.34     29.90  8.36
 
 ```
+
+
 
 The results for this test is the same as the [assignment 2](https://yan-duarte.github.io/2016/RMP-Assignment2/)
 
