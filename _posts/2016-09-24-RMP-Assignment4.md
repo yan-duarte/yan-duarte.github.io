@@ -26,7 +26,7 @@ All of the images posted in the blog can be better view by clicking the right bu
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/rmp-assignment4.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
-## **Index of the variables**
+## **Variables Indexes**
 
 Variable breastCancer100th:
 
