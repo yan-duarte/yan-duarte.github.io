@@ -20,7 +20,7 @@ To make the assignment of this week I have added two other explanatory variables
   - Mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 (the number of days in the year) between the years 1961 and 2002 (meanFoodPerson).
   - The average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world population) between the years 1980 and 2002 (meanCholesterol).
 
-Note that all off my variables are quantitative. Thus, I must management they transforming it to qualitative.
+Note that all off my variables are quantitative. Thus, I management they transforming it to qualitative.
 
 All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
 
@@ -40,7 +40,6 @@ Variable meanSugarPerson:
   - (2) Borderline high 60 and 90 g.
   - (3) High between 90 and 120 g.
   - (4) Very high under 120g.
-
   
 Variable meanFoodPerson:
   
@@ -55,7 +54,7 @@ Variable meanCholesterol:
   
 __*__ There is no data in the dataset that has a cholesterol in blood above 6.2, so I only used the two first categories.
 
-## **Test a Multiple Regression Model**
+## **Test a Logistic Regression Model**
 
 The first thing to do is to import the libraries and prepare the data to be used.
 
