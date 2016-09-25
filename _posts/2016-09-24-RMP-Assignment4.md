@@ -172,7 +172,9 @@ After adding the variables food_consumption and cholesterol_blood, the variable 
 The odds of the greatest incidence of new breast cancer cases were higher for countries with a big food consumption (OR=21.28, 95% CI = 1.436-4.679, p>.0001). 
 We can say that countries that have a bigger food consumption are 21.28 times more likely to have a great incidence of breast cancer.
 
-For the cholesterol in blood, the results were OR=8.36, 95% CI = 0.849-3.398, p=.0001. 
-So, counties that have a borderline high cholesterol in blood are 8.36 times more likely to have a big incidance of breast cancer than countries that the population have a desirable amount of cholesterol in blood.
+For the cholesterol in the blood, the results were OR=8.36, 95% CI = 0.849-3.398, p=.0001. 
+So, counties that have a borderline high cholesterol in the blood are 8.36 times more likely to have a big incidence of breast cancer than countries that the population has a desirable amount of cholesterol in the blood.
+
+The hypothesis that the sugar consumption would increase the incidence of cancer become unacceptable because the sugar consumption becomes a confounding variable for this model. Therefore, we saw that either the food consumption and the cholesterol in the blood are significant variables for the work.
 
 
