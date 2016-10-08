@@ -154,6 +154,16 @@ The confusion matrix of the test was:
 ```
   
 We can see that the accuracy is 88.46% and we have 1.92% of true negative and 9.62% of false positive.
+
+Sensitivity
+= TP / (TP + FN)
+= 39 / (39 + 5)
+≈ 88.63%
+
+Specificity
+= TN / (FP + TN)
+= 7 / (1 + 7)
+= 87.50%
  
 The total number of samples for train the decision tree was 77.
 A total of 48 (62.34%) countries in the samples have the incidence of new breast cancer cases below the mean, while 29 (37.66%) are above.
