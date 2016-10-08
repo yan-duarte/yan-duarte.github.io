@@ -124,8 +124,10 @@ classifier=classifier.fit(pred_train,tar_train)
 
 predictions=classifier.predict(pred_test)
 
-sklearn.metrics.confusion_matrix(tar_test, predictions)
-sklearn.metrics.accuracy_score(tar_test, predictions)
+cmatrix = sklearn.metrics.confusion_matrix(tar_test, predictions)
+accuracy = sklearn.metrics.accuracy_score(tar_test, predictions)
+print(cmatrix)
+print(accuracy)
 
 #Displaying the decision tree
 out = StringIO()
@@ -136,10 +138,35 @@ Image(graph.create_png())
 
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass1-fig1.png)
 
-Decision tree analysis was performed to test nonlinear relationships among a series of explanatory variables and a binary, categorical response variable. All possible separations (categorical) or cut points (quantitative) are tested. For the present analyses, the entropy “goodness of split” criterion was used to grow the tree and a cost complexity algorithm was used for pruning the full tree into a final subtree.
+Decision tree analysis was performed to test nonlinear relationships among a series of explanatory variables and a binary, categorical response variable.
 
-The following explanatory variables were included as possible contributors to a classification tree model evaluating smoking experimentation (my response variable), age, gender, (race/ethnicity) Hispanic, White, Black, Native American and Asian. Alcohol use, marijuana use, cocaine use, inhalant use, availability of cigarettes in the home, whether or not either parent was on public assistance, any experience with being expelled from school. alcohol problems, deviance, violence, depression, self-esteem, parental presence, parental activities, family connectedness, school connectedness and grade point average.
+As mentioned above, the explanatory variables included as possible contributors to a classification tree model evaluating breast cancer new cases were:
+  
+  - The mean of food consumption (grams per day) between the years 1961 and 2002.
+  - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
-The deviance score was the first variable to separate the sample into two subgroups. Adolescents with a deviance score greater than 0.112 (range 0 to 2.8 –M=0.13, SD=0.209) were more likely to have experimented with smoking compared to adolescents not meeting this cutoff (18.6% vs. 11.2%).
+Confusion matrix
+[[39  1]
+ [ 5  7]]
+ 
+Accuracy 
+0.884615384615
 
-Of the adolescents with deviance scores less than or equal to 0.112, a further subdivision was made with the dichotomous variable of alcohol use without supervision. Adolescents who reported having used alcohol without supervision were more likely to have experimented with smoking. Adolescents with a deviance score less than or equal to 0.112 who had never drank alcohol were less likely to have experimented with smoking. The total model classified 63% of the sample correctly, 52% of experimenters (sensitivity) and 65% of nonsmokers (specificity).
+
+The total number of samples to make the decision tree is 77.
+A total of 51 (66.23%) countries in the samples have the incidence of new breast cancer cases below the mean, while 26 (33.77%) are above.
+
+We have four leafs in the decision tree that can be interpreted in a folowed way:
+
+  - For food consumption below the mean and cholesterol in blood below 5.2 represents 53.24% (41 samples)
+
+  - For food consumption below the mean and cholesterol in blood above 5.2 represents 02.60% (2 samples)
+
+  - For food consumption above the mean and cholesterol in blood below 5.2 represents 19.48% (15 samples)
+
+  - For food consumption above the mean and cholesterol in blood above 5.2 represents 24.68% (19 samples)
+
+
+
+
+ The total model classified 63% of the sample correctly, 52% of experimenters (sensitivity) and 65% of nonsmokers (specificity).
