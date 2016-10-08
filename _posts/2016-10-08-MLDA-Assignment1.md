@@ -22,7 +22,7 @@ All of the images posted in the blog can be better view by clicking the right bu
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment1.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
-You also can run the code using jupyter notebook by clicking [here](https://yan-duarte.github.io/archives/mlda-ass1.ipynb)
+You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass1.ipynb)
 
 ## **Contents of variables**
 
@@ -133,7 +133,7 @@ graph = pydotplus.graph_from_dot_data(out.getvalue())
 Image(graph.create_png())
 ```
 
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass1-fig1.png)
+![Figure 1]({{site.baseurl}}/https://yan-duarte.github.io/images/mlda-assignments/mlda-ass1-fig1.png)
 
 Decision tree analysis was performed to test nonlinear relationships among a series of explanatory variables and a binary, categorical response variable. All possible separations (categorical) or cut points (quantitative) are tested. For the present analyses, the entropy “goodness of split” criterion was used to grow the tree and a cost complexity algorithm was used for pruning the full tree into a final subtree.
 
