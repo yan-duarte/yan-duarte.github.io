@@ -164,14 +164,14 @@ We have four leafs in the decision tree that can be interpreted in a followed wa
     - 94.87% (37 samples) have the incidence of breast cancer below the mean.
     - 05.13% (2 samples) have the incidence of breast cancer above the mean.
 
-  - For food consumption below the mean and cholesterol in blood above 5.2 mmol/L represents 02.60% (2 samples) which:
+  - The food consumption below the mean and cholesterol in blood above 5.2 mmol/L represents 02.60% (2 samples) which:
     - 100% (2 samples) have the incidence of breast cancer below the mean.
     
-  - For food consumption above the mean and cholesterol in blood below 5.2 mmol/L represents 15.58% (12 samples) which:
+  - The food consumption above the mean and cholesterol in blood below 5.2 mmol/L represents 15.58% (12 samples) which:
     - 58.33% (7 samples) have the incidence of breast cancer below the mean.
     - 41.66% (5 samples) have the incidence of breast cancer above the mean.
 
-  - For food consumption above the mean and cholesterol in blood above 5.2 mmol/L represents 31.17% (24 samples) which:
+  - The food consumption above the mean and cholesterol in blood above 5.2 mmol/L represents 31.17% (24 samples) which:
     - 08.33% (2 samples) have the incidence of breast cancer below the mean.
     - 91.66% (22 samples) have the incidence of breast cancer above the mean.
 
