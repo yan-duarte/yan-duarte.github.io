@@ -7,6 +7,7 @@ tags:
   - Machine Learning for Data Analysis
 published: true
 ---
+
 This is the first assignment for the machine learning for data analysis course, fourth from a series of five courses from Data Analysis and Interpretation ministered from Wesleyan University.
 The previous content you can see [here](https://yan-duarte.github.io/tags/).
 
