@@ -147,8 +147,11 @@ As mentioned above, the explanatory variables included as possible contributors 
 
 There was 77 samples for train and 52 for test.
 The confusion matrix of test was:
- [[39  1]
-  [ 5  7]]
+ 
+``` 
+  [[39  1]
+   [ 5  7]]
+```
   
 We can see that there was an accuracy of 88.46%, 1.92% of true negative and 9.62% of false positive.
  
