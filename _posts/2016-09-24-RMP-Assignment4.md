@@ -107,8 +107,8 @@ sub1['sugar_consumption'] = sub1.apply (lambda row: sugar_consumption (row),axis
 meanFood = statistics.mean(sub1['meanFoodPerson'])
 
 def food_consumption (row):
-    if row['meanFoodPerson'] <= meanIncidence : return 0   # food consumption below the average of the food consumption of all countries.
-    if row['meanFoodPerson'] > meanIncidence  : return 1   # food consumption above the average of the food consumption of all countries.
+    if row['meanFoodPerson'] <= meanFood : return 0   # food consumption below the average of the food consumption of all countries.
+    if row['meanFoodPerson'] > meanFood  : return 1   # food consumption above the average of the food consumption of all countries.
 
 # Add the new variable food_consumption to subData
 sub1['food_consumption'] = sub1.apply (lambda row: food_consumption (row),axis=1)
@@ -176,5 +176,3 @@ For the cholesterol in the blood, the results were OR=8.36, 95% CI = 0.849-3.398
 So, counties that have a borderline high cholesterol in the blood are 8.36 times more likely to have a big incidence of breast cancer than countries that the population has a desirable amount of cholesterol in the blood.
 
 The hypothesis that the sugar consumption would increase the incidence of cancer become unacceptable because the sugar consumption becomes a confounding variable for this model. Therefore, we saw that either the food consumption and the cholesterol in the blood are significant variables for the work.
-
-
