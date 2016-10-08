@@ -21,7 +21,7 @@ Note that all off my variables are quantitative. Thus, I management they transfo
 
 All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
 
-The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment1.py){:target="_blank"} and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv){:target="_blank"}.
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment1.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
 You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass1.ipynb){:target="_blank"}.
 
