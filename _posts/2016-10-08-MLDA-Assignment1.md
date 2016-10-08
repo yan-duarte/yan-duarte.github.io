@@ -145,28 +145,29 @@ As mentioned above, the explanatory variables included as possible contributors 
   - The mean of food consumption (grams per day) between the years 1961 and 2002.
   - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
-Confusion matrix
-[[39  1]
- [ 5  7]]
+There was 77 samples for train and 52 for test.
+The confusion matrix of test was:
+ [[39  1]
+  [ 5  7]]
+  
+We can see that there was an accuracy of 88.46%, 1.92% of true negative and 9.62% of false positive.
  
-Accuracy 
-0.884615384615
-
-
-The total number of samples to make the decision tree is 77.
-A total of 51 (66.23%) countries in the samples have the incidence of new breast cancer cases below the mean, while 26 (33.77%) are above.
+The total number of samples to train the decision tree was 77.
+A total of 48 (62.34%) countries in the samples have the incidence of new breast cancer cases below the mean, while 29 (37.66%) are above.
 
 We have four leafs in the decision tree that can be interpreted in a folowed way:
 
-  - For food consumption below the mean and cholesterol in blood below 5.2 represents 53.24% (41 samples)
+  - The food consumption below the mean and cholesterol in blood below 5.2 mmol/L represents 50.65% (39 samples) where:
+    - 94.87% (37 samples) have the incidence of breast cancer below the mean.
+    - 05.13% (2 samples) have the incidence of breast cancer above the mean.
 
-  - For food consumption below the mean and cholesterol in blood above 5.2 represents 02.60% (2 samples)
+  - For food consumption below the mean and cholesterol in blood above 5.2 mmol/L represents 02.60% (2 samples) where:
+    - 100% (2 samples) have the incidence of breast cancer below the mean.
+    
+  - For food consumption above the mean and cholesterol in blood below 5.2 mmol/L represents 15.58% (12 samples) where:
+    - 58.33% (7 samples) have the incidence of breast cancer below the mean.
+    - 41.66% (5 samples) have the incidence of breast cancer above the mean.
 
-  - For food consumption above the mean and cholesterol in blood below 5.2 represents 19.48% (15 samples)
-
-  - For food consumption above the mean and cholesterol in blood above 5.2 represents 24.68% (19 samples)
-
-
-
-
- The total model classified 63% of the sample correctly, 52% of experimenters (sensitivity) and 65% of nonsmokers (specificity).
+  - For food consumption above the mean and cholesterol in blood above 5.2 mmol/L represents 31.17% (24 samples) where:
+    - 08.33% (2 samples) have the incidence of breast cancer below the mean.
+    - 91.66% (22 samples) have the incidence of breast cancer above the mean.
