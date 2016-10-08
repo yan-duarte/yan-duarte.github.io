@@ -1,6 +1,6 @@
 ---
 title: 'Assignment 1: Running a Classification Tree'
-date: '2016-08-10 00:00:00 -0300'
+date: '2016-10-08 00:00:00 -0300'
 categories:
   - Machine Learning for Data Analysis
 tags:
