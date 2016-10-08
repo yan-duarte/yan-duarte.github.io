@@ -184,5 +184,7 @@ We have four leafs in the decision tree that can be interpreted in a followed wa
   - The food consumption above the mean and cholesterol in blood above 5.2 mmol/L represents 31.17% (24 samples) which:
     - 08.33% (2 samples) have the incidence of breast cancer below the mean.
     - 91.66% (22 samples) have the incidence of breast cancer above the mean.
+    
+We can conclude that if the country has the food consumption below the mean and the cholesterol in the blood under 5.2mmol/L it would have the incidence of breast cancer below the mean.
 
-
+Now, if the country has the food consumption above the mean and the cholesterol in blood over 5.2mmol/L, then it would have the incidence of breast cancer above the mean.
