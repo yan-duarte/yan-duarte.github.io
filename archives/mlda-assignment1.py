@@ -69,8 +69,10 @@ classifier=classifier.fit(pred_train,tar_train)
 
 predictions=classifier.predict(pred_test)
 
-sklearn.metrics.confusion_matrix(tar_test, predictions)
-sklearn.metrics.accuracy_score(tar_test, predictions)
+cmatrix = sklearn.metrics.confusion_matrix(tar_test, predictions)
+accuracy = sklearn.metrics.accuracy_score(tar_test, predictions)
+print(cmatrix)
+print(accuracy)
 
 #Displaying the decision tree
 out = StringIO()
