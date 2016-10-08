@@ -23,7 +23,7 @@ All of the images posted in the blog can be better view by clicking the right bu
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment1.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
-You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass1.ipynb)
+You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass1.ipynb){:target="_blank"}.
 
 ## **Contents of variables**
 
