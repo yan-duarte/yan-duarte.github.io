@@ -22,7 +22,7 @@ All of the images posted in the blog can be better view by clicking the right bu
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment1.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
-You also can run the code using jupyter notebook by clicking [here](https://yan-duarte.github.io/archives/mlda-assignment1.py)
+You also can run the code using jupyter notebook by clicking [here](https://yan-duarte.github.io/archives/mlda-ass1.ipynb)
 
 ## **Contents of variables**
 
@@ -107,52 +107,38 @@ sub1['cholesterol_blood'] = sub1.apply (lambda row: cholesterol_blood (row),axis
 The code to make the Logistic Regression model and the odds ratios
 
 ```python
-# Logistic Regression analysis
-lreg1 = smf.logit(formula = 'incidence_cancer ~ sugar_consumption + food_consumption + cholesterol_blood', data = sub1).fit()
-print (lreg1.summary())
+"""
+Modeling and Prediction
+"""
+#Split into training and testing sets
+predictors = sub1[['food_consumption', 'cholesterol_blood']]
+targets = sub1['incidence_cancer']
 
-# odd ratios with 95% confidence intervals
-params = lreg1.params
-conf = lreg1.conf_int()
-conf['OR'] = params
-conf.columns = ['Lower CI', 'Upper CI', 'OR']
-print (numpy.exp(conf))
+#Train = 60%, Test = 40%
+pred_train, pred_test, tar_train, tar_test = train_test_split(predictors, targets, test_size=.4)
 
+#Build model on training data
+classifier=DecisionTreeClassifier()
+classifier=classifier.fit(pred_train,tar_train)
+
+predictions=classifier.predict(pred_test)
+
+sklearn.metrics.confusion_matrix(tar_test, predictions)
+sklearn.metrics.accuracy_score(tar_test, predictions)
+
+#Displaying the decision tree
+out = StringIO()
+tree.export_graphviz(classifier, out_file=out)
+graph = pydotplus.graph_from_dot_data(out.getvalue())
+Image(graph.create_png())
 ```
 
-```
-                           Logit Regression Results                           
-==============================================================================
-Dep. Variable:       incidence_cancer   No. Observations:                  129
-Model:                          Logit   Df Residuals:                      125
-Method:                           MLE   Df Model:                            3
-Date:                Sat, 24 Sep 2016   Pseudo R-squ.:                  0.5627
-Time:                        20:26:10   Log-Likelihood:                -35.268
-converged:                       True   LL-Null:                       -80.654
-                                        LLR p-value:                 1.496e-19
-==============================================================================
-                        coef  std err        z    P>|z|    [95.0% Conf. Int.]
-------------------------------------------------------------------------------
-Intercept            -4.9331    1.049   -4.705    0.000      -6.988    -2.878
-sugar_consumption     0.5915    0.317    1.864    0.062      -0.031     1.214
-food_consumption      3.0577    0.827    3.696    0.000       1.436     4.679
-cholesterol_blood     2.1235    0.650    3.267    0.001       0.849     3.398
-==============================================================================
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass1-fig1.png)
 
-                   Lower CI  Upper CI    OR
-Intercept              0.00      0.06  0.01
-sugar_consumption      0.97      3.37  1.81
-food_consumption       4.20    107.69 21.28
-cholesterol_blood      2.34     29.90  8.36
+Decision tree analysis was performed to test nonlinear relationships among a series of explanatory variables and a binary, categorical response variable. All possible separations (categorical) or cut points (quantitative) are tested. For the present analyses, the entropy “goodness of split” criterion was used to grow the tree and a cost complexity algorithm was used for pruning the full tree into a final subtree.
 
-```
+The following explanatory variables were included as possible contributors to a classification tree model evaluating smoking experimentation (my response variable), age, gender, (race/ethnicity) Hispanic, White, Black, Native American and Asian. Alcohol use, marijuana use, cocaine use, inhalant use, availability of cigarettes in the home, whether or not either parent was on public assistance, any experience with being expelled from school. alcohol problems, deviance, violence, depression, self-esteem, parental presence, parental activities, family connectedness, school connectedness and grade point average.
 
-After adding the variables food_consumption and cholesterol_blood, the variable sugar_consumption becomes a confounding variable beeing not significant for the comparison.
+The deviance score was the first variable to separate the sample into two subgroups. Adolescents with a deviance score greater than 0.112 (range 0 to 2.8 –M=0.13, SD=0.209) were more likely to have experimented with smoking compared to adolescents not meeting this cutoff (18.6% vs. 11.2%).
 
-The odds of the greatest incidence of new breast cancer cases were higher for countries with a big food consumption (OR=21.28, 95% CI = 1.436-4.679, p>.0001). 
-We can say that countries that have a bigger food consumption are 21.28 times more likely to have a great incidence of breast cancer.
-
-For the cholesterol in the blood, the results were OR=8.36, 95% CI = 0.849-3.398, p=.0001. 
-So, counties that have a borderline high cholesterol in the blood are 8.36 times more likely to have a big incidence of breast cancer than countries that the population has a desirable amount of cholesterol in the blood.
-
-The hypothesis that the sugar consumption would increase the incidence of cancer become unacceptable because the sugar consumption becomes a confounding variable for this model. Therefore, we saw that either the food consumption and the cholesterol in the blood are significant variables for the work.
+Of the adolescents with deviance scores less than or equal to 0.112, a further subdivision was made with the dichotomous variable of alcohol use without supervision. Adolescents who reported having used alcohol without supervision were more likely to have experimented with smoking. Adolescents with a deviance score less than or equal to 0.112 who had never drank alcohol were less likely to have experimented with smoking. The total model classified 63% of the sample correctly, 52% of experimenters (sensitivity) and 65% of nonsmokers (specificity).
