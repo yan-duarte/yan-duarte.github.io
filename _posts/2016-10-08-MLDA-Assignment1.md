@@ -134,9 +134,7 @@ graph = pydotplus.graph_from_dot_data(out.getvalue())
 Image(graph.create_png())
 ```
 
-![Figura 1]({{site.baseurl}}/https://yan-duarte.github.io/images/mlda-assignments/mlda-ass1-fig1.png)
-
-![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass1-fig1.png)
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass1-fig1.png)
 
 Decision tree analysis was performed to test nonlinear relationships among a series of explanatory variables and a binary, categorical response variable. All possible separations (categorical) or cut points (quantitative) are tested. For the present analyses, the entropy “goodness of split” criterion was used to grow the tree and a cost complexity algorithm was used for pruning the full tree into a final subtree.
 
