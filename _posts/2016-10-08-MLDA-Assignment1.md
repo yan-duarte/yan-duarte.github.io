@@ -64,7 +64,7 @@ import pydotplus
 pandas.set_option('display.float_format', lambda x:'%.2f'%x)
 
 #load the data
-data = pandas.read_csv('..\separatedData.csv')
+data = pandas.read_csv('separatedData.csv')
 
 # convert to numeric format
 data["breastCancer100th"] = pandas.to_numeric(data["breastCancer100th"], errors='coerce')
