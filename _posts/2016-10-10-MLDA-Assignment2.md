@@ -155,12 +155,12 @@ print(statistics.mean(accuracy))
 0.86923076923076925
 ```
 
-Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. As mentioned above, the explanatory variables included as possible contributors to random forest evaluatingbreast cancer new cases were:
+Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. As mentioned above, the explanatory variables included as possible contributors to random forest evaluating breast cancer new cases were:
 
   - The mean of sugar consumption quantity (grams per person and day) between the years 1961 and 2002.
   - The mean of food consumption (grams per day) between the years 1961 and 2002.
   - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
-The explanatory variables with the highest relative importance scores were the average of the Total Cholesterol mean in blood (39.96%). The accuracy of the random forest was 90.38%. The subsequent growing of multiple trees rather than a single tree does not added much to the overall accuracy of the model. This suggest that the interpretation of a single decision tree may be appropriate.
+The explanatory variables with the highest relative importance scores were the average of the Total Cholesterol mean in the blood (39.96%). The accuracy of the random forest was 90.38%. The subsequent growing of multiple trees rather than a single tree does not benefit to the overall accuracy of the model. This suggests that the interpretation of a single decision tree may be appropriate.
 
 
