@@ -94,8 +94,11 @@ classifier=classifier.fit(pred_train,tar_train)
 
 predictions=classifier.predict(pred_test)
 
-sklearn.metrics.confusion_matrix(tar_test,predictions)
-sklearn.metrics.accuracy_score(tar_test, predictions)
+confusion_matrix = sklearn.metrics.confusion_matrix(tar_test,predictions)
+accuracy_score = sklearn.metrics.accuracy_score(tar_test, predictions)
+
+print (confusion_matrix)
+print (accuracy_score)
 
 # fit an Extra Trees model to the data
 model = ExtraTreesClassifier()
@@ -105,17 +108,51 @@ print(model.feature_importances_)
 ```
 
 ```
-[ 0.28289515  0.36676817  0.35033668]
+#Confusion_matrix:
+[[31  3]
+ [ 2 16]]
+ 
+#accuracy_score
+0.903846153846
+
+#relative importance of each attribute
+[ 0.21311057  0.38723056  0.39965887]
+```
+
+```python
+"""
+Running a different number of trees and see the effect
+ of that on the accuracy of the prediction
+"""
+
+trees=range(25)
+accuracy=np.zeros(25)
+
+for idx in range(len(trees)):
+    classifier=RandomForestClassifier(n_estimators=idx + 1)
+    classifier=classifier.fit(pred_train,tar_train)
+    predictions=classifier.predict(pred_test)
+    accuracy[idx]=sklearn.metrics.accuracy_score(tar_test, predictions)
+    
+plt.cla()
+plt.plot(trees, accuracy)
+
+print(accuracy)
+print(statistics.mean(accuracy))
 ```
 
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass2-fig1.png)
 
 ```
-[ 0.78846154  0.82692308  0.90384615  0.94230769  0.92307692  0.90384615
-  0.92307692  0.80769231  0.88461538  0.88461538  0.90384615  0.88461538
-  0.94230769  0.94230769  0.94230769  0.90384615  0.92307692  0.92307692
-  0.92307692  0.90384615  0.92307692  0.94230769  0.92307692  0.94230769
-  0.92307692]
+#Accuracy from 25 trees
+[ 0.84615385  0.80769231  0.80769231  0.86538462  0.88461538  0.84615385
+  0.90384615  0.88461538  0.88461538  0.90384615  0.88461538  0.86538462
+  0.86538462  0.88461538  0.88461538  0.88461538  0.88461538  0.88461538
+  0.86538462  0.84615385  0.86538462  0.84615385  0.88461538  0.88461538
+  0.86538462]
+  
+#Mean of the accuracy from 25 trees
+0.86923076923076925
 ```
 
 Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. As mentioned above, the explanatory variables included as possible contributors to random forest evaluatingbreast cancer new cases were:
@@ -124,6 +161,6 @@ Random forest analysis was performed to evaluate the importance of a series of e
   - The mean of food consumption (grams per day) between the years 1961 and 2002.
   - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
-The explanatory variables with the highest relative importance scores were food consumption (36.68%). The accuracy of the random forest was 78%, with the subsequent growing of multiple trees rather than a single tree, adding little to the overall accuracy of the model, and suggesting that interpretation of a single decision tree may be appropriate.
+The explanatory variables with the highest relative importance scores were the average of the Total Cholesterol mean in blood (39.96%). The accuracy of the random forest was 90.38%. The subsequent growing of multiple trees rather than a single tree does not added much to the overall accuracy of the model. This suggest that the interpretation of a single decision tree may be appropriate.
 
 
