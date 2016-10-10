@@ -105,7 +105,7 @@ def cholesterol_blood (row):
 sub1['cholesterol_blood'] = sub1.apply (lambda row: cholesterol_blood (row),axis=1)
 ```
 
-The code to make the Logistic Regression model and the odds ratios
+The code to make the Classification Tree is
 
 ```python
 """
