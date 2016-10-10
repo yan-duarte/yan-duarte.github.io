@@ -104,6 +104,10 @@ model.fit(pred_train,tar_train)
 print(model.feature_importances_)
 ```
 
+```
+[ 0.28289515  0.36676817  0.35033668]
+```
+
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass2-fig1.png)
 
 Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. As mentioned above, the explanatory variables included as possible contributors to random forest evaluatingbreast cancer new cases were:
@@ -112,6 +116,6 @@ Random forest analysis was performed to evaluate the importance of a series of e
   - The mean of food consumption (grams per day) between the years 1961 and 2002.
   - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
-The explanatory variables with the highest relative importance scores were marijuana use, White ethnicity, deviance and grade point average. The accuracy of the random forest was 78%, with the subsequent growing of multiple trees rather than a single tree, adding little to the overall accuracy of the model, and suggesting that interpretation of a single decision tree may be appropriate.
+The explanatory variables with the highest relative importance scores were food consumption (36.68%). The accuracy of the random forest was 78%, with the subsequent growing of multiple trees rather than a single tree, adding little to the overall accuracy of the model, and suggesting that interpretation of a single decision tree may be appropriate.
 
 
