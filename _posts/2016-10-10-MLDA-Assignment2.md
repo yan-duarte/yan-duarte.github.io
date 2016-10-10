@@ -54,7 +54,7 @@ from sklearn.ensemble import ExtraTreesClassifier
 pandas.set_option('display.float_format', lambda x:'%.2f'%x)
 
 #load the data
-data = pandas.read_csv('..\separatedData.csv')
+data = pandas.read_csv('separatedData.csv')
 
 # convert to numeric format
 data["breastCancer100th"] = pandas.to_numeric(data["breastCancer100th"], errors='coerce')
@@ -109,6 +109,14 @@ print(model.feature_importances_)
 ```
 
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass2-fig1.png)
+
+```
+[ 0.78846154  0.82692308  0.90384615  0.94230769  0.92307692  0.90384615
+  0.92307692  0.80769231  0.88461538  0.88461538  0.90384615  0.88461538
+  0.94230769  0.94230769  0.94230769  0.90384615  0.92307692  0.92307692
+  0.92307692  0.90384615  0.92307692  0.94230769  0.92307692  0.94230769
+  0.92307692]
+```
 
 Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. As mentioned above, the explanatory variables included as possible contributors to random forest evaluatingbreast cancer new cases were:
 
