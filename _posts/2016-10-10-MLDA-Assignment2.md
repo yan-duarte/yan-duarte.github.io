@@ -34,13 +34,11 @@ Variable incidence_cancer:
   - (1) The incidence of breast cancer is above the average of the incidence of all countries.
    
 
-## **Running a Classification Tree**
+## **Running a Random Forest**
 
 The first thing to do is to import the libraries and prepare the data to be used.
 
 ```python
-%matplotlib inline
-
 import pandas
 import sklearn.metrics
 import statistics
@@ -162,5 +160,3 @@ Random forest analysis was performed to evaluate the importance of a series of e
   - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
 The explanatory variables with the highest relative importance scores were the average of the Total Cholesterol mean in the blood (39.96%). The accuracy of the random forest was 90.38%. The subsequent growing of multiple trees rather than a single tree does not benefit to the overall accuracy of the model. This suggests that the interpretation of a single decision tree may be appropriate.
-
-
