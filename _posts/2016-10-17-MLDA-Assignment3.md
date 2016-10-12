@@ -1,5 +1,5 @@
 ---
-title: 'Assignment 2: Running a Lasso Regression Analysis'
+title: 'Assignment 3: Running a Lasso Regression Analysis'
 date: '2016-10-17 14:00:00 -0300'
 categories:
   - Machine Learning for Data Analysis
@@ -22,9 +22,9 @@ Note that my response variable is quantitative. Thus, I management it transformi
 
 All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
 
-The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment2.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
-You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass2.ipynb){:target="_blank"}.
+You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass3.ipynb){:target="_blank"}.
 
 ## **Contents of variables**
 
@@ -34,27 +34,24 @@ Variable incidence_cancer:
   - (1) The incidence of breast cancer is above the average of the incidence of all countries.
    
 
-## **Running a Classification Tree**
+## **Running a Lasso Regression Analysis**
 
 The first thing to do is to import the libraries and prepare the data to be used.
 
 ```python
-%matplotlib inline
-
 import pandas
-import sklearn.metrics
 import statistics
 import numpy as np
 import matplotlib.pylab as plt
 from sklearn.cross_validation import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.linear_model import LassoLarsCV
+from sklearn import preprocessing
 
 # bug fix for display formats to avoid run time errors
 pandas.set_option('display.float_format', lambda x:'%.2f'%x)
 
 #load the data
-data = pandas.read_csv('separatedData.csv')
+data = pandas.read_csv('..\separatedData.csv')
 
 # convert to numeric format
 data["breastCancer100th"] = pandas.to_numeric(data["breastCancer100th"], errors='coerce')
@@ -69,18 +66,32 @@ sub1 = data[['breastCancer100th', 'meanFoodPerson', 'meanCholesterol', 'meanSuga
 meanIncidence = statistics.mean(sub1['breastCancer100th'])
 
 def incidence_cancer (row):
-    if row['breastCancer100th'] <= meanIncidence : return 0   # Incidence of breast cancer is below the 
+    if row['breastCancer100th'] <= meanIncidence : return 0   # Incidence of breast cancer is below the
                                                               # average of the incidence of all countries.
-    if row['breastCancer100th'] > meanIncidence  : return 1   # Incidence of breast cancer is above the average 
+    if row['breastCancer100th'] > meanIncidence  : return 1   # Incidence of breast cancer is above the average
                                                               # of the incidence of all countries.
 
 # Add the new variable sugar_consumption to subData
 sub1['incidence_cancer'] = sub1.apply (lambda row: incidence_cancer (row),axis=1)
+
+#Split into training and testing sets
+predvar = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
+targets = sub1['incidence_cancer']
 ```
 
-The code to make the Random Forest classification
+To run the Lasso Regression Analysis we must standardize the predictors to have mean = 0 and standard deviation = 1.
 
 ```python
+# standardize predictors to have mean=0 and sd=1
+predictors = predvar.copy()
+predictors['meanSugarPerson']=preprocessing.scale(predictors['meanSugarPerson'].astype('float64'))
+predictors['meanFoodPerson']=preprocessing.scale(predictors['meanFoodPerson'].astype('float64'))
+predictors['meanCholesterol']=preprocessing.scale(predictors['meanCholesterol'].astype('float64'))
+
+# split data into train and test sets - Train = 70%, Test = 30%
+pred_train, pred_test, tar_train, tar_test = train_test_split(predictors, targets,
+                                                              test_size=.3, random_state=123)
+
 #Split into training and testing sets
 predictors = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
 targets = sub1['incidence_cancer']
@@ -162,5 +173,3 @@ Random forest analysis was performed to evaluate the importance of a series of e
   - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
 The explanatory variables with the highest relative importance scores were the average of the Total Cholesterol mean in the blood (39.96%). The accuracy of the random forest was 90.38%. The subsequent growing of multiple trees rather than a single tree does not benefit to the overall accuracy of the model. This suggests that the interpretation of a single decision tree may be appropriate.
-
-
