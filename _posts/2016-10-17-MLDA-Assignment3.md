@@ -51,7 +51,7 @@ from sklearn import preprocessing
 pandas.set_option('display.float_format', lambda x:'%.2f'%x)
 
 #load the data
-data = pandas.read_csv('..\separatedData.csv')
+data = pandas.read_csv('separatedData.csv')
 
 # convert to numeric format
 data["breastCancer100th"] = pandas.to_numeric(data["breastCancer100th"], errors='coerce')
@@ -91,80 +91,90 @@ predictors['meanCholesterol']=preprocessing.scale(predictors['meanCholesterol'].
 # split data into train and test sets - Train = 70%, Test = 30%
 pred_train, pred_test, tar_train, tar_test = train_test_split(predictors, targets,
                                                               test_size=.3, random_state=123)
-
-#Split into training and testing sets
-predictors = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
-targets = sub1['incidence_cancer']
-
-#Train = 60%, Test = 40%
-pred_train, pred_test, tar_train, tar_test = train_test_split(predictors, targets, test_size=.4)
-
-#Build model on training data
-classifier=RandomForestClassifier(n_estimators=25)
-classifier=classifier.fit(pred_train,tar_train)
-
-predictions=classifier.predict(pred_test)
-
-confusion_matrix = sklearn.metrics.confusion_matrix(tar_test,predictions)
-accuracy_score = sklearn.metrics.accuracy_score(tar_test, predictions)
-
-print (confusion_matrix)
-print (accuracy_score)
-
-# fit an Extra Trees model to the data
-model = ExtraTreesClassifier()
-model.fit(pred_train,tar_train)
-# display the relative importance of each attribute
-print(model.feature_importances_)
-```
-
-```
-#Confusion_matrix:
-[[31  3]
- [ 2 16]]
- 
-#accuracy_score
-0.903846153846
-
-#relative importance of each attribute
-[ 0.21311057  0.38723056  0.39965887]
 ```
 
 ```python
-"""
-Running a different number of trees and see the effect
- of that on the accuracy of the prediction
-"""
+# specify the lasso regression model
+model=LassoLarsCV(cv=10, precompute=False).fit(pred_train,tar_train)
 
-trees=range(25)
-accuracy=np.zeros(25)
-
-for idx in range(len(trees)):
-    classifier=RandomForestClassifier(n_estimators=idx + 1)
-    classifier=classifier.fit(pred_train,tar_train)
-    predictions=classifier.predict(pred_test)
-    accuracy[idx]=sklearn.metrics.accuracy_score(tar_test, predictions)
-    
-plt.cla()
-plt.plot(trees, accuracy)
-
-print(accuracy)
-print(statistics.mean(accuracy))
+# print variable names and regression coefficients
+dict(zip(predictors.columns, model.coef_))
 ```
 
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass2-fig1.png)
+```
+{'meanCholesterol': 0.22564201762237368,
+ 'meanFoodPerson': 0.15430005397580904,
+ 'meanSugarPerson': 0.0002943836394151331}
+```
+
+```python
+# plot coefficient progression
+m_log_alphas = -np.log10(model.alphas_)
+ax = plt.gca()
+plt.plot(m_log_alphas, model.coef_path_.T)
+plt.axvline(-np.log10(model.alpha_), linestyle='--', color='k',
+            label='alpha CV')
+plt.ylabel('Regression Coefficients')
+plt.xlabel('-log(alpha)')
+plt.title('Regression Coefficients Progression for Lasso Paths')
+```
+
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig1.png)
+
+```python
+# plot mean square error for each fold
+m_log_alphascv = -np.log10(model.cv_alphas_)
+plt.figure()
+plt.plot(m_log_alphascv, model.cv_mse_path_, ':')
+plt.plot(m_log_alphascv, model.cv_mse_path_.mean(axis=-1), 'k',
+         label='Average across the folds', linewidth=2)
+plt.axvline(-np.log10(model.alpha_), linestyle='--', color='k',
+            label='alpha CV')
+plt.legend()
+plt.xlabel('-log(alpha)')
+plt.ylabel('Mean squared error')
+plt.title('Mean squared error on each fold')
+```
+
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig2.png)
+
+```python
+# MSE from training and test data
+from sklearn.metrics import mean_squared_error
+train_error = mean_squared_error(tar_train, model.predict(pred_train))
+test_error = mean_squared_error(tar_test, model.predict(pred_test))
+print ('training data MSE')
+print(train_error)
+print ('test data MSE')
+print(test_error)
+```
 
 ```
-#Accuracy from 25 trees
-[ 0.84615385  0.80769231  0.80769231  0.86538462  0.88461538  0.84615385
-  0.90384615  0.88461538  0.88461538  0.90384615  0.88461538  0.86538462
-  0.86538462  0.88461538  0.88461538  0.88461538  0.88461538  0.88461538
-  0.86538462  0.84615385  0.86538462  0.84615385  0.88461538  0.88461538
-  0.86538462]
-  
-#Mean of the accuracy from 25 trees
-0.86923076923076925
+training data MSE
+0.0790314442922
+test data MSE
+0.12526564828
 ```
+
+```python
+# R-square from training and test data
+rsquared_train=model.score(pred_train,tar_train)
+rsquared_test=model.score(pred_test,tar_test)
+print ('training data R-square')
+print(rsquared_train)
+print ('test data R-square')
+print(rsquared_test)
+```
+
+```
+training data R-square
+0.638126230205
+test data R-square
+0.411947373351
+```
+
+
+
 
 Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. As mentioned above, the explanatory variables included as possible contributors to random forest evaluating breast cancer new cases were:
 
