@@ -178,28 +178,4 @@ test data R-square
 0.411947373351
 ```
 
-
-A lasso regression analysis was conducted to identify a subset of variables from a pool of 3 quantitative predictor variables that best predicted a quantitative response variable measuring school connectedness in adolescents. Categorical predictors included gender and a series of 5 binary categorical variables for race and ethnicity (Hispanic, White, Black, Native American and Asian) to improve interpretability of the selected model with fewer predictors. Binary substance use variables were measured with individual questions about whether the adolescent had ever used alcohol, marijuana, cocaine or inhalants. Additional categorical variables included the availability of cigarettes in the home, whether or not either parent was on public assistance and any experience with being expelled from school. Quantitative predictor variables include age, alcohol problems, and a measure of deviance that included such behaviors as vandalism, other property damage, lying, stealing, running away, driving without permission, selling drugs, and skipping school. Another scale for violence, one for depression, and others measuring self-esteem, parental presence, parental activities, family connectedness and grade point average were also included. All predictor variables were standardized to have a mean of zero and a standard deviation of one.
-
-Data were randomly split into a training set that included 70% of the observations (N=3201) and a test set that included 30% of the observations (N=1701). The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
-
-
-
-Of the 23 predictor variables, 18 were retained in the selected model. During the estimation process, self-esteem and depression were most strongly associated with school connectedness, followed by engaging in violent behavior and GPA. Depression and violent behavior were negatively associated with school connectedness and self-esteem and GPA were positively associated with school connectedness. Other predictors associated with greater school connectedness included older age, Hispanic and Asian ethnicity, family connectedness, and parental involvement in activities. Other predictors associated with lower school connectedness included being male, Black and Native American ethnicity, alcohol, marijuana, and cocaine use, availability of cigarettes at home, deviant behavior, and history of being expelled from school. These 18 variables accounted for 33.4% of the variance in the school connectedness response variable.
-
-
-
-
-
-
-
-
-
-
-Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. As mentioned above, the explanatory variables included as possible contributors to random forest evaluating breast cancer new cases were:
-
-  - The mean of sugar consumption quantity (grams per person and day) between the years 1961 and 2002.
-  - The mean of food consumption (grams per day) between the years 1961 and 2002.
-  - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
-
-The explanatory variables with the highest relative importance scores were the average of the Total Cholesterol mean in the blood (39.96%). The accuracy of the random forest was 90.38%. The subsequent growing of multiple trees rather than a single tree does not benefit to the overall accuracy of the model. This suggests that the interpretation of a single decision tree may be appropriate.
+##**This work is not finished yet.**
