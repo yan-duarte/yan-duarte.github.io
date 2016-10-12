@@ -178,4 +178,3 @@ test data R-square
 0.411947373351
 ```
 
-## **This assignment is not finished yet.**
