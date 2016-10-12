@@ -70,7 +70,7 @@ def incidence_cancer (row):
                                                               # is below the average of
                                                               # incidence of all countries.
     if row['breastCancer100th'] > meanIncidence  : return 1   # Incidence of breast cancer 
-    														  # is above the average of
+                                                              # is above the average of
                                                               # incidence of all countries.
 
 # Add the new variable sugar_consumption to subData
