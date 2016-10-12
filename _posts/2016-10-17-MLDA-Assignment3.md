@@ -84,9 +84,12 @@ To run the Lasso Regression Analysis we must standardize the predictors to have 
 ```python
 # standardize predictors to have mean=0 and sd=1
 predictors = predvar.copy()
-predictors['meanSugarPerson']=preprocessing.scale(predictors['meanSugarPerson'].astype('float64'))
-predictors['meanFoodPerson']=preprocessing.scale(predictors['meanFoodPerson'].astype('float64'))
-predictors['meanCholesterol']=preprocessing.scale(predictors['meanCholesterol'].astype('float64'))
+predictors['meanSugarPerson']=
+			preprocessing.scale(predictors['meanSugarPerson'].astype('float64'))
+predictors['meanFoodPerson']=
+			preprocessing.scale(predictors['meanFoodPerson'].astype('float64'))
+predictors['meanCholesterol']=
+			preprocessing.scale(predictors['meanCholesterol'].astype('float64'))
 
 # split data into train and test sets - Train = 70%, Test = 30%
 pred_train, pred_test, tar_train, tar_test = train_test_split(predictors, targets,
