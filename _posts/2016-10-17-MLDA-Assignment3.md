@@ -68,10 +68,10 @@ meanIncidence = statistics.mean(sub1['breastCancer100th'])
 def incidence_cancer (row):
     if row['breastCancer100th'] <= meanIncidence : return 0   # Incidence of breast cancer 
                                                               # is below the average of
-                                                              # incidence of all countries.
+                                                              # incidence of countries.
     if row['breastCancer100th'] > meanIncidence  : return 1   # Incidence of breast cancer 
                                                               # is above the average of
-                                                              # incidence of all countries.
+                                                              # incidence of countries.
 
 # Add the new variable sugar_consumption to subData
 sub1['incidence_cancer'] = sub1.apply (lambda row: incidence_cancer (row),axis=1)
