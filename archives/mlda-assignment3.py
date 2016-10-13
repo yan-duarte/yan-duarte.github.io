@@ -23,18 +23,6 @@ data["meanCholesterol"]   = pandas.to_numeric(data["meanCholesterol"], errors='c
 # listwise deletion of missing values
 sub1 = data[['breastCancer100th', 'meanFoodPerson', 'meanCholesterol', 'meanSugarPerson']].dropna()
 
-# Create the conditions to a new variable named incidence_cancer that will categorize the meanSugarPerson answers
-meanIncidence = statistics.mean(sub1['breastCancer100th'])
-
-def incidence_cancer (row):
-    if row['breastCancer100th'] <= meanIncidence : return 0   # Incidence of breast cancer is below the
-                                                              # average of the incidence of all countries.
-    if row['breastCancer100th'] > meanIncidence  : return 1   # Incidence of breast cancer is above the average
-                                                              # of the incidence of all countries.
-
-# Add the new variable sugar_consumption to subData
-sub1['incidence_cancer'] = sub1.apply (lambda row: incidence_cancer (row),axis=1)
-
 #Split into training and testing sets
 predvar = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
 targets = sub1['incidence_cancer']
