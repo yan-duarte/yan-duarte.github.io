@@ -102,9 +102,10 @@ plt.xlabel('-log(alpha)')
 plt.title('Regression Coefficients Progression for Lasso Paths')
 ```
 
-<a name = "#figura_1">
+<a name = "#figura_1"></a>
+
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig1.png)
-</a>
+
 
 ```python
 # plot mean square error for each fold
