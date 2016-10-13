@@ -191,7 +191,7 @@ The results were:
 
 ![#fig_3]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig3.png)
 
-Mean square error for each fold:
+  - Mean square error for each fold:
 
 ![#fig_4]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig4.png)
 
