@@ -158,7 +158,7 @@ test data R-square
 0.633973360069
 ```
 
-A lasso regression analysis was conducted to identify a subset of variables from a pool of 3 quantitative predictor variables that best predicted a qualitative response variable measuring the incidence of breast cancer in countries. As mentioned above, the explanatory variables were:
+A lasso regression analysis was conducted to identify a subset of variables from a pool of 3 quantitative predictor variables that best predicted a quantitative response variable measuring the incidence of breast cancer in countries. As mentioned above, the explanatory variables were:
 
   - The mean of sugar consumption quantity (grams per person and day) between the years 1961 and 2002.
   - The mean of food consumption (grams per day) between the years 1961 and 2002.
