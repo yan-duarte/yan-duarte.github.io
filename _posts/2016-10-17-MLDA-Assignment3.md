@@ -102,9 +102,7 @@ plt.xlabel('-log(alpha)')
 plt.title('Regression Coefficients Progression for Lasso Paths')
 ```
 
-<a name = "#figura_1"></a>TESTE
-
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig1.png)
+![fig_1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig1.png)
 
 
 ```python
@@ -166,7 +164,7 @@ A lasso regression analysis was conducted to identify a subset of variables from
   - The mean of food consumption (grams per day) between the years 1961 and 2002.
   - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
-No variable were removed and the variable that is most strongly associated with the incidence of cancer is the cholesterol in blood, followed by food consumption and then sugar consumption ([figura 1](#figura_1)).
+No variable were removed and the variable that is most strongly associated with the incidence of cancer is the cholesterol in blood, followed by food consumption and then sugar consumption ([figura 1](#fig_1)).
 
 The data were randomly split into a training set that included 70% of the observations (N=90) and a test set that included 30% of the observations (N=39). The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
 
