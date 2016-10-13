@@ -175,7 +175,7 @@ The selected model was more accurate in predicting the incidence of breast cance
 ## **Running a Lasso Regression Analysis whitout split training and test**
 
 As my data set has a relatively small number of observations, I run the lasso regression analysis without split it into training and test data sets.
-You can see the code and the output [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass3.2.ipynb)
+You can see the code and the output [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass3.2.ipynb).
 
 The results were:
 
