@@ -85,9 +85,9 @@ dict(zip(predictors.columns, model.coef_))
 ```
 
 ```
-{'meanCholesterol': 0.22564201762237368,
- 'meanFoodPerson': 0.15430005397580904,
- 'meanSugarPerson': 0.0002943836394151331}
+{'meanCholesterol': 16.739257253156911,
+ 'meanFoodPerson': 2.6688475418098832,
+ 'meanSugarPerson': 2.5710138593832852}
 ```
 
 ```python
@@ -119,7 +119,7 @@ plt.ylabel('Mean squared error')
 plt.title('Mean squared error on each fold')
 ```
 
-![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig2.png)
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig2.png)
 
 ```python
 # MSE from training and test data
@@ -134,9 +134,9 @@ print(test_error)
 
 ```
 training data MSE
-0.0790314442922
+167.849476371
 test data MSE
-0.12526564828
+209.885898511
 ```
 
 ```python
@@ -151,19 +151,21 @@ print(rsquared_test)
 
 ```
 training data R-square
-0.638126230205
+0.71692405706
 test data R-square
-0.411947373351
+0.633973360069
 ```
 
 A lasso regression analysis was conducted to identify a subset of variables from a pool of 3 quantitative predictor variables that best predicted a qualitative response variable measuring the incidence of breast cancer in countries. As mentioned above, the explanatory variables were:
 
-The mean of sugar consumption quantity (grams per person and day) between the years 1961 and 2002.
-The mean of food consumption (grams per day) between the years 1961 and 2002.
-The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
+  - The mean of sugar consumption quantity (grams per person and day) between the years 1961 and 2002.
+  - The mean of food consumption (grams per day) between the years 1961 and 2002.
+  - The average of the Total Cholesterol mean of the female population (mmol/L) between the years 1980 and 2002 (meanCholesterol).
 
-Data were randomly split into a training set that included 70% of the observations (N=90) and a test set that included 30% of the observations (N=39). The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
+No variable were removed and the variable that is most strongly associated with the incidence of cancer is the cholesterol in blood, followed by food consumption and then sugar consumption ([figure 1](figure 1)).
 
+The data were randomly split into a training set that included 70% of the observations (N=90) and a test set that included 30% of the observations (N=39). The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
 
+We can see in [figure 2](Figure 2) that there is variability across the individual cross-validation folds in the training data set, but the change in the mean square error as variables are added to the model follows the same pattern for each fold.
 
-Of the 3 predictor variables, 18 were retained in the selected model. During the estimation process, self-esteem and depression were most strongly associated with school connectedness, followed by engaging in violent behavior and GPA. Depression and violent behavior were negatively associated with school connectedness and self-esteem and GPA were positively associated with school connectedness. Other predictors associated with greater school connectedness included older age, Hispanic and Asian ethnicity, family connectedness, and parental involvement in activities. Other predictors associated with lower school connectedness included being male, Black and Native American ethnicity, alcohol, marijuana, and cocaine use, availability of cigarettes at home, deviant behavior, and history of being expelled from school. These 18 variables accounted for 33.4% of the variance in the school connectedness response variable.
+The selected model was more accurate in predicting the incidence of breast cancer in the test data. The R-square values were 0.72 and 0.63, indicating that the selected model explained 72 and 63% of the variance in incidence of breast cancer for the training and test sets, respectively.
