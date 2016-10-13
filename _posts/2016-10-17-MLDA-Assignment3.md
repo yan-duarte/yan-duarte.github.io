@@ -171,3 +171,52 @@ The data were randomly split into a training set that included 70% of the observ
 We can see in [figure 2](#fig_2) that there is variability across the individual cross-validation folds in the training data set, but the change in the mean square error as variables are added to the model follows the same pattern for each fold.
 
 The selected model was more accurate in predicting the incidence of breast cancer in the test data. The R-square values were 0.72 and 0.63, indicating that the selected model explained 72 and 63% of the variance in incidence of breast cancer for the training and test sets, respectively.
+
+## **Running a Lasso Regression Analysis whitout split training and test**
+
+As my data set has a relatively small number of observations, I run the lasso regression analysis whiout split it into training and test data sets.
+You can see the code and the output [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass3.2.ipynb)
+
+The results were:
+
+  - The variable names and regression coefficients:
+
+```
+{'meanCholesterol': 14.454522951763355,
+ 'meanFoodPerson': 5.6180418717114913,
+ 'meanSugarPerson': 1.1077912357101849}
+```
+
+  - Coefficient progression:
+
+![#fig_3]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig3.png)
+
+Mean square error for each fold:
+
+![#fig_4]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig4.png)
+
+  - MSE from training and test data:
+
+```
+training data MSE
+176.079857367
+test data MSE
+176.079857367
+```
+
+  - R-square from training and test data:
+
+```
+training data R-square
+0.700067190794
+test data R-square
+0.700067190794
+```
+
+In general, the results were pretty close compared when running the previous lasso regression analysis.
+
+No variable were removed and the variable that is most strongly associated with the incidence of cancer were the same in the same order.
+
+The variability across the individual cross-validation folds in the training data set has behaved in a similar way.
+
+At least, the R-square values was 0.70, indicating that the selected model explained 70% of the variance in incidence of breast cancer.
