@@ -18,21 +18,13 @@ My first explanatory variable is the mean of sugar consumption quantity (grams p
 My second explanatory variable is the mean of the total supply of food (kilocalories / person & day) available in a country, divided by the population and 365 between the years 1961 and 2002.
 My third explanatory variable is the average of the mean TC (Total Cholesterol) of the female population, counted in mmol per L; (calculated as if each country has the same age composition as the world population) between the years 1980 and 2002.
 
-Note that my response variable is quantitative. Thus, I management it transforming to qualitative.
+All variables used in this assignment are quantitative.
 
 All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
 
 The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
 You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass3.ipynb){:target="_blank"}.
-
-## **Contents of variables**
-
-Variable incidence_cancer:
-
-  - (0) The incidence of breast cancer is below the average of the incidence of all countries.
-  - (1) The incidence of breast cancer is above the average of the incidence of all countries.
-   
 
 ## **Running a Lasso Regression Analysis**
 
@@ -62,23 +54,9 @@ data["meanCholesterol"]   = pandas.to_numeric(data["meanCholesterol"], errors='c
 # listwise deletion of missing values
 sub1 = data[['breastCancer100th', 'meanFoodPerson', 'meanCholesterol', 'meanSugarPerson']].dropna()
 
-# Create the conditions to a new variable named incidence_cancer that will categorize the meanSugarPerson answers
-meanIncidence = statistics.mean(sub1['breastCancer100th'])
-
-def incidence_cancer (row):
-    if row['breastCancer100th'] <= meanIncidence : return 0   # Incidence of breast cancer 
-                                                              # is below the average of
-                                                              # incidence of countries.
-    if row['breastCancer100th'] > meanIncidence  : return 1   # Incidence of breast cancer 
-                                                              # is above the average of
-                                                              # incidence of countries.
-
-# Add the new variable sugar_consumption to subData
-sub1['incidence_cancer'] = sub1.apply (lambda row: incidence_cancer (row),axis=1)
-
 #Split into training and testing sets
 predvar = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
-targets = sub1['incidence_cancer']
+targets = sub1['breastCancer100th']
 ```
 
 To run the Lasso Regression Analysis we must standardize the predictors to have mean = 0 and standard deviation = 1.
@@ -186,4 +164,6 @@ The average of the Total Cholesterol mean of the female population (mmol/L) betw
 
 Data were randomly split into a training set that included 70% of the observations (N=90) and a test set that included 30% of the observations (N=39). The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
 
-Of the 23 predictor variables, 18 were retained in the selected model. During the estimation process, self-esteem and depression were most strongly associated with school connectedness, followed by engaging in violent behavior and GPA. Depression and violent behavior were negatively associated with school connectedness and self-esteem and GPA were positively associated with school connectedness. Other predictors associated with greater school connectedness included older age, Hispanic and Asian ethnicity, family connectedness, and parental involvement in activities. Other predictors associated with lower school connectedness included being male, Black and Native American ethnicity, alcohol, marijuana, and cocaine use, availability of cigarettes at home, deviant behavior, and history of being expelled from school. These 18 variables accounted for 33.4% of the variance in the school connectedness response variable.
+
+
+Of the 3 predictor variables, 18 were retained in the selected model. During the estimation process, self-esteem and depression were most strongly associated with school connectedness, followed by engaging in violent behavior and GPA. Depression and violent behavior were negatively associated with school connectedness and self-esteem and GPA were positively associated with school connectedness. Other predictors associated with greater school connectedness included older age, Hispanic and Asian ethnicity, family connectedness, and parental involvement in activities. Other predictors associated with lower school connectedness included being male, Black and Native American ethnicity, alcohol, marijuana, and cocaine use, availability of cigarettes at home, deviant behavior, and history of being expelled from school. These 18 variables accounted for 33.4% of the variance in the school connectedness response variable.
