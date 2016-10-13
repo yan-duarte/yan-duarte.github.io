@@ -102,7 +102,7 @@ plt.xlabel('-log(alpha)')
 plt.title('Regression Coefficients Progression for Lasso Paths')
 ```
 
-![fig_1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig1.png)
+![#fig_1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig1.png)
 
 
 ```python
