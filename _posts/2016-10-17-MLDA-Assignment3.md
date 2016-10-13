@@ -195,21 +195,17 @@ The results were:
 
 ![#fig_4]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig4.png)
 
-  - MSE from training and test data:
+  - MSE from data:
 
 ```
-training data MSE
-176.079857367
-test data MSE
+Data MSE
 176.079857367
 ```
 
-  - R-square from training and test data:
+  - R-square from data:
 
 ```
-training data R-square
-0.700067190794
-test data R-square
+R-square
 0.700067190794
 ```
 
