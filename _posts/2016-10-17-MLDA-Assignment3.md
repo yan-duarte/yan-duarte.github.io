@@ -120,7 +120,7 @@ plt.ylabel('Mean squared error')
 plt.title('Mean squared error on each fold')
 ```
 
-![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig2.png)
+![#fig_2]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass3-fig2.png)
 
 
 ```python
@@ -168,6 +168,6 @@ No variable were removed and the variable that is most strongly associated with 
 
 The data were randomly split into a training set that included 70% of the observations (N=90) and a test set that included 30% of the observations (N=39). The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
 
-We can see in [Figure 2](Figure 2) that there is variability across the individual cross-validation folds in the training data set, but the change in the mean square error as variables are added to the model follows the same pattern for each fold.
+We can see in [Figure 2](#fig_2) that there is variability across the individual cross-validation folds in the training data set, but the change in the mean square error as variables are added to the model follows the same pattern for each fold.
 
 The selected model was more accurate in predicting the incidence of breast cancer in the test data. The R-square values were 0.72 and 0.63, indicating that the selected model explained 72 and 63% of the variance in incidence of breast cancer for the training and test sets, respectively.
