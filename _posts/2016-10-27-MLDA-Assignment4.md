@@ -201,7 +201,7 @@ cluster
 
 We can see that the mean of sugar intake, food consumption and cholesterol in the blood are low, very low and high for the clusters 0, 1 and 2 consecutively.
 
-To validate this cluster we have to examine the cluster diferences in the incidence of cancer using ANOVA. 
+To validate this cluster we have to examine the cluster differences in the incidence of cancer using ANOVA. Because our categorical cluster variable has three categories, we will make a turkey test to evaluate post hot comparisons between the clusters.
 
 ```python
 # validate clusters in training data by examining cluster differences in incidence of cancer using ANOVA
@@ -233,3 +233,54 @@ mc1 = multi.MultiComparison(sub1['breastCancer100th'], sub1['cluster'])
 res1 = mc1.tukeyhsd()
 print(res1.summary())
 ```
+
+```
+ OLS Regression Results                            
+==============================================================================
+Dep. Variable:      breastCancer100th   R-squared:                       0.700
+Model:                            OLS   Adj. R-squared:                  0.693
+Method:                 Least Squares   F-statistic:                     101.3
+Date:                Sat, 29 Oct 2016   Prob (F-statistic):           1.91e-23
+Time:                        01:38:45   Log-Likelihood:                -360.92
+No. Observations:                  90   AIC:                             727.8
+Df Residuals:                      87   BIC:                             735.3
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [95.0% Conf. Int.]
+-----------------------------------------------------------------------------------
+Intercept          32.4697      2.363     13.741      0.000        27.773    37.166
+C(cluster)[T.1]   -11.7197      3.317     -3.533      0.001       -18.313    -5.127
+C(cluster)[T.2]    39.2868      3.687     10.655      0.000        31.958    46.615
+==============================================================================
+Omnibus:                        7.990   Durbin-Watson:                   2.004
+Prob(Omnibus):                  0.018   Jarque-Bera (JB):               12.206
+Skew:                           0.316   Prob(JB):                      0.00224
+Kurtosis:                       4.690   Cond. No.                         3.63
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+means for breastCancer100th by cluster
+         breastCancer100th
+cluster                   
+0                    32.47
+1                    20.75
+2                    71.76
+standard deviations for breastCancer100th by cluster
+         breastCancer100th
+cluster                   
+0                    13.68
+1                     7.76
+2                    19.14
+Multiple Comparison of Means - Tukey HSD,FWER=0.05
+==============================================
+group1 group2 meandiff  lower    upper  reject
+----------------------------------------------
+  0      1    -11.7197 -19.6296 -3.8098  True 
+  0      2    39.2868  30.4945  48.0791  True 
+  1      2    51.0065  42.2675  59.7456  True 
+----------------------------------------------
+```
+
+The analysis of variance summary table indicates that the clusters differed significantly on the incidence of breast cancer. When we examine the means, we find that countries with bigger sugar intake, food consumption and high level of cholesterol in the blood (cluster 2) had the biggest incidence of breast cancer. The Tukey test shows that the clusters differed significantly in the mean of incidence of breast cancer, although the difference between cluster 0 and cluster 1 was smaller. 
