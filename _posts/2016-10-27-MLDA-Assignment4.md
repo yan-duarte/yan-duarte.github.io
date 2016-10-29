@@ -43,7 +43,7 @@ from sklearn.cluster import KMeans
 pandas.set_option('display.float_format', lambda x:'%.2f'%x)
 
 #load the data
-data = pandas.read_csv('separatedData.csv')
+data = pandas.read_csv('../separatedData.csv')
 
 # convert to numeric format
 data["breastCancer100th"] = pandas.to_numeric(data["breastCancer100th"], errors='coerce')
@@ -55,14 +55,13 @@ data["meanCholesterol"]   = pandas.to_numeric(data["meanCholesterol"], errors='c
 sub1 = data[['breastCancer100th', 'meanFoodPerson', 'meanCholesterol', 'meanSugarPerson']].dropna()
 
 #Split into training and testing sets
-cluster = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol', 'breastCancer100th']]
+cluster = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
 
 # standardize predictors to have mean=0 and sd=1
 clustervar = cluster.copy()
 clustervar['meanSugarPerson']=preprocessing.scale(clustervar['meanSugarPerson'].astype('float64'))
 clustervar['meanFoodPerson']=preprocessing.scale(clustervar['meanFoodPerson'].astype('float64'))
 clustervar['meanCholesterol']=preprocessing.scale(clustervar['meanCholesterol'].astype('float64'))
-clustervar['breastCancer100th']=preprocessing.scale(clustervar['breastCancer100th'].astype('float64'))
 
 # split data into train and test sets - Train = 70%, Test = 30%
 clus_train, clus_test = train_test_split(clustervar, test_size=.3, random_state=123)
@@ -193,18 +192,44 @@ print(clustergrp)
 
 ```
 Clustering variable means by cluster
-         index  meanSugarPerson  meanFoodPerson  meanCholesterol  \
-cluster                                                            
-0        63.29             0.32            0.00            -0.04   
-1        64.27             0.95            1.41             1.33   
-2        70.82            -1.08           -0.88            -0.90   
-
-         breastCancer100th  
-cluster                     
-0                    -0.28  
-1                     1.54  
-2                    -0.71  
+         index  meanSugarPerson  meanFoodPerson  meanCholesterol
+cluster                                                         
+0        63.97             0.33           -0.03            -0.08
+1        70.82            -1.08           -0.88            -0.90
+2        63.26             0.91            1.39             1.33
 ```
 
-We can see that cluster 0 and cluster 2 are cases that the mean of sugar intake, food consumption and cholesterol in blood are low and, consecutively the incidence of breast cancer is low too. Now for cluster 1, we can see that all variables have a high value.
+We can see that the mean of sugar intake, food consumption and cholesterol in the blood are low, very low and high for the clusters 0, 1 and 2 consecutively.
 
+To validate this cluster we have to examine the cluster diferences in the incidence of cancer using ANOVA. 
+
+```python
+# validate clusters in training data by examining cluster differences in incidence of cancer using ANOVA
+# first have to merge incidence of cancer with clustering variables and cluster assignment data
+ic_data=data['breastCancer100th']
+
+# split incidence of cancer data into train and test sets
+ic_data, ic_test = train_test_split(ic_data, test_size=.3, random_state=123)
+ic_data1=pandas.DataFrame(ic_data)
+ic_data1.reset_index(level=0, inplace=True)
+merged_train_all=pandas.merge(ic_data1, merged_train, on='index')
+sub1 = merged_train_all[['breastCancer100th', 'cluster']].dropna()
+
+import statsmodels.formula.api as smf
+import statsmodels.stats.multicomp as multi
+
+icmod = smf.ols(formula='breastCancer100th ~ C(cluster)', data=sub1).fit()
+print (icmod.summary())
+
+print ('means for breastCancer100th by cluster')
+m1= sub1.groupby('cluster').mean()
+print (m1)
+
+print ('standard deviations for breastCancer100th by cluster')
+m2= sub1.groupby('cluster').std()
+print (m2)
+
+mc1 = multi.MultiComparison(sub1['breastCancer100th'], sub1['cluster'])
+res1 = mc1.tukeyhsd()
+print(res1.summary())
+```
