@@ -146,3 +146,65 @@ plt.show()
 
 The three clusters plot show us that there is no overlap between the clusters, they are well separated and the observations are less spread out indicating higher correlation among the observations and less within cluster variance. 
 
+
+After that, we begin the multiple steps to merge cluster assignment with clustering variables to examine
+cluster variable means by cluster
+
+```python
+# create a unique identifier variable from the index for the
+# cluster training data to merge with the cluster assignment variable
+clus_train.reset_index(level=0, inplace=True)
+
+# create a list that has the new index variable
+cluslist=list(clus_train['index'])
+
+# create a list of cluster assignments
+labels=list(model3.labels_)
+
+# combine index variable list with cluster assignment list into a dictionary
+newlist=dict(zip(cluslist, labels))
+
+# convert newlist dictionary to a dataframe
+newclus=pandas.DataFrame.from_dict(newlist, orient='index')
+
+# rename the cluster assignment column
+newclus.columns = ['cluster']
+
+# now do the same for the cluster assignment variable
+# create a unique identifier variable from the index for the
+# cluster assignment dataframe
+# to merge with cluster training data
+newclus.reset_index(level=0, inplace=True)
+
+# merge the cluster assignment dataframe with the cluster training variable dataframe
+# by the index variable
+merged_train=pandas.merge(clus_train, newclus, on='index')
+merged_train.head(n=100)
+
+# cluster frequencies
+merged_train.cluster.value_counts()
+
+# Finally calculate clustering variable means by cluster
+clustergrp = merged_train.groupby('cluster').mean()
+print ("Clustering variable means by cluster")
+print(clustergrp)
+
+```
+
+```
+Clustering variable means by cluster
+         index  meanSugarPerson  meanFoodPerson  meanCholesterol  \
+cluster                                                            
+0        63.29             0.32            0.00            -0.04   
+1        64.27             0.95            1.41             1.33   
+2        70.82            -1.08           -0.88            -0.90   
+
+         breastCancer100th  
+cluster                     
+0                    -0.28  
+1                     1.54  
+2                    -0.71  
+```
+
+We can see that cluster 0 and cluster 2 are cases that the mean of sugar intake, food consumption and cholesterol in blood are low and, consecutively the incidence of breast cancer is low too. Now for cluster 1, we can see that all variables have a high value.
+
