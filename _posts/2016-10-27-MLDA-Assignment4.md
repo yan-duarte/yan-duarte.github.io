@@ -22,8 +22,75 @@ All variables used in this assignment are quantitative.
 
 All of the images posted in the blog can be better view by clicking the right button of the mouse and opening the image in a new tab.
 
-The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment3.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
+The complete program for this assignment can be download [here](https://yan-duarte.github.io/archives/mlda-assignment4.py) and the dataset [here](https://yan-duarte.github.io/archives/separatedData.csv).
 
-You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass3.ipynb){:target="_blank"}.
+You also can run the code using jupyter notebook by clicking [here](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/mlda-ass4.ipynb){:target="_blank"}.
 
 ## **Running a k-means Cluster Analysis**
+
+The first thing to do is to import the libraries and prepare the data to be used.
+
+```python
+import pandas
+import statistics
+import numpy as np
+import matplotlib.pylab as plt
+from sklearn.cross_validation import train_test_split
+from sklearn import preprocessing
+from sklearn.cluster import KMeans
+
+# bug fix for display formats to avoid run time errors
+pandas.set_option('display.float_format', lambda x:'%.2f'%x)
+
+#load the data
+data = pandas.read_csv('separatedData.csv')
+
+# convert to numeric format
+data["breastCancer100th"] = pandas.to_numeric(data["breastCancer100th"], errors='coerce')
+data["meanSugarPerson"]   = pandas.to_numeric(data["meanSugarPerson"], errors='coerce')
+data["meanFoodPerson"]   = pandas.to_numeric(data["meanFoodPerson"], errors='coerce')
+data["meanCholesterol"]   = pandas.to_numeric(data["meanCholesterol"], errors='coerce')
+
+# listwise deletion of missing values
+sub1 = data[['breastCancer100th', 'meanFoodPerson', 'meanCholesterol', 'meanSugarPerson']].dropna()
+
+#Split into training and testing sets
+cluster = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol', 'breastCancer100th']]
+
+# standardize predictors to have mean=0 and sd=1
+clustervar = cluster.copy()
+clustervar['meanSugarPerson']=preprocessing.scale(clustervar['meanSugarPerson'].astype('float64'))
+clustervar['meanFoodPerson']=preprocessing.scale(clustervar['meanFoodPerson'].astype('float64'))
+clustervar['meanCholesterol']=preprocessing.scale(clustervar['meanCholesterol'].astype('float64'))
+clustervar['breastCancer100th']=preprocessing.scale(clustervar['breastCancer100th'].astype('float64'))
+
+# split data into train and test sets - Train = 70%, Test = 30%
+clus_train, clus_test = train_test_split(clustervar, test_size=.3, random_state=123)
+```
+
+To run the k-means Cluster Analysis we must standardize the predictors to have mean = 0 and standard deviation = 1
+
+
+```python
+# k-means cluster analysis for 1-9 clusters
+from scipy.spatial.distance import cdist
+clusters=range(1,10)
+meandist=[]
+
+for k in clusters:
+    model=KMeans(n_clusters=k)
+    model.fit(clus_train)
+    clusassign=model.predict(clus_train)
+    meandist.append(sum(np.min(cdist(clus_train, model.cluster_centers_, 'euclidean'), axis=1))
+    / clus_train.shape[0])
+
+"""
+Plot average distance from observations from the cluster centroid
+to use the Elbow Method to identify number of clusters to choose
+"""
+
+plt.plot(clusters, meandist)
+plt.xlabel('Number of clusters')
+plt.ylabel('Average distance')
+plt.title('Selecting k with the Elbow Method')
+```
