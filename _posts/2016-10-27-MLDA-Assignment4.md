@@ -68,8 +68,7 @@ clustervar['breastCancer100th']=preprocessing.scale(clustervar['breastCancer100t
 clus_train, clus_test = train_test_split(clustervar, test_size=.3, random_state=123)
 ```
 
-To run the k-means Cluster Analysis we must standardize the predictors to have mean = 0 and standard deviation = 1
-
+To run the k-means Cluster Analysis we must standardize the predictors to have mean = 0 and standard deviation = 1. After that, we make 9 analysis with the data, the first one with one cluster increasing a cluster per experiment.
 
 ```python
 # k-means cluster analysis for 1-9 clusters
@@ -94,3 +93,12 @@ plt.xlabel('Number of clusters')
 plt.ylabel('Average distance')
 plt.title('Selecting k with the Elbow Method')
 ```
+
+![#fig_1]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass4-fig1.png)
+
+*This plot shows the decrease in the average minimum distance of the observations from the cluster centroids for each of the cluster solutions. We can see that the average distance decreases as the number of clusters increases. Since the goal of cluster analysis is to minimize the distance between observations and their assigned clusters we want to chose the fewest numbers of clusters that provides a low average distance. What we're looking for in this plot is a bend in the elbow that kind of shows where the average distance value might be leveling off such that adding more clusters doesn't decrease the average distance as much.*
+
+In our case, the bend in the elbow appears to be at two clusters and at three clusters.
+
+To help us figure out which of the solutions is best we should we are going to use the canonical discriminate analysis.
+
