@@ -59,9 +59,15 @@ cluster = sub1[[ 'meanSugarPerson', 'meanFoodPerson', 'meanCholesterol']]
 
 # standardize predictors to have mean=0 and sd=1
 clustervar = cluster.copy()
-clustervar['meanSugarPerson']=preprocessing.scale(clustervar['meanSugarPerson'].astype('float64'))
-clustervar['meanFoodPerson']=preprocessing.scale(clustervar['meanFoodPerson'].astype('float64'))
-clustervar['meanCholesterol']=preprocessing.scale(clustervar['meanCholesterol'].astype('float64'))
+
+clustervar['meanSugarPerson']=
+	preprocessing.scale(clustervar['meanSugarPerson'].astype('float64'))
+    
+clustervar['meanFoodPerson']=
+	preprocessing.scale(clustervar['meanFoodPerson'].astype('float64'))
+    
+clustervar['meanCholesterol']=
+	preprocessing.scale(clustervar['meanCholesterol'].astype('float64'))
 
 # split data into train and test sets - Train = 70%, Test = 30%
 clus_train, clus_test = train_test_split(clustervar, test_size=.3, random_state=123)
@@ -283,4 +289,4 @@ group1 group2 meandiff  lower    upper  reject
 ----------------------------------------------
 ```
 
-The analysis of variance summary table indicates that the clusters differed significantly on the incidence of breast cancer. When we examine the means, we find that countries with bigger sugar intake, food consumption and high level of cholesterol in the blood (cluster 2) had the biggest incidence of breast cancer. The Tukey test shows that the clusters differed significantly in the mean of incidence of breast cancer, although the difference between cluster 0 and cluster 1 was smaller. 
+The analysis of variance summary table indicates that the clusters differed significantly on the incidence of breast cancer. When we examine the means, we find that countries with bigger sugar intake, food consumption and high level of cholesterol in the blood (cluster 2) had the biggest incidence of breast cancer. The Tukey test shows that the clusters differed significantly in the mean of incidence of breast cancer, although the difference between cluster 0 and cluster 1 was smaller.
