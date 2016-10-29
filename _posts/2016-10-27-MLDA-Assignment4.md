@@ -102,3 +102,47 @@ In our case, the bend in the elbow appears to be at two clusters and at three cl
 
 To help us figure out which of the solutions is best we should we are going to use the canonical discriminate analysis.
 
+First, lets see the results with two clusters 
+
+```python
+# Interpret 2 cluster solution
+model2=KMeans(n_clusters=2)
+model2.fit(clus_train)
+clusassign=model2.predict(clus_train)
+# plot clusters
+
+from sklearn.decomposition import PCA
+pca_2 = PCA(2)
+plot_columns = pca_2.fit_transform(clus_train)
+plt.scatter(x=plot_columns[:,0], y=plot_columns[:,1], c=model2.labels_,)
+plt.xlabel('Canonical variable 1')
+plt.ylabel('Canonical variable 2')
+plt.title('Scatterplot of Canonical Variables for 2 Clusters')
+plt.show()
+```
+
+![#fig_2]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass4-fig2.png)
+
+We can see that both clusters here are well separated, but the observations are more spread out indicating less correlation among the observations and higher within cluster variance. This suggests that the three cluster solution might be better. So, lets see the results with three clusters 
+
+```python
+# Interpret 3 cluster solution
+model3=KMeans(n_clusters=3)
+model3.fit(clus_train)
+clusassign=model3.predict(clus_train)
+# plot clusters
+
+from sklearn.decomposition import PCA
+pca_3 = PCA(2)
+plot_columns = pca_3.fit_transform(clus_train)
+plt.scatter(x=plot_columns[:,0], y=plot_columns[:,1], c=model3.labels_,)
+plt.xlabel('Canonical variable 1')
+plt.ylabel('Canonical variable 2')
+plt.title('Scatterplot of Canonical Variables for 3 Clusters')
+plt.show()
+```
+
+![#fig_3]({{site.baseurl}}/yan-duarte.github.io/images/mlda-assignments/mlda-ass4-fig3.png)
+
+The three clusters plot show us that there is no overlap between the clusters, they are well separated and the observations are less spread out indicating higher correlation among the observations and less within cluster variance. 
+
