@@ -300,7 +300,7 @@ plt.show(fig2)
 
 ![Figure 4]({{site.baseurl}}/yan-duarte.github.io/images/rmp-assignments/rmp-ass3-fig4.png)
 
-The plot in the upper right hand corner shows the residuals for each observation at different values of Internet use rate. There's not a clearly pattern on it, as there is points all over the graph, we can assume that model predict food consumption kilocalories as well for countries that have either high or low incidence of breast cancer new cases.
+The plot in the upper right hand corner shows the residuals for each observation at different values of mean food consumption. There's not a clearly pattern on it, as there is points all over the graph, we can assume that model predict food consumption kilocalories as well for countries that have either high or low incidence of breast cancer new cases.
 
 To take a look at the contribution of each individual explanatory variable to model fit we analysis the partial regression residual plot (the third plot). It attempts to show the effect of adding meanFoodPerson as an additional explanatory variable to the model. Given that one or more explanatory variables are already in the model. This plot demonstrates the relationship between the response variable and specific explanatory variable, after controlling for the other explanatory variables. We can see that the meanFoodPerson has a linear pattern meaning that it meets the linearity assumption in the multiple regression.
 
@@ -322,4 +322,3 @@ plt.show(fig3)
 
 
 One of the first things we see in the leverage plot is that we have a few outliers, contents that have residuals greater than 2 or less than -2. We've already identified some of these outliers in some of the other plots we've looked at, but this plot also tells us that these outliers have small or close to zero leverage values, meaning that although they are outlying observations, they do not have an undue influence on the estimation of the regression model. On the other hand, we see that there are a few cases with higher than average leverage. But one in particular is more obvious in terms of having an influence on the estimation of the predicted value of sugar consumption per day. This observation has a high leverage but is not an outlier. We don't have any observations that are both high leverage and outliers.
-
