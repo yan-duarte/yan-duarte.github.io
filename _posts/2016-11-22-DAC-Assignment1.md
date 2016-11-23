@@ -15,6 +15,4 @@ In this assignment, we have to make a title and a introduction to the Research Q
 
 Within the innumerable possibilities of datasets, I ended up being in doubt between two possible works
 
-## Tuverculosis research
-
-
+## **Tuverculosis research**
