@@ -15,4 +15,41 @@ In this assignment, we have to make a title and a introduction to the Research Q
 
 Within the innumerable possibilities of datasets, I ended up being in doubt between two possible works
 
-## **Tuverculosis research**
+## **Tuberculosis research**
+
+### Title
+
+The association between the individual and government health care of tuberculosis and its treatment success rate.
+
+### Research question
+
+How does the basic needs
+
+### Hypothesis
+
+The association between the individual and government health care of tuberculosis and its treatment success rate.
+
+### Motivation/Rationale
+
+The association between the individual and government health care of tuberculosis and its treatment success rate.
+
+### Potential Implications
+
+The association between the individual and government health care of tuberculosis and its treatment success rate.
+
+### Dataset and variables
+
+
+## **Tuberculosis research**
+
+### Title
+
+### Research question
+
+### Hypothesis
+
+### Motivation/Rationale
+
+### Potential Implications
+
+### Dataset and variables
