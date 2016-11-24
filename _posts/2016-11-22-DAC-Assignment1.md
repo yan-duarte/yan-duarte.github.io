@@ -38,6 +38,15 @@ The association between the individual and government health care of tuberculosi
 The association between the individual and government health care of tuberculosis and its treatment success rate.
 
 ### Dataset and variables
+To make this research, I decide to use the QOG Standard Dataset 2016. This dataset consists of approximately 2500 variables from more than 100 data sources.
+There was used 10 variables in total from four differents database:
+  
+  - Environmental Performance Data (EPI);
+  - International Monetary Fund (IMF);
+  - Worldbank - World Development Indicators (WDI);
+  - World Economic Forum.
+  
+  
 
 
 ## **Tuberculosis research**
