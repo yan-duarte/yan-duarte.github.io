@@ -65,28 +65,20 @@ There are a series of explanatory that can be used, at first I included these on
   - Incidence of tuberculosis (per 100,000 people)
   - GDP (PPP) (share of world total) (%)
 
-## **Tuberculosis research**
-
-### Title
-
-### Research question
-
-### Hypothesis
-
-### Motivation/Rationale
-
-### Potential Implications
-
-### Dataset and variables
-
 ## **References**
 
 [[1] Tuberculosis: Causes, Symptoms and Treatments][ref_01]
+
 [[2] Global Tuberculosis Report 2013][ref_02]
+
 [[3] QOG Standard Dataset 2016][ref_03]
+
 [[4] Environmental Performance Data][ref_04]
+
 [[5] International Monetary Fund][ref_05]
+
 [[6] Worldbank - World Development Indicators][ref_06]
+
 [[7] World Economic Forum][ref_07]
 
 
