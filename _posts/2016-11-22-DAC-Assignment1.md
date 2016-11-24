@@ -21,27 +21,27 @@ Within the innumerable possibilities of datasets, I ended up being in doubt betw
 
 The relation between the importance that individuals, governments, and companies give to health and the success rate in the treatment of tuberculosis.
 
-### Research question
+#### **Research question**
 
 How does the relation of the importance give to health of individuals, governments and companies influence the success rate in the treatment of tuberculosis?
 
-### Hypothesis
+#### **Hypothesis**
 
 If a country expends more with health, has a good air quality and an easy access to water and sanitation, then the success rate in tuberculosis treatment will be higher and the incidence of new cases of this disease will be lower.
 
 In contrast, not only the country needs to care about health. If the country has a high number of smokers, the rate in tuberculosis treatment will be lower and the incidence of new cases of this disease will be higher.
 
-### Motivation/Rationale
+#### **Motivation/Rationale**
 
 Tuberculosis (TB) remains a major global health problem. 
 In 2012, 1.3 million people were believed to have died because of tuberculosis with an estimated 8.6 million new cases of TB worldwide [[1]][ref_01].The number of TB deaths is unacceptably large given that most are preventable [[2]][ref_02].
 The purpose of this project is to enforce and determine what measures of healthcare are related to the tuberculosis treatment.
 
-### Potential Implications
+#### **Potential Implications**
 
 As it is a dangerous disease that has a good chance of prevention, it would be interesting to have some measures that countries could take to decrease it.
 
-### Dataset and variables
+#### **Dataset and variables**
 
 To make this research, I decide to use the QOG Standard Dataset 2016 [[3]][ref_03]. This dataset consists of approximately 2500 variables from more than 100 data sources.
 At first, I am thinking to use variables from four differents database:
