@@ -13,10 +13,6 @@ You can see all the previous content [here](https://yan-duarte.github.io/tags/).
 
 In this assignment, we have to make a title and an introduction to the Research Question.
 
-Within the innumerable possibilities of datasets, I ended up being in doubt between two possible works.
-
-## **Tuberculosis research**
-
 #### **Title**
 
 The relation between the importance that individuals, governments, and companies give to health and the success rate in the treatment of tuberculosis.
@@ -64,6 +60,7 @@ There are a series of explanatory that can be used, at first I included these on
   - Tuberculosis case detection rate (%, all forms)
   - Incidence of tuberculosis (per 100,000 people)
   - GDP (PPP) (share of world total) (%)
+
 
 ## **References**
 
