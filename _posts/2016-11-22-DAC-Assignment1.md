@@ -27,9 +27,9 @@ How does the relation of the importance give to health of individuals, governmen
 
 ### Hypothesis
 
-If parolees have a better relation with the family member then they will be less likely to have increased substance abuse, involvement in crime and re-arrests.
+If a country expends more with health, has a good air quality and an easy access to water and sanitation, then the success rate in tuberculosis treatment will be higher and the incidence of new cases of this disease will be lower.
 
-If parolee’s friends are engaged in the less deviant act then parolee’s will be less likely to have increased substance abuse, involvement in crime and re-arrests.
+In contrast, not only the country needs to care about health. If the country has a high number of smokers, the rate in tuberculosis treatment will be lower and the incidence of new cases of this disease will be higher.
 
 ### Motivation/Rationale
 
