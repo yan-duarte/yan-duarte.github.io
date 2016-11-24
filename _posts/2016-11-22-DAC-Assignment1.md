@@ -39,7 +39,10 @@ The purpose of this project is to enforce and determine what measures of healthc
 
 ### Potential Implications
 
+As it is a dangerous disease that has a good chance of prevention, it would be interesting to have some measures that countries could take to decrease it.
+
 ### Dataset and variables
+
 To make this research, I decide to use the QOG Standard Dataset 2016 [[3]][ref_03]. This dataset consists of approximately 2500 variables from more than 100 data sources.
 At first, I am thinking to use variables from four differents database:
   
