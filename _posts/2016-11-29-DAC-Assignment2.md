@@ -60,15 +60,15 @@ The lasso regression model was estimated on a training data set consisting of a 
 
 ## **References**
 
-[[1] QOG Standard Dataset 2016][ref_03]
+[[1] QOG Standard Dataset 2016][ref_01]
 
-[[2] Environmental Performance Data][ref_04]
+[[2] Environmental Performance Data][ref_02]
 
-[[3] International Monetary Fund][ref_05]
+[[3] International Monetary Fund][ref_03]
 
-[[4] Worldbank - World Development Indicators][ref_06]
+[[4] Worldbank - World Development Indicators][ref_04]
 
-[[5] World Economic Forum][ref_07]
+[[5] World Economic Forum][ref_05]
 
 
 [ref_01]: http://qog.pol.gu.se/data/datadownloads/qogstandarddata
