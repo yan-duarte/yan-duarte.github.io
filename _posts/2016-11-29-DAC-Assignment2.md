@@ -8,58 +8,26 @@ tags:
 published: true
 ---
 
-This is the first assignment for the Data Analysis Capstone from Data Analysis and Interpretation course ministered by Wesleyan University.
+This is the second assignment for the Data Analysis Capstone from Data Analysis and Interpretation course ministered by Wesleyan University.
 You can see all the previous content [here](https://yan-duarte.github.io/tags/).
 
-In this assignment, we have to make a title and an introduction to the Research Question.
+In this assignment, we have to talk about the methods used in the research.
 
-#### **Title**
+### **Methods**
 
-The relation between the importance that individuals, governments, and companies give to health and the success rate in the treatment of tuberculosis.
+#### **Sample**
+The sample included N=109 countries injection drug production batches manufactured at the Chicago plant from Jan 1, 2015 to December 31, 2015. All batches were high yield batches, meaning that each batch produced between 500,000 and 1 million 0.5 mg drug units.
 
-#### **Research question**
+#### **Measures**
+The manufacturing lead time response variable was measured for each drug batch by calculating the number of hours between release of the batch manufacturing order and completion of product packaging.
+Predictors included 1) an average of the number of units of each drug ingredient on the bill of materials that was in stock at the time of release of the batch manufacturing order, 2) any equipment failure during production (yes/no) based on Engineering reports, and 3) the number of production steps that were required to complete the manufacturing process.
+Employee records were used to determine 4) whether or not trainees were involved during the production process, with trainees defined as production operators who had been working less than 6 months in their current job at the time of manufacturing. Operator fatigue was assessed by 5) the average number of hours of sleep the night before batch production that each production operator reported, and 6) the average of the number of shift hours production operators had already worked prior to beginning batch production.
 
-How does the relation of the importance give to health of individuals, governments and companies influence the success rate in the treatment of tuberculosis?
+#### **Analysis**
+The distributions for the predictors and the manufacturing lead time response variable were evaluated by examining frequency tables for categorical variables and calculating the mean, standard deviation and minimum and maximum values for quantitative variables.
+Scatter plots and box plots were also examined, and Pearson correlation and Analysis of Variance (ANOVA) were used to test bivariate associations between individual predictors and the manufacturing lead time response variable.
+Lasso regression with the least angle regression selection algorithm was used to identify the subset of variables that best predicted manufacturing lead time. The lasso regression model was estimated on a training data set consisting of a random sample of 60% of the batches (N=411). A test data set included the other 40% of the batches (N=273). All predictor variables were standardized to have a mean=0 and standard deviation=1 prior to conducting the lasso regression analysis. Cross validation was performed using k-fold cross validation specifying 10 cross validation folds. The change in the cross validation mean squared error rate at each step was used to identify the best subset of predictor variables. Predictive accuracy was assessed by determining the mean squared error rate of the training data prediction algorithm when applied to observations in the test data set.
 
-#### **Hypothesis**
-
-If a country expends more with health, has a good air quality and an easy access to water and sanitation, then the success rate in tuberculosis treatment will be higher and the incidence of new cases of this disease will be lower.
-
-In contrast, not only the country needs to care about health. If the country has a high number of smokers, the rate in tuberculosis treatment will be lower and the incidence of new cases of this disease will be higher.
-
-#### **Motivation/Rationale**
-
-Tuberculosis (TB) remains a major global health problem. 
-In 2012, 1.3 million people were believed to have died because of tuberculosis with an estimated 8.6 million new cases of TB worldwide [[1]][ref_01].The number of TB deaths is unacceptably large given that most are preventable [[2]][ref_02].
-The purpose of this project is to enforce and determine what measures of healthcare are related to the tuberculosis treatment.
-
-#### **Potential Implications**
-
-As it is a dangerous disease that has a good chance of prevention, it would be interesting to have some measures that countries could take to decrease it.
-
-#### **Dataset and variables**
-
-To make this research, I decide to use the QOG Standard Dataset 2016 [[3]][ref_03]. This dataset consists of approximately 2500 variables from more than 100 data sources.
-At first, I am thinking to use variables from four differents database:
-  
-  - Environmental Performance Data (EPI) [[4]][ref_04];
-  - International Monetary Fund (IMF) [[5]][ref_05];
-  - Worldbank - World Development Indicators (WDI) [[6]][ref_06];
-  - World Economic Forum (WEF) [[7]][ref_07].
-  
-The response variable is the Tuberculosis treatment success rate (% of new cases).
-  
-There are a series of explanatory that can be used, at first I included these ones:
-
-  - Health expenditure per capita, PPP (constant 2011 international dollar)
-  - Water and Sanitation: Access to Drinking Water and Access to Sanitation
-  - Air Quality: Household Air Quality, Air Pollution - Average Exposure to PM2.5 and Air Pollution
-  - Smoking prevalence, females (% of adults)
-  - Smoking prevalence, males (% of adults)
-  - Business impact of tuberculosis
-  - Tuberculosis case detection rate (%, all forms)
-  - Incidence of tuberculosis (per 100,000 people)
-  - GDP (PPP) (share of world total) (%)
 
 
 ## **References**
