@@ -39,10 +39,11 @@ All the variables used are:
 
 In the QoG Standard TS dataset, data from 1946 to 2015 is included and the unit of analysis is country-year (e.g. Sweden-1946, Sweden-1947 and so on).
 
-In the [codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf) you can find a description of all data sources and variables. Detailed descriptions of all variables are sorted by original data sources.
+In the [codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf) you can find a detailed description of all data sources and variables sorted by original data sources.
 
 Every single variable has a different sample number. The variables with the most samples are _Incidence of tuberculosis (per 100,000 people)_, _Air Quality_ and _Water and Sanitation_ with N=191. The variable with the lowest samples are _Smoking prevalence, females_ and _Smoking prevalence, males_ with N = 127.
 
+After dropping the countries with miss information, a total of N = 109 was selected to make the research.
 
 #### **Measures**
 The manufacturing lead time response variable was measured for each drug batch by calculating the number of hours between release of the batch manufacturing order and completion of product packaging.
