@@ -24,8 +24,18 @@ The used variables was extracted from four differents database:
   - Worldbank - World Development Indicators (WDI) [[4]][ref_04];
   - World Economic Forum (WEF) [[5]][ref_05].
 
-All the variables used are:
+In the QoG Standard CS dataset, data from 2012 is prioritized, however, if no data are available for a country for 2012, data for 2013 is included. If no data
+for 2013 exists, data for 2011 is included, and so on up to a maximum of +/- 3 years.
 
+In the [codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf) you can find a detailed description of all data sources and variables sorted by original data sources.
+
+Every single variable has a different sample number. The variables with the most samples are _Incidence of tuberculosis (per 100,000 people)_, _Air Quality_ and _Water and Sanitation_ with N=191. The variable with the lowest samples are _Smoking prevalence, females_ and _Smoking prevalence, males_ with N = 127.
+
+After dropping the countries with miss information, a total of N = 109 was selected to make the research.
+
+#### **Measures**
+For this work, the variables that will be used are:
+  
   - Tuberculosis treatment success rate (% of new cases).
   - Health expenditure per capita, PPP (constant 2011 international dollar)
   - Water and Sanitation: Access to Drinking Water and Access to Sanitation
@@ -37,18 +47,7 @@ All the variables used are:
   - Incidence of tuberculosis (per 100,000 people)
   - GDP (PPP) (share of world total) (%)
 
-In the QoG Standard TS dataset, data from 1946 to 2015 is included and the unit of analysis is country-year (e.g. Sweden-1946, Sweden-1947 and so on).
-
-In the [codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf) you can find a detailed description of all data sources and variables sorted by original data sources.
-
-Every single variable has a different sample number. The variables with the most samples are _Incidence of tuberculosis (per 100,000 people)_, _Air Quality_ and _Water and Sanitation_ with N=191. The variable with the lowest samples are _Smoking prevalence, females_ and _Smoking prevalence, males_ with N = 127.
-
-After dropping the countries with miss information, a total of N = 109 was selected to make the research.
-
-#### **Measures**
-The manufacturing lead time response variable was measured for each drug batch by calculating the number of hours between release of the batch manufacturing order and completion of product packaging.
-Predictors included 1) an average of the number of units of each drug ingredient on the bill of materials that was in stock at the time of release of the batch manufacturing order, 2) any equipment failure during production (yes/no) based on Engineering reports, and 3) the number of production steps that were required to complete the manufacturing process.
-Employee records were used to determine 4) whether or not trainees were involved during the production process, with trainees defined as production operators who had been working less than 6 months in their current job at the time of manufacturing. Operator fatigue was assessed by 5) the average number of hours of sleep the night before batch production that each production operator reported, and 6) the average of the number of shift hours production operators had already worked prior to beginning batch production.
+All variables are quantitative and will be used without any management.
 
 #### **Analysis**
 The distributions for the predictors and the manufacturing lead time response variable were evaluated by examining frequency tables for categorical variables and calculating the mean, standard deviation and minimum and maximum values for quantitative variables.
