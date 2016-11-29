@@ -16,7 +16,33 @@ In this assignment, we have to talk about the methods used in the research.
 ### **Methods**
 
 #### **Sample**
-The sample included N=109 countries injection drug production batches manufactured at the Chicago plant from Jan 1, 2015 to December 31, 2015. All batches were high yield batches, meaning that each batch produced between 500,000 and 1 million 0.5 mg drug units.
+To make this research, the QOG Standard Dataset 2016 [[1]][ref_01] was used. This dataset consists of approximately 2500 variables from more than 100 data sources.
+The used variables was extracted from four differents database:
+  
+  - Environmental Performance Data (EPI) [[2]][ref_02];
+  - International Monetary Fund (IMF) [[3]][ref_03];
+  - Worldbank - World Development Indicators (WDI) [[4]][ref_04];
+  - World Economic Forum (WEF) [[5]][ref_05].
+
+All the variables used are:
+
+  - Tuberculosis treatment success rate (% of new cases).
+  - Health expenditure per capita, PPP (constant 2011 international dollar)
+  - Water and Sanitation: Access to Drinking Water and Access to Sanitation
+  - Air Quality: Household Air Quality, Air Pollution - Average Exposure to PM2.5 and Air Pollution
+  - Smoking prevalence, females (% of adults)
+  - Smoking prevalence, males (% of adults)
+  - Business impact of tuberculosis
+  - Tuberculosis case detection rate (%, all forms)
+  - Incidence of tuberculosis (per 100,000 people)
+  - GDP (PPP) (share of world total) (%)
+
+In the QoG Standard TS dataset, data from 1946 to 2015 is included and the unit of analysis is country-year (e.g. Sweden-1946, Sweden-1947 and so on).
+
+In the [codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf) you can find a description of all data sources and variables. Detailed descriptions of all variables are sorted by original data sources.
+
+Every single variable has a different sample number. The variables with the most samples are _Incidence of tuberculosis (per 100,000 people)_, _Air Quality_ and _Water and Sanitation_ with N=191. The variable with the lowest samples are _Smoking prevalence, females_ and _Smoking prevalence, males_ with N = 127.
+
 
 #### **Measures**
 The manufacturing lead time response variable was measured for each drug batch by calculating the number of hours between release of the batch manufacturing order and completion of product packaging.
@@ -29,28 +55,21 @@ Scatter plots and box plots were also examined, and Pearson correlation and Anal
 Lasso regression with the least angle regression selection algorithm was used to identify the subset of variables that best predicted manufacturing lead time. The lasso regression model was estimated on a training data set consisting of a random sample of 60% of the batches (N=411). A test data set included the other 40% of the batches (N=273). All predictor variables were standardized to have a mean=0 and standard deviation=1 prior to conducting the lasso regression analysis. Cross validation was performed using k-fold cross validation specifying 10 cross validation folds. The change in the cross validation mean squared error rate at each step was used to identify the best subset of predictor variables. Predictive accuracy was assessed by determining the mean squared error rate of the training data prediction algorithm when applied to observations in the test data set.
 
 
-
 ## **References**
 
-[[1] Tuberculosis: Causes, Symptoms and Treatments][ref_01]
+[[1] QOG Standard Dataset 2016][ref_03]
 
-[[2] Global Tuberculosis Report 2013][ref_02]
+[[2] Environmental Performance Data][ref_04]
 
-[[3] QOG Standard Dataset 2016][ref_03]
+[[3] International Monetary Fund][ref_05]
 
-[[4] Environmental Performance Data][ref_04]
+[[4] Worldbank - World Development Indicators][ref_06]
 
-[[5] International Monetary Fund][ref_05]
-
-[[6] Worldbank - World Development Indicators][ref_06]
-
-[[7] World Economic Forum][ref_07]
+[[5] World Economic Forum][ref_07]
 
 
-[ref_01]: http://www.medicalnewstoday.com/articles/8856.php
-[ref_02]: http://apps.who.int/iris/bitstream/10665/91355/1/9789241564656_eng.pdf
-[ref_03]: http://qog.pol.gu.se/data/datadownloads/qogstandarddata
-[ref_04]: http://epi.yale.edu/downloads
-[ref_05]: http://www.imf.org/external/pubs/ft/weo/2014/01/weodata/weoselgr.aspx
-[ref_06]: http://data.worldbank.org/data-catalog/world-development-indicators
-[ref_07]: http://www.weforum.org/issues/competitiveness-0/gci2012-data-platform
+[ref_01]: http://qog.pol.gu.se/data/datadownloads/qogstandarddata
+[ref_02]: http://epi.yale.edu/downloads
+[ref_03]: http://www.imf.org/external/pubs/ft/weo/2014/01/weodata/weoselgr.aspx
+[ref_04]: http://data.worldbank.org/data-catalog/world-development-indicators
+[ref_05]: http://www.weforum.org/issues/competitiveness-0/gci2012-data-platform
