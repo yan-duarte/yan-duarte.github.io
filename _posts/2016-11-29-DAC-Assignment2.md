@@ -50,9 +50,12 @@ For this work, the variables that will be used are:
 All variables are quantitative and will be used without any management.
 
 #### **Analysis**
-The distributions for the predictors and the manufacturing lead time response variable were evaluated by examining frequency tables for categorical variables and calculating the mean, standard deviation and minimum and maximum values for quantitative variables.
-Scatter plots and box plots were also examined, and Pearson correlation and Analysis of Variance (ANOVA) were used to test bivariate associations between individual predictors and the manufacturing lead time response variable.
-Lasso regression with the least angle regression selection algorithm was used to identify the subset of variables that best predicted manufacturing lead time. The lasso regression model was estimated on a training data set consisting of a random sample of 60% of the batches (N=411). A test data set included the other 40% of the batches (N=273). All predictor variables were standardized to have a mean=0 and standard deviation=1 prior to conducting the lasso regression analysis. Cross validation was performed using k-fold cross validation specifying 10 cross validation folds. The change in the cross validation mean squared error rate at each step was used to identify the best subset of predictor variables. Predictive accuracy was assessed by determining the mean squared error rate of the training data prediction algorithm when applied to observations in the test data set.
+The distributions for the predictors and the tuberculosis treatment success rate response variable were evaluated by examining the mean, standard deviation and minimum and maximum values.
+
+Scatter plots were also examined. For test bivariate associations between individual predictors and the tuberculosis treatment success rate response variable, pearson correlation were used.
+
+Lasso regression with the least angle regression selection algorithm was used to identify the subset of variables that best predicted the tuberculosis treatment success rate. 
+The lasso regression model was estimated on a training data set consisting of a random sample of 60% of the batches (N=65). A test data set included the other 40% of the batches (N=44). All predictor variables were standardized to have a mean=0 and standard deviation=1 prior to conducting the lasso regression analysis. Cross validation was performed using k-fold cross validation specifying 10 cross validation folds. The change in the cross validation mean squared error rate at each step was used to identify the best subset of predictor variables. Predictive accuracy was assessed by determining the mean squared error rate of the training data prediction algorithm when applied to observations in the test data set.
 
 
 ## **References**
