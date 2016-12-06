@@ -15,7 +15,7 @@ In this assignment, we have to talk about the results obtained in the research.
 
 ### **Results**
 
-#### **Sample**
+#### **Descriptive Statistics**
 To make this research, the QOG Standard Dataset 2016 [[1]][ref_01] was used. This dataset consists of approximately 2500 variables from more than 100 data sources.
 The used variables was extracted from four differents database:
   
@@ -33,7 +33,7 @@ Every single variable has a different sample number. The variables with the most
 
 After dropping the countries with miss information, a total of N = 109 was selected to make the research.
 
-#### **Measures**
+#### **Univariate Analysis**
 For this work, the variables that will be used are:
   
   - Tuberculosis treatment success rate (% of new cases).
@@ -49,7 +49,7 @@ For this work, the variables that will be used are:
 
 All variables are quantitative and will be used without any management.
 
-#### **Analysis**
+#### **Bivariate Analysis**
 The distributions for the predictors and the tuberculosis treatment success rate response variable were evaluated by examining the mean, standard deviation and minimum and maximum values.
 
 Scatter plots were also examined. For test bivariate associations between individual predictors and the tuberculosis treatment success rate response variable, pearson correlation were used.
