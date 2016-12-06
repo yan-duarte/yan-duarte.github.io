@@ -54,8 +54,9 @@ The distributions for the predictors and the tuberculosis treatment success rate
 
 Scatter plots were also examined. For test bivariate associations between individual predictors and the tuberculosis treatment success rate response variable, pearson correlation were used.
 
-Lasso regression with the least angle regression selection algorithm was used to identify the subset of variables that best predicted the tuberculosis treatment success rate. 
-The lasso regression model was estimated on a training data set consisting of a random sample of 60% of the batches (N=65). A test data set included the other 40% of the batches (N=44). All predictor variables were standardized to have a mean=0 and standard deviation=1 prior to conducting the lasso regression analysis. Cross validation was performed using k-fold cross validation specifying 10 cross validation folds. The change in the cross validation mean squared error rate at each step was used to identify the best subset of predictor variables. Predictive accuracy was assessed by determining the mean squared error rate of the training data prediction algorithm when applied to observations in the test data set.
+Lasso regression with the least angle regression selection algorithm was used to identify the subset of variables that best predicted the tuberculosis treatment success rate.
+
+As the data set has few samples, the lasso regression model was estimated on the entire data set (N=109). All predictor variables were standardized to have a mean=0 and standard deviation=1 prior to conducting the lasso regression analysis. Cross validation was performed using k-fold cross validation specifying 10 cross validation folds. The change in the cross validation mean squared error rate at each step was used to identify the best subset of predictor variables. Predictive accuracy was assessed by determining the mean squared error rate of the training data prediction algorithm when applied to observations in the test data set.
 
 
 ## **References**
