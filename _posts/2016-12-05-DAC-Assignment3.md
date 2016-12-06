@@ -16,6 +16,31 @@ In this assignment, we have to talk about the results obtained in the research.
 ### **Results**
 
 #### **Descriptive Statistics**
+Table 1 shows descriptive statistics for the quantitative data analytic variables.
+
+
+| Analysis Variable | N |  Mean | Std Dev | Minimun | Maximum |
+|:----:|----:|----:|----:|----:|----:|
+| Air Quality                   | 109 |   78.97 |   18.73 | 14.30 |  100.00 |
+| Water and Sanitation access   | 109 |   55.56 |   33.05 |  2.88 |  100.00 |
+| GDP PPP share of world total  | 109 |    0.81 |    2.44 |  0.00 |   19.57 |
+| Health expenditure per capita | 109 | 1424.78 | 1626.97 | 34.81 | 8845.18 |
+| Smoking prevalence females    | 109 |   11.57 |   10.22 |  0.40 |   39.80 |
+| Smoking prevalence males      | 109 |   34.44 |   12.83 |  8.90 |   71.80 |
+| TB case detection rate        | 109 |   75.28 |   17.89 | 16.00 |  120.00 |
+| Incidence of TB               | 109 |  128.83 |  195.29 |  1.60 | 1042.00 |
+| TB treatment success rate     | 109 |   78.29 |   15.64 |  0.00 |  100.00 |
+| Business impact of TB         | 109 |    5.24 |    1.05 |  2.27 |    6.84 |
+
+
+
+
+
+The average manufacturing lead time was 21.45 hours (sd=3.86), with a minimum lead time of 9.40 hours and a maximum of 33.37 hours. In addition, equipment failure occurred in manufacturing for nearly half of the batches (48%; N=329) and trainees were involved in the production of 51% (N=351) of the batches.
+
+
+
+
 To make this research, the QOG Standard Dataset 2016 [[1]][ref_01] was used. This dataset consists of approximately 2500 variables from more than 100 data sources.
 The used variables was extracted from four differents database:
   
