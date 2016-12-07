@@ -38,18 +38,27 @@ The average of the response variable, tuberculosis treatment success rate, was 7
 
 #### **Bivariate Analysis**
 
-Scatter plots for the association between the tuberculosis success rate response variable and quantitative predictors ([Figure 1](#figure1)) revealed that only the variables _GDP PPP share of the world total_, _Smoking prevalence males_ and _Incidence of Tuberculosis_ increased when the tuberculosis treatment had a greater success rate. However, the other variables decreased when the success treatment rate had a great value. Table 2 shows all the Pearson values of the variables.
+Scatter plots for the association between the tuberculosis success rate response variable and quantitative predictors ([Figure 1](#figure1)) revealed that only the variables _GDP PPP share of the world total_, _Smoking prevalence males_ and _Incidence of Tuberculosis_ increased when the tuberculosis treatment had a greater success rate. However, the other variables decreased when the success treatment rate had a great value.
 
 <center><a name="figure1">Figure 1.</a> Association between predictors and tuberculosis success rate.</center>
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/bivariate_analysis.png)
 
+[Table 2](#table2) shows all the Pearson values of the variables. The variables _GDP PPP share of world total_, _Smoking prevalence males_ and _Incidence of tuberculosis_ were not significantly associated with the response variable tuberculosis treatment success rate.
+
+<center><a name="table2">Table 2.</a> Pearson values of the association between predictors and tuberculosis success rate.</center>
+| Analysis Variable             |   Pearson   |   p-value  |
+|:------------------------------|------------:|-----------:|
+| Air Quality                   |   -0.26776  |     0.0049 |
+| Water and Sanitation access   |   -0.38838  | 3.0049e-05 |
+| GDP PPP share of world total  |    0.04870  |     0.6150 |
+| Health expenditure per capita |   -0.37709  | 5.3036e-05 |
+| Smoking prevalence females    |   -0.41092  | 9.0657e-06 |
+| Smoking prevalence males      |    0.07624  |    0.43071 |
+| TB case detection rate        |   -0.30539  |    0.00124 |
+| Incidence of TB               |    0.16489  |    0.08664 |
+| Business impact of TB         |   -0.33497  |    0.00037 |
 
 
-
-
-
-
-Manufacturing lead time was not significantly associated with the number of steps involved in the production of a batch (Pearson r=-0.05, p=.176) and the number of hours of sleep that production workers reported getting the night before batch production began (Pearson r=0.01, p=.710).
 
 
 
