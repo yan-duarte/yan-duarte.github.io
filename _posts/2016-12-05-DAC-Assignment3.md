@@ -46,6 +46,7 @@ Scatter plots for the association between the tuberculosis success rate response
 [Table 2](#table2) shows all the Pearson values of the variables. The variables _GDP PPP share of world total_, _Smoking prevalence males_ and _Incidence of tuberculosis_ were not significantly associated with the response variable tuberculosis treatment success rate.
 
 <center><a name="table2">Table 2.</a> Pearson values of the association between predictors and tuberculosis success rate.</center>
+
 | Analysis Variable             |   Pearson   |   p-value  |
 |:------------------------------|------------:|-----------:|
 | Air Quality                   |   -0.26776  |     0.0049 |
@@ -57,8 +58,6 @@ Scatter plots for the association between the tuberculosis success rate response
 | TB case detection rate        |   -0.30539  |    0.00124 |
 | Incidence of TB               |    0.16489  |    0.08664 |
 | Business impact of TB         |   -0.33497  |    0.00037 |
-
-
 
 
 
