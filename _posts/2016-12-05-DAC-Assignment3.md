@@ -17,10 +17,9 @@ In this assignment, we have to talk about the results obtained in the research.
 
 #### **Descriptive Statistics**
 [Table 1](#table1) shows descriptive statistics for the quantitative data analytic variables.
-
+The average of the response variable, tuberculosis treatment success rate, was 78.29%, with a minimum success rate of 0% and a maximum of 100%.
 
 <center><a name="table1">Table 1.</a> Descriptive Statistic for Data Analytic Variables.</center>
-
 
 | Analysis Variable             |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
 |:------------------------------|------:|---------:|------------:|------------:|------------:|
@@ -37,29 +36,19 @@ In this assignment, we have to talk about the results obtained in the research.
 
 <br>
 
+![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/bivariate_analysis.png)
 
 
-The average manufacturing lead time was 21.45 hours (sd=3.86), with a minimum lead time of 9.40 hours and a maximum of 33.37 hours. In addition, equipment failure occurred in manufacturing for nearly half of the batches (48%; N=329) and trainees were involved in the production of 51% (N=351) of the batches.
+#### **Bivariate Analysis**
+Scatter plots for the association between the manufacturing lead time response variable and quantitative predictors (Figure 1) revealed that manufacturing lead times were shorter when there was a greater number of ingredient units in stock (Pearson r=-0.79, p<.0001), but increased when production workers had worked more hours on their shift before beginning production (Pearson r=0.57, p<.0001).
+
+
+
+Manufacturing lead time was not significantly associated with the number of steps involved in the production of a batch (Pearson r=-0.05, p=.176) and the number of hours of sleep that production workers reported getting the night before batch production began (Pearson r=0.01, p=.710).
 
 
 
 
-To make this research, the QOG Standard Dataset 2016 [[1]][ref_01] was used. This dataset consists of approximately 2500 variables from more than 100 data sources.
-The used variables was extracted from four differents database:
-  
-  - Environmental Performance Data (EPI) [[2]][ref_02];
-  - International Monetary Fund (IMF) [[3]][ref_03];
-  - Worldbank - World Development Indicators (WDI) [[4]][ref_04];
-  - World Economic Forum (WEF) [[5]][ref_05].
-
-In the QoG Standard CS dataset, data from 2012 is prioritized, however, if no data are available for a country for 2012, data for 2013 is included. If no data
-for 2013 exists, data for 2011 is included, and so on up to a maximum of +/- 3 years.
-
-In the [codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf) you can find a detailed description of all data sources and variables sorted by original data sources.
-
-Every single variable has a different sample number. The variables with the most samples are _Incidence of tuberculosis (per 100,000 people)_, _Air Quality_ and _Water and Sanitation_ with N=191. The variable with the lowest samples are _Smoking prevalence, females_ and _Smoking prevalence, males_ with N = 127.
-
-After dropping the countries with miss information, a total of N = 109 was selected to make the research.
 
 #### **Univariate Analysis**
 For this work, the variables that will be used are:
@@ -77,13 +66,7 @@ For this work, the variables that will be used are:
 
 All variables are quantitative and will be used without any management.
 
-#### **Bivariate Analysis**
-The distributions for the predictors and the tuberculosis treatment success rate response variable were evaluated by examining the mean, standard deviation and minimum and maximum values.
 
-Scatter plots were also examined. For test bivariate associations between individual predictors and the tuberculosis treatment success rate response variable, pearson correlation were used.
-
-Lasso regression with the least angle regression selection algorithm was used to identify the subset of variables that best predicted the tuberculosis treatment success rate. 
-The lasso regression model was estimated on a training data set consisting of a random sample of 60% of the batches (N=65). A test data set included the other 40% of the batches (N=44). All predictor variables were standardized to have a mean=0 and standard deviation=1 prior to conducting the lasso regression analysis. Cross validation was performed using k-fold cross validation specifying 10 cross validation folds. The change in the cross validation mean squared error rate at each step was used to identify the best subset of predictor variables. Predictive accuracy was assessed by determining the mean squared error rate of the training data prediction algorithm when applied to observations in the test data set.
 
 
 ## **References**
