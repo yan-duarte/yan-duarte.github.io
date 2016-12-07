@@ -59,7 +59,7 @@ Scatter plots for the association between the tuberculosis success rate response
 | Incidence of TB               |    0.16489  |    0.08664 |
 | Business impact of TB         |   -0.33497  |    0.00037 |
 
-
+<br>
 
 
 
