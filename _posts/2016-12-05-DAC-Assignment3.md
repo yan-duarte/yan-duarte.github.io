@@ -38,7 +38,8 @@ The average of the response variable, tuberculosis treatment success rate, was 7
 
 #### **Bivariate Analysis**
 
-Scatter plots for the association between the tuberculosis success rate response variable and quantitative predictors ([Figure 1](#figure1)) revealed that manufacturing lead times were shorter when there was a greater number of ingredient units in stock (Pearson r=-0.79, p<.0001), but increased when production workers had worked more hours on their shift before beginning production (Pearson r=0.57, p<.0001).
+Scatter plots for the association between the tuberculosis success rate response variable and quantitative predictors ([Figure 1](#figure1)) revealed that only the variables _GDP PPP share of world total_, _"Smoking prevalence males"_ and _"Incidence of Tuberculosis"_ increased when the turberculosis treatment had a greater success rate. However, the other variables decreased when the success treatment rate had a great value. The Table 2 shows all the pearson values of the variables.
+
 
 <center><a name="figure1">Figure 1.</a> Association between predictors and tuberculosis success rate.</center>
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/bivariate_analysis.png)
