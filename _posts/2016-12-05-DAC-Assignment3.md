@@ -38,8 +38,7 @@ The average of the response variable, tuberculosis treatment success rate, was 7
 
 #### **Bivariate Analysis**
 
-Scatter plots for the association between the tuberculosis success rate response variable and quantitative predictors ([Figure 1](#figure1)) revealed that only the variables _GDP PPP share of world total_, _"Smoking prevalence males"_ and _"Incidence of Tuberculosis"_ increased when the turberculosis treatment had a greater success rate. However, the other variables decreased when the success treatment rate had a great value. The Table 2 shows all the pearson values of the variables.
-
+Scatter plots for the association between the tuberculosis success rate response variable and quantitative predictors ([Figure 1](#figure1)) revealed that only the variables _GDP PPP share of the world total_, _Smoking prevalence males_ and _Incidence of Tuberculosis_ increased when the tuberculosis treatment had a greater success rate. However, the other variables decreased when the success treatment rate had a great value. Table 2 shows all the Pearson values of the variables.
 
 <center><a name="figure1">Figure 1.</a> Association between predictors and tuberculosis success rate.</center>
 ![Figure 1]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/bivariate_analysis.png)
