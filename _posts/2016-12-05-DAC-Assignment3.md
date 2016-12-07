@@ -19,18 +19,18 @@ In this assignment, we have to talk about the results obtained in the research.
 Table 1 shows descriptive statistics for the quantitative data analytic variables.
 
 
-| Analysis Variable |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
-|:----:|--------:|--------:|----------:|------------:|------------:|
-| Air Quality                   |  109  |    78.97 |   18.73 | 14.30 |  100.00 |
-| Water and Sanitation access   |  109  |    55.56 |   33.05 |  2.88 |  100.00 |
-| GDP PPP share of world total  |  109  |     0.81 |    2.44 |  0.00 |   19.57 |
-| Health expenditure per capita |  109  |  1424.78 | 1626.97 | 34.81 | 8845.18 |
-| Smoking prevalence females    |  109  |    11.57 |   10.22 |  0.40 |   39.80 |
-| Smoking prevalence males      |  109  |    34.44 |   12.83 |  8.90 |   71.80 |
-| TB case detection rate        |  109  |    75.28 |   17.89 | 16.00 |  120.00 |
-| Incidence of TB               |  109  |   128.83 |  195.29 |  1.60 | 1042.00 |
-| TB treatment success rate     |  109  |    78.29 |   15.64 |  0.00 |  100.00 |
-| Business impact of TB         |  109  |     5.24 |    1.05 |  2.27 |    6.84 |
+| Analysis Variable             |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
+|:-----------------------------:|------:|---------:|------------:|------------:|------------:|
+| Air Quality                   |  109  |    78.97 |       18.73 |       14.30 |      100.00 |
+| Water and Sanitation access   |  109  |    55.56 |       33.05 |        2.88 |      100.00 |
+| GDP PPP share of world total  |  109  |     0.81 |        2.44 |        0.00 |       19.57 |
+| Health expenditure per capita |  109  |  1424.78 |     1626.97 |       34.81 |     8845.18 |
+| Smoking prevalence females    |  109  |    11.57 |       10.22 |        0.40 |       39.80 |
+| Smoking prevalence males      |  109  |    34.44 |       12.83 |        8.90 |       71.80 |
+| TB case detection rate        |  109  |    75.28 |       17.89 |       16.00 |      120.00 |
+| Incidence of TB               |  109  |   128.83 |      195.29 |        1.60 |     1042.00 |
+| TB treatment success rate     |  109  |    78.29 |       15.64 |        0.00 |      100.00 |
+| Business impact of TB         |  109  |     5.24 |        1.05 |        2.27 |        6.84 |
 
 
 
