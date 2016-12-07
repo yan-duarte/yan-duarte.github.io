@@ -16,10 +16,10 @@ In this assignment, we have to talk about the results obtained in the research.
 ### **Results**
 
 #### **Descriptive Statistics**
-[Table 1](#abcd) shows descriptive statistics for the quantitative data analytic variables.
+[Table 1](#table1) shows descriptive statistics for the quantitative data analytic variables.
 
 
-<center><a name="abcd">Table 1.</a> Descriptive Statisti for Data Analytic Variables.</center>
+<center><a name="table1">Table 1.</a> Descriptive Statisti for Data Analytic Variables.</center>
 
 | Analysis Variable             |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
 |:------------------------------|------:|---------:|------------:|------------:|------------:|
