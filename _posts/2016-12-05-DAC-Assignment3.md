@@ -34,7 +34,7 @@ In this assignment, we have to talk about the results obtained in the research.
 | TB treatment success rate     |  109  |    78.29 |       15.64 |        0.00 |      100.00 |
 | Business impact of TB         |  109  |     5.24 |        1.05 |        2.27 |        6.84 |
 
-
+<br>
 
 
 
