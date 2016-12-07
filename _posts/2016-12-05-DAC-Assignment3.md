@@ -20,7 +20,7 @@ Table 1 shows descriptive statistics for the quantitative data analytic variable
 
 
 | Analysis Variable |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
-|:----:|--------:|--------:|--------:|--------:|--------:|
+|:----:|--------:|--------:|----------:|------------:|------------:|
 | Air Quality                   |  109  |    78.97 |   18.73 | 14.30 |  100.00 |
 | Water and Sanitation access   |  109  |    55.56 |   33.05 |  2.88 |  100.00 |
 | GDP PPP share of world total  |  109  |     0.81 |    2.44 |  0.00 |   19.57 |
