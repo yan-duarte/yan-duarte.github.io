@@ -61,42 +61,6 @@ Scatter plots for the association between the tuberculosis success rate response
 
 <br>
 
+#### **Multivariable Analysis**
 
-
-#### **Univariate Analysis**
-For this work, the variables that will be used are:
-  
-  - Tuberculosis treatment success rate (% of new cases).
-  - Health expenditure per capita, PPP (constant 2011 international dollar)
-  - Water and Sanitation: Access to Drinking Water and Access to Sanitation
-  - Air Quality: Household Air Quality, Air Pollution - Average Exposure to PM2.5 and Air Pollution
-  - Smoking prevalence, females (% of adults)
-  - Smoking prevalence, males (% of adults)
-  - Business impact of tuberculosis
-  - Tuberculosis case detection rate (%, all forms)
-  - Incidence of tuberculosis (per 100,000 people)
-  - GDP (PPP) (share of world total) (%)
-
-All variables are quantitative and will be used without any management.
-
-
-
-
-## **References**
-
-[[1] QOG Standard Dataset 2016][ref_01]
-
-[[2] Environmental Performance Data][ref_02]
-
-[[3] International Monetary Fund][ref_03]
-
-[[4] Worldbank - World Development Indicators][ref_04]
-
-[[5] World Economic Forum][ref_05]
-
-
-[ref_01]: http://qog.pol.gu.se/data/datadownloads/qogstandarddata
-[ref_02]: http://epi.yale.edu/downloads
-[ref_03]: http://www.imf.org/external/pubs/ft/weo/2014/01/weodata/weoselgr.aspx
-[ref_04]: http://data.worldbank.org/data-catalog/world-development-indicators
-[ref_05]: http://www.weforum.org/issues/competitiveness-0/gci2012-data-platform
+Figure 4 shows that 5 of the 6 variables were retained in the model selected by the lasso regression analysis. Only the number of production steps predictor was excluded. The number of ingredient units in stock and the number of shift hours employees worked before beginning production were most strongly associated with manufacturing lead time, followed by equipment failure, trainee involvement in production, and the number of hours of sleep that production workers reported getting the night before their shift began (Table 2). Manufacturing lead times were shorter for batches that had a greater number of ingredients in stock and when production operators reported sleeping for more hours the night prior to batch production. Working more shift hours prior to manufacturing, equipment failure, and having trainees involved in batch production was associated with increased lead times. Together, these 5 predictors accounted for 93.3% of the variance in manufacturing lead time. The mean squared error (MSE) for the test data (MSE=1.03) differed very little from the MSE for the training data (MSE=1.00), which suggests that predictive accuracy did not decline when the lasso regression algorithm developed on the training data set was applied to predict lead manufacturing times in the test data set (Figure 4).
