@@ -16,10 +16,10 @@ In this assignment, we have to talk about the results obtained in the research.
 ### **Results**
 
 #### **Descriptive Statistics**
-Table 1 shows descriptive statistics for the quantitative data analytic variables.
+[Table 1](#abcd) shows descriptive statistics for the quantitative data analytic variables.
 
 
-<center>Table 1</center>
+<center><a name="abcd">Table 1</a></center>
 | Analysis Variable             |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
 |:------------------------------|------:|---------:|------------:|------------:|------------:|
 | Air Quality                   |  109  |    78.97 |       18.73 |       14.30 |      100.00 |
