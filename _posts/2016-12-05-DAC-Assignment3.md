@@ -19,7 +19,7 @@ In this assignment, we have to talk about the results obtained in the research.
 Table 1 shows descriptive statistics for the quantitative data analytic variables.
 
 
-<center>
+<center>Table 1</center>
 | Analysis Variable             |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
 |:------------------------------|------:|---------:|------------:|------------:|------------:|
 | Air Quality                   |  109  |    78.97 |       18.73 |       14.30 |      100.00 |
@@ -32,7 +32,7 @@ Table 1 shows descriptive statistics for the quantitative data analytic variable
 | Incidence of TB               |  109  |   128.83 |      195.29 |        1.60 |     1042.00 |
 | TB treatment success rate     |  109  |    78.29 |       15.64 |        0.00 |      100.00 |
 | Business impact of TB         |  109  |     5.24 |        1.05 |        2.27 |        6.84 |
-</center>
+
 
 
 
