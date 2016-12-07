@@ -21,6 +21,7 @@ In this assignment, we have to talk about the results obtained in the research.
 
 <center><a name="table1">Table 1.</a> Descriptive Statisti for Data Analytic Variables.</center>
 
+<center>
 | Analysis Variable             |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
 |:------------------------------|------:|---------:|------------:|------------:|------------:|
 | Air Quality                   |  109  |    78.97 |       18.73 |       14.30 |      100.00 |
@@ -33,7 +34,7 @@ In this assignment, we have to talk about the results obtained in the research.
 | Incidence of TB               |  109  |   128.83 |      195.29 |        1.60 |     1042.00 |
 | TB treatment success rate     |  109  |    78.29 |       15.64 |        0.00 |      100.00 |
 | Business impact of TB         |  109  |     5.24 |        1.05 |        2.27 |        6.84 |
-
+</center>
 <br>
 
 
