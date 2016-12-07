@@ -20,6 +20,7 @@ In this assignment, we have to talk about the results obtained in the research.
 
 
 <center><a name="abcd">Table 1</a></center>
+
 | Analysis Variable             |   N   |   Mean   |   Std Dev   |   Minimun   |   Maximum   |
 |:------------------------------|------:|---------:|------------:|------------:|------------:|
 | Air Quality                   |  109  |    78.97 |       18.73 |       14.30 |      100.00 |
