@@ -63,13 +63,14 @@ Scatter plots for the association between the tuberculosis success rate response
 
 #### **Multivariable Analysis**
 
-[Figure 2](#figure2) and [Table 3] shows that only 
+[Figure 2](#figure2) and [Table 3](#table3) shows that only four variables were retained in the model selected by the lasso regression analysis.
 
 
 <center><a name="figure2">Figure 2.</a> Regression Coefficients Progression for Lasso Paths.</center>
 ![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/multivariate_analysis1.png)
 
 <center><a name="table3">Table 2.</a> Lasso Regression Coefficients.</center>
+
 | Analysis Variable             |     Coef    |
 |:------------------------------|------------:|
 | Air Quality                   |   -0.95440  |
@@ -77,6 +78,7 @@ Scatter plots for the association between the tuberculosis success rate response
 | Health expenditure per capita |   -1.41151  |
 | Smoking prevalence females    |   -3.17685  |
 
+<br>
 
 <center><a name="figure3">Figure 3.</a> Mean squared error on each fold.</center>
 ![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/multivariate_analysis2.png)
