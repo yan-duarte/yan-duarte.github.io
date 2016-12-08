@@ -63,13 +63,13 @@ Scatter plots for the association between the tuberculosis success rate response
 
 #### **Multivariable Analysis**
 
-[Figure 2](#figure2) and [Table 3](#table3) shows that only four variables were retained in the model selected by the lasso regression analysis.
+[Figure 2](#figure2) shows that only four variables were retained in the model selected by the lasso regression analysis. The other five predictors were excluded. The _Smoking prevalence females (%)_ and the _Helath expenditure per capita_ were most strongly associated with tuberculosis success treatment rate, followed by _Air quality_ and at last _Water and sanitation access_ ([Table 3](#table3)).
 
 
 <center><a name="figure2">Figure 2.</a> Regression Coefficients Progression for Lasso Paths.</center>
 ![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/multivariate_analysis1.png)
 
-<center><a name="table3">Table 2.</a> Lasso Regression Coefficients.</center>
+<center><a name="table3">Table 3.</a> Lasso Regression Coefficients.</center>
 
 | Analysis Variable             |     Coef    |
 |:------------------------------|------------:|
@@ -80,16 +80,11 @@ Scatter plots for the association between the tuberculosis success rate response
 
 <br>
 
+As the data set have low samples, the data were not splited into training and a test sets. The least angle regression algorithm with k=10 fold cross-validation was used to estimate the lasso regression model in the data set. The change in the cross-validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
+
+[Figure 3](#figure3) shows that there is variability across the individual cross-validation folds in the training data set, but the change in the mean square error as variables are added to the model follows the same pattern for each fold.
+
 <center><a name="figure3">Figure 3.</a> Mean squared error on each fold.</center>
 ![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/multivariate_analysis2.png)
 
-Figure 4 shows that 5 of the 6 variables were retained in the model selected by the lasso regression analysis. Only the number of production steps predictor was excluded. The number of ingredient units in stock and the number of shift hours employees worked before beginning production were most strongly associated with manufacturing lead time, followed by equipment failure, trainee involvement in production, and the number of hours of sleep that production workers reported getting the night before their shift began (Table 2). Manufacturing lead times were shorter for batches that had a greater number of ingredients in stock and when production operators reported sleeping for more hours the night prior to batch production. Working more shift hours prior to manufacturing, equipment failure, and having trainees involved in batch production was associated with increased lead times. Together, these 5 predictors accounted for 93.3% of the variance in manufacturing lead time. The mean squared error (MSE) for the test data (MSE=1.03) differed very little from the MSE for the training data (MSE=1.00), which suggests that predictive accuracy did not decline when the lasso regression algorithm developed on the training data set was applied to predict lead manufacturing times in the test data set (Figure 4).
-
-
-No variables were removed and the variable that is most strongly associated with the incidence of cancer is the cholesterol in the blood, followed by food consumption and then sugar consumption (figure 1).
-
-The data were randomly split into a training set that included 70% of the observations (N=90) and a test set that included 30% of the observations (N=39). The least angle regression algorithm with k=10 fold cross-validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross-validation average (mean) squared error at each step was used to identify the best subset of predictor variables.
-
-We can see in figure 2 that there is variability across the individual cross-validation folds in the training data set, but the change in the mean square error as variables are added to the model follows the same pattern for each fold.
-
-The selected model was more accurate in predicting the incidence of breast cancer in the test data. The R-square values were 0.72 and 0.63, indicating that the selected model explained 72 and 63% of the variance in incidence of breast cancer for the training and test sets, respectively.
+The mean squared error for the data was MSE = 193.10 and the R-square value was 0.2034, indicating that the selected model explained 20.34% of the variance in tuberculosis success treatment rate for the dataset.
