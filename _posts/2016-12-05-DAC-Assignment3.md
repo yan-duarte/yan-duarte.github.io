@@ -63,4 +63,10 @@ Scatter plots for the association between the tuberculosis success rate response
 
 #### **Multivariable Analysis**
 
+<center><a name="figure2">Figure 2.</a> Regression Coefficients Progression for Lasso Paths.</center>
+![Figure 2]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/multivariate_analysis1.png)
+
+<center><a name="figure3">Figure 3.</a> Mean squared error on each fold.</center>
+![Figure 3]({{site.baseurl}}/yan-duarte.github.io/images/dac-assignments/multivariate_analysis2.png)
+
 Figure 4 shows that 5 of the 6 variables were retained in the model selected by the lasso regression analysis. Only the number of production steps predictor was excluded. The number of ingredient units in stock and the number of shift hours employees worked before beginning production were most strongly associated with manufacturing lead time, followed by equipment failure, trainee involvement in production, and the number of hours of sleep that production workers reported getting the night before their shift began (Table 2). Manufacturing lead times were shorter for batches that had a greater number of ingredients in stock and when production operators reported sleeping for more hours the night prior to batch production. Working more shift hours prior to manufacturing, equipment failure, and having trainees involved in batch production was associated with increased lead times. Together, these 5 predictors accounted for 93.3% of the variance in manufacturing lead time. The mean squared error (MSE) for the test data (MSE=1.03) differed very little from the MSE for the training data (MSE=1.00), which suggests that predictive accuracy did not decline when the lasso regression algorithm developed on the training data set was applied to predict lead manufacturing times in the test data set (Figure 4).
