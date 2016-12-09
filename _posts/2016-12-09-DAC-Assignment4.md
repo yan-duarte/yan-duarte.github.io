@@ -15,7 +15,7 @@ In this assignment, we have to send the final report as pdf file.
 
 Following are all the links of the work:
 
-  - [Final Report](http://yan-duarte.github.io/archives/FinalReport.pdf)
-  - [Codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf)
+  - [Final Report](http://yan-duarte.github.io/archives/FinalReport.pdf){:target="_blank"}
+  - [Codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf){:target="_blank"}
   - [Data set](http://yan-duarte.github.io/archives/QOG_dataset.csv)
-  - [Algorithm](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/dac_final.ipynb)
+  - [Algorithm](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/dac_final.ipynb){:target="_blank"}
