@@ -18,4 +18,4 @@ Following are all the links of the work:
   - [Final Report](http://yan-duarte.github.io/archives/FinalReport.pdf)
   - [Codebook](http://yan-duarte.github.io/archives/QOG_codebook.pdf)
   - [Data set](http://yan-duarte.github.io/archives/QOG_dataset.csv)
-  - [Algorithm](http://yan-duarte.github.io/archives/dac_final.ipynb)
+  - [Algorithm](https://github.com/yan-duarte/yan-duarte.github.io/blob/master/archives/dac_final.ipynb)
